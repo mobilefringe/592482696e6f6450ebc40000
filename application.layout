@@ -177,12 +177,12 @@
             </ul>	
 		</div><!-- .container -->
 	</div>
-    </header>
+</header>
     <section id="content">
         <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
         {{yield}}
     </section>
-    <<footer id="footer">
+    <footer id="footer">
 	<div class="footer-inside">
 		<div class="container">
 			<p class="mobile top">
