@@ -14,7 +14,7 @@ $(document).ready(function(e){
             var contest = {}
             contest["email"] = $("#subscribe_email").val();
             contest["newsletter"] = true;
-            contest["property_id"] = {{site.property.id}};
+            contest["property_id"] = site.property.id;
             data["contest"] = contest
             data["notice"] = "false"
             $.ajax({
