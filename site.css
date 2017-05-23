@@ -187,7 +187,7 @@ li{
 }
 
 #hours-short a span {
-    background: url(/system/site_images/photos/000/001/776/original/sprites.png?1392319449) no-repeat scroll right top rgba(0, 0, 0, 0);
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566932000/sprites.png) no-repeat scroll right top rgba(0, 0, 0, 0);
     display: inline-block;
     height: 75px;
     margin: -25px 5px -33px 0;
@@ -335,7 +335,7 @@ header .search-form .input{
 }
 
 header .search-form .button{
-    background: url(/system/site_images/photos/000/001/776/original/sprites.png?1392319449) no-repeat scroll 0 1px #05E7E4;
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566932000/sprites.png) no-repeat scroll 0 1px #05E7E4;
     border: 1px solid #CCCCCC;
     border-radius: 4px;
     height: 30px;
@@ -536,7 +536,7 @@ a.toggle_sub_menu img{
 
 /****** Main Body ********/
 #main{
-    background: url(/system/site_images/photos/000/001/776/original/sprites.png?1392319449) repeat-x scroll -90px 0 rgba(0, 0, 0, 0);
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566932000/sprites.png) repeat-x scroll -90px 0 rgba(0, 0, 0, 0);
     box-shadow: 4px 4px 4px -1px rgba(0, 0, 0, 0.3);
     float: left;
     margin: -44px 0 20px;
