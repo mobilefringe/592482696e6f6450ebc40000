@@ -46,7 +46,7 @@
         <script src="../helpers.js" type="text/javascript"></script>
         
         <script>
-            setEndPoint('//soc.mallmaverick.com/api/v3/soc/all.json');
+            setEndPoint('//svc.mallmaverick.com/api/v3/svc/all.json');
         </script>
     
         
