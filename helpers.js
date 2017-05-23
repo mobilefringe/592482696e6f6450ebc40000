@@ -27,7 +27,7 @@ function init(e){
         if (visited == null) {
             $.magnificPopup.open({
               items: {
-                src: '<div class="mfp-with-anim homepop_up_container" style="height:100%;"><a href=http://www.stvitalcentre.com/pages/svc-giftcard><img alt="Pop up" width="100%" src="/system/popups/photos/000/000/174/original/CAN150_Popup_FNL.jpg?1491856970" /></a></div>', 
+                src: '<div class="mfp-with-anim homepop_up_container" style="height:100%;"><a href=http://www.stvitalcentre.com/pages/svc-giftcard><img alt="Pop up" width="100%" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/jpeg/1495572694000/CAN150_Popup_FNL.jpg" /></a></div>', 
                 type: 'inline'
               }
             });
