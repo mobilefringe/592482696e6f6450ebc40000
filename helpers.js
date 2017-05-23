@@ -21,24 +21,7 @@ function init(e){
 	$(function(){
         $("#giftcard").show();
     })
-    
-    $(document).ready(function() {
-        var visited = $.cookie("visited")
-        if (visited == null) {
-            $.magnificPopup.open({
-              items: {
-                src: '<div class="mfp-with-anim homepop_up_container" style="height:100%;"><a href=http://www.stvitalcentre.com/pages/svc-giftcard><img alt="Pop up" width="100%" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/jpeg/1495572694000/CAN150_Popup_FNL.jpg" /></a></div>', 
-                type: 'inline'
-              }
-            });
-            $.cookie('visited', 'yes'); 
-        }
-        var date = new Date();
-        var minutes = 1440;
-        date.setTime(date.getTime() + (minutes * 60 * 1000));
-        $.cookie('visited', 'yes', { expires: date, path: '/' });
-    });
-    
+
     $(window).load(function() {
         if (window.location.pathname.indexOf("/stores") == -1) {
             $('.flexslider').flexslider({
