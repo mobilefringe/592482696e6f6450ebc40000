@@ -58,7 +58,7 @@ function init(e){
     }
     var view_all = false;
 
-        $('input').placeholder();
+        $('input').val();
 
 //        var logo_img = $(".logo img").attr("src");
 //        $(".logo").hover(
