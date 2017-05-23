@@ -53,9 +53,131 @@
     </head>
 
 <body>
-    <header>
-        <!--Header Content-->
-    </header>
+    <div id="hours">
+    <div class="container">
+        <div id="hours-full" class="row-fluid">
+            <div class="column span4">
+            	<h3>Regular Hours</h3>
+    			<ul>
+                
+                    
+                    <li>
+                        Sunday 11:00am -  6:00pm        				
+    				</li>
+                    
+                    <li>
+                        Monday 10:00am -  9:00pm        				
+    				</li>
+                    
+                    <li>
+                        Tuesday 10:00am -  9:00pm        				
+    				</li>
+                    
+                    <li>
+                        Wednesday 10:00am -  9:00pm        				
+    				</li>
+                    
+                    <li>
+                        Thursday 10:00am -  9:00pm        				
+    				</li>
+                    
+                    <li>
+                        Friday 10:00am -  9:00pm        				
+    				</li>
+                    
+                    <li>
+                        Saturday  9:30am -  6:00pm        				
+    				</li>
+                    				
+    			</ul>
+			</div>
+	
+			<div class="column span4">
+				<h3>Exceptional Dates</h3>
+				<ul>		
+					    
+                        <li>
+                            
+                                May 22 11:00am -  6:00pm            			
+                            
+        				</li>
+                        
+                        <li>
+                            
+                                <div class="hoursasterisk">
+                                    <img alt="hours div" src="https://www.mallmaverick.com/system/site_images/photos/000/001/810/original/directory_hover.png?1392755825" />
+                                </div>
+                                Jul 01 Closed
+                            
+        				</li>
+                        
+                        <li>
+                            
+                                Aug 07 11:00am -  6:00pm            			
+                            
+        				</li>
+                        				
+				</ul>
+                
+			</div>		
+		</div>
+		
+		<div id="hours-short">
+    		<p>
+                <span class="replace tr-todays"></span> HOURS <strong>
+                    
+                        10:00am -  9:00pm
+                    
+                </strong> 
+                <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
+            </p>
+		</div>
+	</div>
+</div>
+
+<header id="header">
+	<div class="header-inside">
+		<div class="container">				
+            <h1><a class="logo" href="/"><span style="display:none">logo</span></a></h1>
+
+			<div class="search-form" >                
+                <div class="input text">
+                    <label for="SearchTerms" style="display:none" >search terms</label>
+                    <input type="text" class="input text" id="SearchTerms" placeholder="Search" />                    
+                    <button class="input button" onclick="search_site();">search</button>
+                </div>
+                <div class="input submit"></div>
+            </div>
+            <ul class="social ss">
+                
+                <li class="social_icon">
+                    <a href="https://www.facebook.com/StVitalCentre" target="_blank" class="social_facebook_small" >
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+                <li class="social_icon">
+                    <a href="https://twitter.com/StVitalCentre" target="_blank" class="social_twitter_small" >
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+                <li class="social_icon">
+                    <a href="http://www.pinterest.com/stvitalcentre/" target="_blank" class="social_pinterest_small" >
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+                <li class="social_icon">
+                    <a href="http://instagram.com/stvitalcentre" target="_blank" class="social_instagram_small" >
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                                	
+            </ul>	
+		</div><!-- .container -->
+	</div>
+</header>
     <section id="content">
         <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
         {{yield}}
