@@ -37,7 +37,6 @@ $(document).ready(function(e){
             alert("Please enter a valid email address. ")
         }
     }
-    $(document).ready(function() {
         var visited = $.cookie("visited")
         if (visited == null) {
             $.magnificPopup.open({
@@ -52,5 +51,5 @@ $(document).ready(function(e){
         var minutes = 1440;
         date.setTime(date.getTime() + (minutes * 60 * 1000));
         $.cookie('visited', 'yes', { expires: date, path: '/' });
-    });
+ 
 </script>
