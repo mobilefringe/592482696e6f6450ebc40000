@@ -1769,7 +1769,7 @@ input[type=text]{
 }
 
 .promo_page h3 .event_time .weekday {
-    background: url(/system/site_images/photos/000/001/776/original/sprites.png?1392319449) no-repeat scroll -90px -150px rgba(0, 0, 0, 0);
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566932000/sprites.png) no-repeat scroll -90px -150px rgba(0, 0, 0, 0);
     display: block;
     float: left;
     height: 50px;
