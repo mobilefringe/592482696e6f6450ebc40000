@@ -3,6 +3,11 @@
 
 
 <script>
+$(document).ready(function(e){
+        init(e);
+        loadMallData(renderAll); 
+        
+    });
     function subscribe_email(){ 
         if (isValidEmailAddress($("#subscribe_email").val())){            
             var data = {}
