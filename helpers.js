@@ -57,7 +57,7 @@ function init(e){
         $(".newsletter-box").hide();
     }
     var view_all = false;
-    $(function(){
+
         $('input').placeholder();
 
 //        var logo_img = $(".logo img").attr("src");
@@ -133,8 +133,6 @@ function init(e){
         } else {
              $(".main_menu").show();
         }
-    
-    })    
     
     //Campaign Monitor Sign Up
     $('#subForm').submit(function (e) {
