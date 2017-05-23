@@ -53,7 +53,7 @@
     </head>
 
 <body>
-        <div id="hours">
+    <div id="hours">
         <div class="container">
             <div id="hours-full" class="row-fluid">
                 <div class="column span4">
