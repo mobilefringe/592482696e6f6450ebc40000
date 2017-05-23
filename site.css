@@ -1034,7 +1034,7 @@ footer .copyright a:hover{
     padding: 12px 30px 13px;
     position: relative;
     text-transform: uppercase;
-    background: url(/system/site_images/photos/000/003/911/original/title_frame_copy.png?1410453184)  no-repeat scroll left top #05E7E4;
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495570982000/title_frame_copy.png)  no-repeat scroll left top #05E7E4;
 }
 
 .home_page h3.store_title{
@@ -1042,7 +1042,7 @@ footer .copyright a:hover{
 }
 
 .home_page h3:after{
-    background: url(/system/site_images/photos/000/001/845/original/title_frame.png?1393255586) right bottom no-repeat transparent;
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495571014000/title_frame.png) right bottom no-repeat transparent;
     display: block;
     height: 10px;
     left: 0px;
