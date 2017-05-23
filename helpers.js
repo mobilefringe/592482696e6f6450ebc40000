@@ -18,6 +18,9 @@ function init(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
 	
+	$(function(){
+        $("#giftcard").show();
+    })
 
 }
 
