@@ -265,6 +265,14 @@ function in_my_time_zone(hour, format){
     return hour.tz(getPropertyTimeZone()).format(format)
 }
 
+function getURLParameter(name) {
+    return decodeURI(
+        (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
+    );
+}
+
+
+
 // vendor scroll- SimplyScroll 2
 
 /*
