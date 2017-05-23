@@ -1392,7 +1392,7 @@ a#mapshot-toggle.mapview{
 }
 
 #compass {
-    background: url(/system/site_images/photos/000/001/870/original/sprites_map.png?1393528804) no-repeat scroll right 0 rgba(0, 0, 0, 0);
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495571124000/sprites_map.png) no-repeat scroll right 0 rgba(0, 0, 0, 0);
     display: block;
     height: 90px;
     position: absolute;
