@@ -38,6 +38,178 @@ function init(e){
         date.setTime(date.getTime() + (minutes * 60 * 1000));
         $.cookie('visited', 'yes', { expires: date, path: '/' });
     });
+    
+    $(window).load(function() {
+        if (window.location.pathname.indexOf("/stores") == -1) {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: false,        
+                prevText: "Previous",
+                nextText: "Next"
+            });
+        }; 
+        if (window.location.pathname == "/") {
+            
+            
+            if (getCookie("visited") != "yes"){
+                $('.newsletter-box').show();
+                var a = new Date();
+                a = new Date(a.getTime() +1000*60*60*24*30);
+                document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;
+            } 
+        }
+    });
+    
+    
+    function getCookie(name) {
+      var value = "; " + document.cookie;
+      var parts = value.split("; " + name + "=");
+      if (parts.length == 2) return parts.pop().split(";").shift();
+    }
+    
+    
+    
+    function close_popup() {
+        $(".newsletter-box").hide();
+    }
+    var view_all = false;
+    $(function(){
+        $('input').placeholder();
+
+//        var logo_img = $(".logo img").attr("src");
+//        $(".logo").hover(
+//            function(){
+//                $(this).find("img").attr("src", "{{1818 | get_image_url}}");
+//            },function(){
+//                $(this).find("img").attr("src", logo_img);
+//            }
+//        );
+        
+        $("#hours-toggle").click(function(){
+            $("#hours-full").slideToggle();
+            if (!view_all){
+                $("#hours-toggle b").html("HIDE HOURS");
+                view_all = true;
+            } else {
+                $("#hours-toggle b").html("VIEW ALL HOURS");
+                view_all = false;
+            }
+        });
+        
+        $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
+            function(){
+                $(this).find("img").show();
+            },function(){
+                $(this).find("img").hide();
+            }
+        );
+        
+        $(".sub_menu_li").hover(
+            function(){
+                $(this).find("ul").show();
+            }, function(){
+                $(this).find("ul").hide();
+            }
+        );
+        
+        $(".page-type-content:nth-child(4)").hover(
+            function(){
+                $("#service_hover").show();
+            }, function(){
+                $("#service_hover").hide();
+            }
+        );
+        
+        var n = 0;
+        $(".home_page h3").each(function(){
+            if (n % 4 == 1 ){
+                $(this).addClass("yellow");    
+                $(this).addClass("ph"+n);    
+            } 
+            if (n % 4 == 2 ){
+                $(this).removeClass("yellow");  
+                $(this).addClass("purple");  
+                $(this).addClass("ph"+n);    
+            }
+            if (n % 4 == 3 ){
+                $(this).removeClass("yellow");  
+                $(this).removeClass("purple");  
+                $(this).addClass("red");    
+                $(this).addClass("ph"+n);    
+            } 
+            
+            n = n+1;
+        });
+        
+        if (getURLParameter("building") == "1"){           
+            $(".building_menu").show();         
+            
+            var menu_index = getURLParameter("menu");
+            $("#building_li_"+ menu_index + " a").addClass("building_menu_highlight");
+        } else {
+             $(".main_menu").show();
+        }
+    
+    })    
+    
+    //Campaign Monitor Sign Up
+    $('#subForm').submit(function (e) {
+//        if ($("#agree_terms").prop("checked") != true){
+//            alert("Please agree to the term and conditions.");
+//            $("#agree_terms").focus();
+//            return false;
+//        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+                function (data) {
+                    if (data.Status === 400) {
+                        alert("Please try again later.");
+                    } else { // 200
+                        alert("Thank you for signing up.");
+                    }
+        });
+    });
+        
+    function subscribe_email(){ 
+        if (isValidEmailAddress($("#subscribe_email").val())){            
+            var data = {}
+            var contest = {}
+            contest["email"] = $("#subscribe_email").val();
+            contest["newsletter"] = true;
+            contest["property_id"] = {{site.property.id}};
+            data["contest"] = contest
+            data["notice"] = "false"
+            $.ajax({
+                url: "/newsletter_no_captcha",
+                type: "POST",
+                data: data,
+        		success: function(response){        		    
+                    alert("Thank you for signing up.");
+    			},
+                error: function(xhr, ajaxOptions, thrownError){
+                    alert("Please try again later.");
+    			}
+            })    
+        } else {
+            alert("Please enter a valid email address. ")
+        }
+    }
+    function validate_pop_up(){
+        if($('#subscribe_newsletter_popup').is(":checked"))
+        return true;
+        else{
+            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
+            return false;
+        }
+    }
+    function search_site(){
+        if($("#SearchTerms").val() != ""){
+            window.location.href = "/search?query=" + $("#SearchTerms").val();
+        }
+    }
 
 }
 
