@@ -8,6 +8,11 @@ $(document).ready(function(e){
         loadMallData(renderAll); 
         
     });
+    
+    function renderAll(){
+        show_content();
+    }
+    
     function subscribe_email(){ 
         if (isValidEmailAddress($("#subscribe_email").val())){            
             var data = {}
