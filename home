@@ -1,7 +1,7 @@
 <center>
     Blank Website
 </center>
-
+<script src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495574705000/js.cookie.js"></script>
 <script>
 $(document).ready(function(e){
         init(e);
