@@ -681,7 +681,7 @@ function renderEventDetails(container, template, collection){
             }
         }
         else{
-            val.store_name = "St. VitalCentre";
+            val.store_name = "St. Vital Centre";
             val.image_url  = val.event_image_url_abs;
             if(val.image_url.indexOf('missing.png') > 0){
                 val.image_url = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
