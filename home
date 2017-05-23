@@ -1,6 +1,6 @@
 <center>
     Blank Website
-
+</center>
 
 <script>
 $(document).ready(function(e){
