@@ -500,7 +500,7 @@ function renderPromotions(container, template, collection){
             
         }
         else{
-            val.store_name = "South Oakville Centre";
+            val.store_name = "St. Vital Centre";
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
         }
         
