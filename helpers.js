@@ -659,7 +659,7 @@ $.simplyScroll.fn.extend({
 })(jQuery,window);
 
 
-/****** PLUGIN ************/
+//****** PLUGIN ************/
 /*!
  * jQuery Cookie Plugin v1.4.1
  * https://github.com/carhartl/jquery-cookie
