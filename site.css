@@ -352,11 +352,11 @@ header .search-form .button{
     width:200px;
     height:80px;
     float:left;
-    background: url(/system/sites/logo_images/000/000/041/original/logo.png?1392317368) no-repeat scroll 0% 0% transparent;
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png) no-repeat scroll 0% 0% transparent;
 }
 
 .header-inside a.logo:hover {
-    background: url(/system/site_images/photos/000/001/818/original/logo-over.png?1392844892) no-repeat scroll 0% 0% transparent;
+    background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569772000/logo-over.png) no-repeat scroll 0% 0% transparent;
 }
 /******* Header END *******/
 
