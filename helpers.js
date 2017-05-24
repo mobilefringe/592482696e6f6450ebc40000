@@ -193,7 +193,7 @@ function subscribe_email(){
         } else {
             alert("Please enter a valid email address. ")
         }
-    }
+}
 
 function show_content(){
     $('.yield').fadeIn();
