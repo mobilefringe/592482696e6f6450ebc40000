@@ -9,6 +9,7 @@ $('document').ready(function() {
             nextText: "Next"
         });
     }; 
+    var view_all = false;
     $('#hours-toggle').click(function(){
         console.log("toggled!");
         $("#hours-full").slideToggle();
