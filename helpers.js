@@ -41,7 +41,7 @@ function init(e){
     function close_popup() {
         $(".newsletter-box").hide();
     }
-    var view_all = false;
+    
     $(function(){
 
         $('input').val();
