@@ -170,6 +170,19 @@ function init(e){
     }
 
 }
+$("#hours-toggle").click(function(){
+            $("#hours-full").slideToggle();
+            if (!view_all){
+                $("#hours-toggle b").html("HIDE HOURS");
+                view_all = true;
+            } else {
+                $("#hours-toggle b").html("VIEW ALL HOURS");
+                view_all = false;
+            }
+        });
+
+
+
 function subscribe_email(){ 
     if (isValidEmailAddress($("#subscribe_email").val())){            
         var data = {}
