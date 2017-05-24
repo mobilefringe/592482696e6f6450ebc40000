@@ -20,8 +20,7 @@
 $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
-        
-        
+
         if (window.location.pathname.indexOf("/stores") == -1) {
             $('.flexslider').flexslider({
                 animation: "slide",
