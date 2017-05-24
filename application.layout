@@ -88,12 +88,12 @@
     		<div id="hours-short">
     		    <script id="today_home_template" type="x-tmpl-mustache/text">
     		        <p>
-                    <span class="replace tr-todays"></span>
-                    HOURS
-                    <strong>
-                        10:00am -  9:00pm
-                    </strong> 
-                    <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
+                        <span class="replace tr-todays"></span>
+                        HOURS
+                        <strong>
+                            10:00am -  9:00pm
+                        </strong> 
+                        <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
                     </p>
     		    </script>
         		
