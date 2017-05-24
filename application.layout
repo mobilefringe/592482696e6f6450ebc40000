@@ -77,9 +77,9 @@
                                 {%raw%}
                                     {{day}} {{h}} 
                                 {%endraw%}
-                                 <div class="hoursasterisk">
-                                        <img alt="hours div" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566468000/directory_hover.png" />
-                                    </div>
+                                <div class="hoursasterisk">
+                                    <img alt="hours div" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566468000/directory_hover.png" />
+                                </div>
         				    </li>
                         </script>
                             
