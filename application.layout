@@ -96,7 +96,9 @@
     		
     		<div id="hours-short">
         		<p>
-                    <span class="replace tr-todays"></span> HOURS <strong>
+                    <span class="replace tr-todays"></span> 
+                    HOURS 
+                    <strong>
                         <div id="today_hour_container">
                             <script id="today_hour_template" type="x-tmpl-mustache/text">
                                 %raw%}
