@@ -24,6 +24,8 @@ $(document).ready(function(e){
     });
     
     function renderAll(){
+        
+        renderBanner(banner_template,home_banner,banners);
         show_content();
     }
 
