@@ -72,31 +72,18 @@
     	
     			<div class="column span4">
     				<h3>Exceptional Dates</h3>
-    				<ul>		
-    					    
+    				<ul>
+    				    <ul id="home_hour_container">
+                        <script id="home_hour_template" type="x-tmpl-mustache/text">
                             <li>
-                                
-                                    May 22 11:00am -  6:00pm            			
-                                
-            				</li>
+                                {%raw%}
+                                 {{day}} {{h}} 
+                                {%endraw%}
+        				    </li>
+                        </script>
                             
-                            <li>
-                                
-                                    <div class="hoursasterisk">
-                                        <img alt="hours div" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566468000/directory_hover.png" />
-                                    </div>
-                                    Jul 01 Closed
-                                
-            				</li>
-                            
-                            <li>
-                                
-                                    Aug 07 11:00am -  6:00pm            			
-                                
-            				</li>
-                            				
-    				</ul>
-                    
+                        </ul>
+                    </div>
     			</div>		
     		</div>
     		
