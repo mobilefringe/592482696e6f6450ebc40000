@@ -725,7 +725,7 @@ function renderHomeHours(container, template, collection){
         if (val.open_time && val.close_time && (val.is_closed == false || val.is_closed == null)){
             var open_time = in_my_time_zone(moment(val.open_time), "h:mma");
             var close_time = in_my_time_zone(moment(val.close_time), "h:mma");
-            val.h = "Open until " + close_time;
+            val.h = open_time " - " + close_time;
         } else {
             val.h = "Closed";
         }
