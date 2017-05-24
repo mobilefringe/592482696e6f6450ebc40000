@@ -47,16 +47,6 @@ function init(e){
     $(function(){
 
         $('input').val();
-
-//        var logo_img = $(".logo img").attr("src");
-//        $(".logo").hover(
-//            function(){
-//                $(this).find("img").attr("src", "{{1818 | get_image_url}}");
-//            },function(){
-//                $(this).find("img").attr("src", logo_img);
-//            }
-//        );
-        
         
         
         $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
