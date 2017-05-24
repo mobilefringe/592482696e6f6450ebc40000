@@ -5,6 +5,6 @@
             $("#giftcard").show();
             console.log("")
         })
-
+    show_content();
     });
 </script>
