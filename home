@@ -2,7 +2,7 @@
     <div class="page_content">            
         <div class="row-fluid home_page white_bg">
             <div class="flexslider trim_screen" style="margin-bottom:0px;">
-                <ul class="slides" id = "banner_container">            
+                <ul class="slides" id = "home_banner">            
                     <li id = "banner_template">
                         <a href="http://bit.ly/non-boring-florals">
                             <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/029/063/original/11224_STV_TAP_HomepageGraphic_DY_FNL.jpg?1494613907" />
