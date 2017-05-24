@@ -9,39 +9,10 @@
                         </a>
                     </li>  
                 </ul>
-            </div> 
-                
-<script type="text/javascript" >    
-    
-</script>
-
-<script>
-    $(document).ready(function() {
-        var visited = $.cookie("visited")
-        if (visited == null) {
-            $.magnificPopup.open({
-              items: {
-                src: '<div class="mfp-with-anim homepop_up_container" style="height:100%;"><a href=http://www.stvitalcentre.com/pages/svc-giftcard><img alt="Pop up" width="100%" src="/system/popups/photos/000/000/174/original/CAN150_Popup_FNL.jpg?1491856970" /></a></div>', 
-                type: 'inline'
-              }
-            });
-            $.cookie('visited', 'yes'); 
-        }
-        var date = new Date();
-        var minutes = 1440;
-        date.setTime(date.getTime() + (minutes * 60 * 1000));
-        $.cookie('visited', 'yes', { expires: date, path: '/' });
-    });
-</script>
-
-
-
             </div>
-
-            
-        
-        </div>        
-    </div>
+        </div>
+    </div>        
+</div>
 
 
 <script>
