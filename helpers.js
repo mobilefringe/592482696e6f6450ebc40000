@@ -18,11 +18,6 @@ function init(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
 	
-	$(function(){
-        $("#giftcard").show();
-    })
-    
-    
     function getCookie(name) {
       var value = "; " + document.cookie;
       var parts = value.split("; " + name + "=");
