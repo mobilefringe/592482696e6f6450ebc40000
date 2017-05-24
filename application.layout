@@ -362,6 +362,130 @@
 
         <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
         {{yield}}
+        
+        <aside id="sidebar">    	
+		<a href="http://www.stvitalcentre.com/spark" target="_blank"><h3 class="replace tr-sweet-tweets"><span style="display:none">Spark</span></h3></a>
+            
+                <br/>
+                <div class="blogfeatureitems">                      
+                    <a href='http://bit.ly/how-to-wear-yellow'>
+                        How to Wear Yellow If You Hate Colour
+                        <br/>
+                        <i>Read More</i>
+                    </a>    
+                    
+                </div>            
+            
+                <br/>
+                <div class="blogfeatureitems">                      
+                    <a href='http://bit.ly/non-boring-florals'>
+                        Non-Boring Ways to Wear Floral this Spring
+                        <br/>
+                        <i>Read More</i>
+                    </a>    
+                    
+                </div>            
+            
+                <br/>
+                <div class="blogfeatureitems">                      
+                    <a href='http://bit.ly/stripes-three-ways'>
+                        The New Way to Wear Stripes
+                        <br/>
+                        <i>Read More</i>
+                    </a>    
+                    
+                </div>            
+            
+	</aside>    
+    
+    <div id="sign-up">
+        <a href="/pages/svc-giftcard" id="giftcard">
+            <img ALT="giftcard_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/819/original/giftcard.png?1392845291" />
+        </a>    
+        
+        <div id="signup">
+            <form action=http://mobilefringe.createsend.com/t/d/s/jukin/ method="post" id="subForm">
+                <label for="subscribe_email">Sign-up for emails</label>
+                <input id="subscribe_email" name=cm-jukin-jukin type="text" required placeholder="Your email">
+    	        <input type="submit" class="button" value="Sign-up">
+                    <p id="signupdisclaimer2" style="margin-top: 10px;">
+                        Enter your email address to receive St. Vital Centre's <br/>
+                        newsletter containing news, updates, and promotions.<br/>
+                        You can withdraw your consent at any time. Please refer<br/>
+                        to our <a href="/pages/svc-privacy-policy-contest-rules">privacy policy</a> or
+                        <a href="/pages/svc-contact">contact us</a> for more details.
+                    </p>
+            </form>
+    	</div>
+    </div>
+    
+    <p id="signupdisclaimer" style="display:none;">
+        Enter your email address to receive St. Vital Centre's newsletter<br/>
+        containing news, updates, and promotions. You can withdraw<br/>
+        your consent at any time. Please refer to our <a href="/pages/svc-privacy-policy-contest-rules">privacy policy</a> or<br/>
+        <a href="/pages/svc-contact">contact us</a> for more details.
+    </p>
+    
+    <div class="clear"></div>
+   <iframe class="hidden-phone" src="http://www.2017canadagames.ca/sites/default/files/sponsor_728x90_en.html" style="display:block;max-width: 728px;height:90px;border:1px solid #000000;box-sizing:border-box;overflow:hidden;margin-left: auto;margin-right: auto;width: 100%;" frameborder="0" scrolling="no"></iframe> 
+    <div id="bottom">
+        <ul class="quick-contact">
+    		<li class="email"><a href="mailto:stvitalcentre@20vic.com">stvitalcentre@20vic.com</a></li>
+    		<li class="tel">  <a href="/pages/svc-contact"><b>204.257.5646</b></a></li>
+    	</ul>
+    	
+    	<div id="channels">
+    		<h4 class="replace tr-follow-us"></h4>
+    		<ul class="social ss">
+            	
+                <li class="social_icon_large">
+                    <a href="https://www.facebook.com/StVitalCentre" target="_blank" class="social_facebook">
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+                <li class="social_icon_large">
+                    <a href="https://twitter.com/StVitalCentre" target="_blank" class="social_twitter">
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+                <li class="social_icon_large">
+                    <a href="http://www.pinterest.com/stvitalcentre/" target="_blank" class="social_pinterest">
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+                <li class="social_icon_large">
+                    <a href="http://instagram.com/stvitalcentre" target="_blank" class="social_instagram">
+                    <h1 style="display:none">social_link</h1>
+                    </a>
+                </li>
+                
+            </ul>
+        </div>
+    	
+    	<ul id="quick-links">
+    		<li id="tr-community">
+    			<a href="/pages/svc-community">Community</a>
+    		</li>
+    		<li id="tr-kids-club">
+    			<a href="/pages/svc-kids-club">Kids Club</a>
+    		</li>
+    		<li id="tr-careers">
+    			<a href="/jobs">
+    				<strong>Hire me!</strong>
+    				<span>Work where you LOVE to shop! Check out our current career opportunities.</span>
+    			</a>
+    		</li>
+            <li id="bottom_divider"></li>
+    		<li id="tr-tenant-login">
+    			<a href="/pages/svc-tenant-login">Tenant Login</a>
+    		</li>
+    	</ul>
+    </div>
+
+        
     </section>
     
     
