@@ -1,6 +1,6 @@
 var view_all = false;
 $('document').ready(function() {
-if (window.location.pathname.indexOf("/stores") == -1) {
+    if (window.location.pathname.indexOf("/stores") == -1) {
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
