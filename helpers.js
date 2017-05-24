@@ -20,14 +20,14 @@ function init(e){
 	});
     
     if (window.location.pathname.indexOf("/stores") == -1) {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlNav: false,
-                directionNav: false,        
-                prevText: "Previous",
-                nextText: "Next"
-            });
-        }; 
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
+    }; 
 	
 	$('#hours-toggle').click(function(){
             console.log("toggled!");
