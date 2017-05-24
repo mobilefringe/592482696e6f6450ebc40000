@@ -69,16 +69,7 @@ function init(e){
 //            }
 //        );
         
-        $("#hours-toggle").click(function(){
-            $("#hours-full").slideToggle();
-            if (!view_all){
-                $("#hours-toggle b").html("HIDE HOURS");
-                view_all = true;
-            } else {
-                $("#hours-toggle b").html("VIEW ALL HOURS");
-                view_all = false;
-            }
-        });
+        
         
         $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
             function(){
