@@ -268,12 +268,12 @@
                                 </script>
                             </ul>
                     </div>
-                </div>
-            </div>   
-            !--Pages that use this file as a layout will have their content replaced in the 'yield'-->
+                    <!--Pages that use this file as a layout will have their content replaced in the 'yield'-->
         {{yield}}
+                </div>
+            </div>        
         </div>
-        <
+        
         
         <aside id="sidebar">    	
 		<a href="http://www.stvitalcentre.com/spark" target="_blank"><h3 class="replace tr-sweet-tweets"><span style="display:none">Spark</span></h3></a>
