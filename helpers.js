@@ -206,7 +206,7 @@ function show_content(){
     var hours = getPropertyHours();
     renderHomeHours('#home_hour_container', '#home_hour_template', today_hours);
     renderHours('#home_hour_container', '#home_hour_container', hours, 'reg_hours');
-    renderHours('#home_exp_hour_container', '#home_exp_hour_container', hours, 'rholiday_hours');
+    renderHours('#home_exp_hour_container', '#home_exp_hour_container', hours, 'holiday_hours');
 }
 
 function get_day(id){
