@@ -18,7 +18,9 @@ function init(e){
 	$('.accordion_header').click(function(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
-
+    $(function(){
+            $("#giftcard").show();
+        })
 	
 	$('#hours-toggle').click(function(){
             console.log("toggled!");
