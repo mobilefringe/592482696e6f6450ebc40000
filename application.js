@@ -377,7 +377,7 @@ function renderHours(container, template, collection, type){
                     var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
                     var close_time = in_my_time_zone(moment(val.close_time), "h:mmA");
                     val.h = open_time + " - " + close_time;   
-                    va.style_now="display:none";
+                    val.style_now="display:none";
                 } else {
                     val.h = "Closed";
                     val.active_class="hoursasterisk";
