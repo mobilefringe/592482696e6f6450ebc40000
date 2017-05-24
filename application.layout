@@ -86,6 +86,7 @@
     		</div>
     		
     		<div id="hours-short">
+    		    <script id="today_home_template" type="x-tmpl-mustache/text"></script>
         		<p>
                     <span class="replace tr-todays"></span>
                     HOURS
