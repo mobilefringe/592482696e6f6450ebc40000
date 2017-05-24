@@ -20,7 +20,7 @@ function init(e){
 	});
     $(function(){
             $("#giftcard").show();
-        })
+    })
 	
 	$('#hours-toggle').click(function(){
             console.log("toggled!");
