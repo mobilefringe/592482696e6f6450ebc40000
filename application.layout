@@ -101,11 +101,7 @@
                         <div id="today_hour_container">
                             <script id="today_hour_template" type="x-tmpl-mustache/text">
                                 {%raw%}
-                                 <strong> {{h}}
-                        
-                    
-                        
-                    </strong> 
+                                 <strong> {{h}}</strong> 
                                 {%endraw%}
                             </script>
                         </div>
