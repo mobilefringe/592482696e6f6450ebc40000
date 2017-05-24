@@ -20,7 +20,8 @@ function init(e){
 	});
 
 	
-	
+
+}	
     function getCookie(name) {
       var value = "; " + document.cookie;
       var parts = value.split("; " + name + "=");
