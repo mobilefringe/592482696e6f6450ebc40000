@@ -259,10 +259,11 @@
         <aside id="sidebar">    	
 		<a href="http://www.stvitalcentre.com/spark" target="_blank"><h3 class="replace tr-sweet-tweets"><span style="display:none">Spark</span></h3></a>
             <br/>
-            <div class="blogfeatureitems" id ="feature_container">
+            <div id ="feature_container">
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     
                 </script>
+            <div class="blogfeatureitems">
                 <a href='http://bit.ly/how-to-wear-yellow'>
                     How to Wear Yellow If You Hate Colour
                         <br/>
