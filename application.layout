@@ -275,26 +275,26 @@
             </div>
         </aside>    
     
-    <div id="sign-up">
-        <a href="/pages/svc-giftcard" id="giftcard">
-            <img ALT="giftcard_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/819/original/giftcard.png?1392845291" />
-        </a>    
-        
-        <div id="signup">
-            <form action=http://mobilefringe.createsend.com/t/d/s/jukin/ method="post" id="subForm">
-                <label for="subscribe_email">Sign-up for emails</label>
-                <input id="subscribe_email" name=cm-jukin-jukin type="text" required placeholder="Your email">
-    	        <input type="submit" class="button" value="Sign-up">
-                    <p id="signupdisclaimer2" style="margin-top: 10px;">
-                        Enter your email address to receive St. Vital Centre's <br/>
-                        newsletter containing news, updates, and promotions.<br/>
-                        You can withdraw your consent at any time. Please refer<br/>
-                        to our <a href="/pages/svc-privacy-policy-contest-rules">privacy policy</a> or
-                        <a href="/pages/svc-contact">contact us</a> for more details.
-                    </p>
-            </form>
-    	</div>
-    </div>
+        <div id="sign-up">
+            <a href="/pages/svc-giftcard" id="giftcard">
+                <img ALT="giftcard_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/819/original/giftcard.png?1392845291" />
+            </a>    
+            
+            <div id="signup">
+                <form action=http://mobilefringe.createsend.com/t/d/s/jukin/ method="post" id="subForm">
+                    <label for="subscribe_email">Sign-up for emails</label>
+                    <input id="subscribe_email" name=cm-jukin-jukin type="text" required placeholder="Your email">
+        	        <input type="submit" class="button" value="Sign-up">
+                        <p id="signupdisclaimer2" style="margin-top: 10px;">
+                            Enter your email address to receive St. Vital Centre's <br/>
+                            newsletter containing news, updates, and promotions.<br/>
+                            You can withdraw your consent at any time. Please refer<br/>
+                            to our <a href="/pages/svc-privacy-policy-contest-rules">privacy policy</a> or
+                            <a href="/pages/svc-contact">contact us</a> for more details.
+                        </p>
+                </form>
+        	</div>
+        </div>
     
     <p id="signupdisclaimer" style="display:none;">
         Enter your email address to receive St. Vital Centre's newsletter<br/>
