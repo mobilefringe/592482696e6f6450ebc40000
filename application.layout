@@ -262,11 +262,13 @@
             <div id ="feature_container">
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="blogfeatureitems">                      
-                        <a href='{{url}}'>
-                            {{description}}
-                            <br/>
-                            <i>Read More</i>
-                        </a>    
+                        {%raw%}
+                            <a href='{{url}}'>
+                                {{description}}
+                                <br/>
+                                <i>Read More</i>
+                            </a>
+                        {%endraw%}
                     </div>            
                     <br/>
                 </script>
