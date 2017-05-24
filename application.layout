@@ -314,34 +314,28 @@
         	<div id="channels">
         		<h4 class="replace tr-follow-us"></h4>
         		<ul class="social ss">
-                	
-                    <li class="social_icon_large">
+                	<li class="social_icon_large">
                         <a href="https://www.facebook.com/StVitalCentre" target="_blank" class="social_facebook">
                         <h1 style="display:none">social_link</h1>
                         </a>
                     </li>
-                    
                     <li class="social_icon_large">
                         <a href="https://twitter.com/StVitalCentre" target="_blank" class="social_twitter">
                         <h1 style="display:none">social_link</h1>
                         </a>
                     </li>
-                    
                     <li class="social_icon_large">
                         <a href="http://www.pinterest.com/stvitalcentre/" target="_blank" class="social_pinterest">
                         <h1 style="display:none">social_link</h1>
                         </a>
                     </li>
-                    
                     <li class="social_icon_large">
                         <a href="http://instagram.com/stvitalcentre" target="_blank" class="social_instagram">
                         <h1 style="display:none">social_link</h1>
                         </a>
                     </li>
-                    
                 </ul>
             </div>
-        	
         	<ul id="quick-links">
         		<li id="tr-community">
         			<a href="/pages/svc-community">Community</a>
@@ -361,8 +355,6 @@
         		</li>
         	</ul>
         </div>
-
-        
     </section>
     
     
