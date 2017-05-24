@@ -20,6 +20,11 @@
 $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
+        
+        $(function(){
+            $("#giftcard").show();
+        })
+
     });
     
     function renderAll(){
