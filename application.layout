@@ -85,7 +85,7 @@
     			</div>		
     		</div>
     		
-    		<div id="hours-short">
+    	<div id="hours-short">
     		<div id="today_hour_container">
     		    <script id="today_hour_template" type="x-tmpl-mustache/text">
     		        <p>
