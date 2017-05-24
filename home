@@ -12,9 +12,7 @@
             </div> 
                 
 <script type="text/javascript" >    
-    $(function(){
-        $("#giftcard").show();
-    })
+    
 </script>
 
 <script>
@@ -50,7 +48,9 @@
 $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
-        
+        $(function(){
+        $("#giftcard").show();
+    })
     });
     
     function renderAll(){
