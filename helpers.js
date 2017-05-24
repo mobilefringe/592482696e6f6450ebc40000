@@ -20,7 +20,7 @@ function init(e){
 	});
 
 	
-	$("#hours-toggle").click(function(){
+	$(".hours_toggle").click(function(){
             console.log("toggled!");
             $("#hours-full").slideToggle();
             if (!view_all){
