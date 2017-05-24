@@ -379,7 +379,7 @@ function renderHours(container, template, collection, type){
                     val.h = open_time + " - " + close_time;   
                 } else {
                     val.h = "Closed";
-                    val.active_class=""
+                    val.active_class="hoursasterisk";
                 }
                 item_list.push(val);
             }
