@@ -20,6 +20,7 @@ $('document').ready(function() {
                 view_all = false;
             }
         });
+        show_content();
 });
     
     
