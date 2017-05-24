@@ -262,7 +262,7 @@
             <div id ="feature_container">
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="blogfeatureitems">                      
-                        <a href='http://bit.ly/non-boring-florals'>
+                        <a href='{{url}}'>
                             Non-Boring Ways to Wear Floral this Spring
                             <br/>
                             <i>Read More</i>
