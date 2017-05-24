@@ -20,9 +20,7 @@
 $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
-        $(function(){
-            $("#giftcard").show();
-        })
+        
         
         if (window.location.pathname.indexOf("/stores") == -1) {
             $('.flexslider').flexslider({
