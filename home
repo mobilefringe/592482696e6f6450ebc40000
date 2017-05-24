@@ -25,6 +25,16 @@ $(document).ready(function(e){
         $(function(){
             $("#giftcard").show();
         })
+        
+        if (window.location.pathname.indexOf("/stores") == -1) {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: false,        
+                prevText: "Previous",
+                nextText: "Next"
+            });
+        }; 
     });
     
     function renderAll(){
