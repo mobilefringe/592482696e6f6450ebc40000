@@ -391,28 +391,20 @@
                     </li>
                 </ul>
                 <ul id="footer_services_nav_133" class="footer_services_nav_1">
-                    
-                              
-                        <li class="">
-                            <a href="/pages/svc-customer-service">Customer Service</a>
-                        </li>
-                              
-                        <li class="">
-                            <a href="/pages/svc-leasing">Leasing</a>
-                        </li>
-                              
-                        <li class="">
-                            <a href="/pages/svc-community-booth">Community Booth</a>
-                        </li>
-                              
-                        <li class="">
-                            <a href="/pages/svc-giftcard">Giftcard</a>
-                        </li>
-                        
-                            		
-            	</ul>
-            
-            	<ul class="footer_info_nav_1">
+                    <li class="">
+                        <a href="/pages/svc-customer-service">Customer Service</a>
+                    </li>
+                    <li class="">
+                        <a href="/pages/svc-leasing">Leasing</a>
+                    </li>
+                    <li class="">
+                        <a href="/pages/svc-community-booth">Community Booth</a>
+                    </li>
+                    <li class="">
+                        <a href="/pages/svc-giftcard">Giftcard</a>
+                    </li>
+                </ul>
+                <ul class="footer_info_nav_1">
                      
             		<li class="">
             			<a href="/pages/svc-community">Community</a>
