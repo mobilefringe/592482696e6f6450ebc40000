@@ -170,6 +170,30 @@ function init(e){
     }
 
 }
+function subscribe_email(){ 
+        if (isValidEmailAddress($("#subscribe_email").val())){            
+            var data = {}
+            var contest = {}
+            contest["email"] = $("#subscribe_email").val();
+            contest["newsletter"] = true;
+            contest["property_id"] = site.property.id;
+            data["contest"] = contest
+            data["notice"] = "false"
+            $.ajax({
+                url: "/newsletter_no_captcha",
+                type: "POST",
+                data: data,
+        		success: function(response){        		    
+                    alert("Thank you for signing up.");
+    			},
+                error: function(xhr, ajaxOptions, thrownError){
+                    alert("Please try again later.");
+    			}
+            })    
+        } else {
+            alert("Please enter a valid email address. ")
+        }
+    }
 
 function show_content(){
     $('.yield').fadeIn();
