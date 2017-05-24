@@ -1,6 +1,86 @@
-<center>
-    Blank Website
-</center>
+ <div id="main" class="main" role="main">
+        <div class="page_content">            
+            <div class="row-fluid home_page white_bg">
+                <div class="flexslider trim_screen" style="margin-bottom:0px;">
+                  <ul class="slides">            
+                         
+                            <li>
+                                
+                                <a href="http://bit.ly/non-boring-florals">
+                                    <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/029/063/original/11224_STV_TAP_HomepageGraphic_DY_FNL.jpg?1494613907" />
+                                </a>
+                                
+                            </li>                
+                        
+                            <li>
+                                
+                                <a href="http://www.stvitalcentre.com/events/svc-faces-of-canada-contest">
+                                    <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/028/383/original/CAN150_Contest_HomepageGraphic_STV_FNL.jpg?1493324296" />
+                                </a>
+                                
+                            </li>                
+                        
+                            <li>
+                                
+                                <a href="http://bit.ly/sunglasses-shoes">
+                                    <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/028/381/original/11224_STV_TAP_HomepageGraphic_FNL.jpg?1493324296" />
+                                </a>
+                                
+                            </li>                
+                        
+                            <li>
+                                
+                                <a href="http://www.stvitalcentre.com/events/svc-faces-of-canada-contest">
+                                    <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/028/380/original/CAN150_Artinst_HomepageGraphic_STV_FNL.jpg?1493324058" />
+                                </a>
+                                
+                            </li>                
+                        
+                            <li>
+                                
+                                <a href="http://www.stvitalcentre.com/pages/svc-giftcard">
+                                    <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/026/392/original/CAN150_HomepageGraphic_FNL.jpg?1487784005" />
+                                </a>
+                                
+                            </li>                
+                        
+                  </ul>
+                </div> 
+                
+<script type="text/javascript" >    
+    $(function(){
+        $("#giftcard").show();
+    })
+</script>
+
+<script>
+    $(document).ready(function() {
+        var visited = $.cookie("visited")
+        if (visited == null) {
+            $.magnificPopup.open({
+              items: {
+                src: '<div class="mfp-with-anim homepop_up_container" style="height:100%;"><a href=http://www.stvitalcentre.com/pages/svc-giftcard><img alt="Pop up" width="100%" src="/system/popups/photos/000/000/174/original/CAN150_Popup_FNL.jpg?1491856970" /></a></div>', 
+                type: 'inline'
+              }
+            });
+            $.cookie('visited', 'yes'); 
+        }
+        var date = new Date();
+        var minutes = 1440;
+        date.setTime(date.getTime() + (minutes * 60 * 1000));
+        $.cookie('visited', 'yes', { expires: date, path: '/' });
+    });
+</script>
+
+
+
+            </div>
+
+            
+        
+        </div>        
+    </div>
+
 
 <script>
 $(document).ready(function(e){
