@@ -372,6 +372,7 @@ function renderHours(container, template, collection, type){
              
             if (!val.store_id && val.is_holiday === true) {
                 holiday = moment(val.holiday_date);
+                console.log(holiday_;)
                 val.formatted_date = in_my_time_zone(holiday, "MMM D");
                 if (val.open_time && val.close_time && val.is_closed === false){
                     var open_time = in_my_time_zone(moment(val.open_time), "h:mmA");
