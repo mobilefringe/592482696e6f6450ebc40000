@@ -8,7 +8,7 @@ $('document').ready(function() {
             prevText: "Previous",
             nextText: "Next"
         });
-    }; 
+    }
     
     var view_all = false;
     $('#hours-toggle').click(function(){
