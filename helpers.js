@@ -29,6 +29,99 @@ $('document').ready(function() {
         renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
         renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
         renderFeatureItems('#feature_container', '#feature_template', feature_items);
+        
+        
+        $('input').placeholder();
+        
+        
+        $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
+            function(){
+                $(this).find("img").show();
+            },function(){
+                $(this).find("img").hide();
+            }
+        );
+        
+        $(".sub_menu_li").hover(
+            function(){
+                $(this).find("ul").show();
+            }, function(){
+                $(this).find("ul").hide();
+            }
+        );
+        
+        $(".page-type-content:nth-child(4)").hover(
+            function(){
+                $("#service_hover").show();
+            }, function(){
+                $("#service_hover").hide();
+            }
+        );
+        
+        var n = 0;
+        $(".home_page h3").each(function(){
+            if (n % 4 == 1 ){
+                $(this).addClass("yellow");    
+                $(this).addClass("ph"+n);    
+            } 
+            if (n % 4 == 2 ){
+                $(this).removeClass("yellow");  
+                $(this).addClass("purple");  
+                $(this).addClass("ph"+n);    
+            }
+            if (n % 4 == 3 ){
+                $(this).removeClass("yellow");  
+                $(this).removeClass("purple");  
+                $(this).addClass("red");    
+                $(this).addClass("ph"+n);    
+            } 
+            
+            n = n+1;
+        });
+        
+        if (getURLParameter("building") == "1"){           
+            $(".building_menu").show();         
+            
+            var menu_index = getURLParameter("menu");
+            $("#building_li_"+ menu_index + " a").addClass("building_menu_highlight");
+        } else {
+             $(".main_menu").show();
+        }
+    
+    //Campaign Monitor Sign Up
+    $('#subForm').submit(function (e) {
+//        if ($("#agree_terms").prop("checked") != true){
+//            alert("Please agree to the term and conditions.");
+//            $("#agree_terms").focus();
+//            return false;
+//        }
+        e.preventDefault();
+        $.getJSON(
+            this.action + "?callback=?",
+            $(this).serialize(),
+                function (data) {
+                    if (data.Status === 400) {
+                        alert("Please try again later.");
+                    } else { // 200
+                        alert("Thank you for signing up.");
+                    }
+        });
+    });
+        
+    
+    function validate_pop_up(){
+        if($('#subscribe_newsletter_popup').is(":checked"))
+        return true;
+        else{
+            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
+            return false;
+        }
+    }
+    function search_site(){
+        if($("#SearchTerms").val() != ""){
+            window.location.href = "/search?query=" + $("#SearchTerms").val();
+        }
+    }
 });
     
     
