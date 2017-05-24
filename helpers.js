@@ -1,5 +1,6 @@
 
 $('document').ready(function() {
+    
     if (window.location.pathname.indexOf("/stores") == -1) {
         $('.flexslider').flexslider({
             animation: "slide",
@@ -9,6 +10,7 @@ $('document').ready(function() {
             nextText: "Next"
         });
     }; 
+    
     var view_all = false;
     $('#hours-toggle').click(function(){
         console.log("toggled!");
