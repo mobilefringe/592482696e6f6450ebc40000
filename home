@@ -5,7 +5,7 @@
                 <ul class="slides" id = "home_banner">     
                     <script id = "banner_template" type="x-tmpl-mustache/text">
                         <li >
-                            <a href="http://bit.ly/non-boring-florals">
+                            <a href="{{url}}>
                                 <img alt="banner image" src="https://www.mallmaverick.com/system/site_images/photos/000/029/063/original/11224_STV_TAP_HomepageGraphic_DY_FNL.jpg?1494613907" />
                             </a>
                         </li>
