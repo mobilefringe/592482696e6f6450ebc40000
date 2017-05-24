@@ -62,7 +62,7 @@
                         <script id="home_hour_template" type="x-tmpl-mustache/text">
                             <li>
                                 {%raw%}
-                                Sunday 11:00am -  6:00pm   
+                                 {{day}}{{h}} 
                                 {%endraw%}
         				    </li>
                         </script>
