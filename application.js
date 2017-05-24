@@ -381,6 +381,7 @@ function renderHours(container, template, collection, type){
                 } else {
                     val.h = "Closed";
                     val.active_class="hoursasterisk";
+                    val.style_now="display:block";
                 }
                 item_list.push(val);
             }
