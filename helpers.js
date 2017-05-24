@@ -38,7 +38,7 @@ function init(e){
 
         $('input').val();
         
-        	$("#hours-toggle").click(function(){
+        $("#hours-toggle").click(function(){
             console.log("toggled!");
             $("#hours-full").slideToggle();
             if (!view_all){
