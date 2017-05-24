@@ -120,12 +120,10 @@
                     </div>
                     <div class="input submit"></div>
                 </div>
-                <ul class="social ss" id="social_ss_container">
-                    <script id="social_ss_template" type="x-tmpl-mustache/text">
-                        
-                    </script>
+                <ul class="social ss">
+                    
                     <li class="social_icon">
-                        <a href="{{url}}" target="_blank" class="social_facebook_small" >
+                        <a href="https://www.facebook.com/StVitalCentre" target="_blank" class="social_facebook_small" >
                         <h1 style="display:none">social_link</h1>
                         </a>
                     </li>
