@@ -405,25 +405,19 @@
                     </li>
                 </ul>
                 <ul class="footer_info_nav_1">
-                     
-            		<li class="">
+                    <li class="">
             			<a href="/pages/svc-community">Community</a>
             		</li>
-                     
-            		<li class="">
+                    <li class="">
             			<a href="/pages/svc-kids-club">Kids Club</a>
             		</li>
-                     
-            		<li class="">
+                    <li class="">
             			<a href="/jobs">Careers</a>
             		</li>
-                     
-            		<li class="">
+                    <li class="">
             			<a href="/pages/svc-tenant-login">Tenant Login</a>
             		</li>
-                                	
-            	</ul>
-                
+                </ul>
                 <ul id="footer_info_nav_145" class="footer_info_nav_1">
                     <li id="footer_info_nav_li_item_155" class="page-type-linked">
                 		<a href="/stores?building=1&menu=0">Building Specs</a>
