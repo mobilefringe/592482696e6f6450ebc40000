@@ -1,18 +1,3 @@
-$(document).ready(function(e){
-    $("#hours-toggle").click(function(){
-            $("#hours-full").slideToggle();
-            if (!view_all){
-                $("#hours-toggle b").html("HIDE HOURS");
-                view_all = true;
-            } else {
-                $("#hours-toggle b").html("VIEW ALL HOURS");
-                view_all = false;
-            }
-        });
-
-});
-
-
 function init(e){
     $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
     
@@ -84,7 +69,16 @@ function init(e){
 //            }
 //        );
         
-        
+        $("#hours-toggle").click(function(){
+            $("#hours-full").slideToggle();
+            if (!view_all){
+                $("#hours-toggle b").html("HIDE HOURS");
+                view_all = true;
+            } else {
+                $("#hours-toggle b").html("VIEW ALL HOURS");
+                view_all = false;
+            }
+        });
         
         $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
             function(){
