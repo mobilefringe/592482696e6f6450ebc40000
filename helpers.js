@@ -46,7 +46,7 @@ function init(e){
     
     $(function(){
 
-        $('input').val();
+        $('input').placeholder();
         
         
         $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
