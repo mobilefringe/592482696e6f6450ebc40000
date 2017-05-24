@@ -548,7 +548,7 @@ a.toggle_sub_menu img{
 
 .page_content{
     background-color: transparent;
-    -webkit-box-sizing: content-box;
+    -webkit-box-sizing: box-box;
 }
 
 .home_page{
