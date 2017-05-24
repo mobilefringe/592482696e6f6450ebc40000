@@ -199,7 +199,7 @@ function show_content(){
     var hours = getPropertyHours();
     var feature_items = getFeatureList();
     var banners  = getBanners();
-    renderBanner(banner_template,home_banner,banners);
+    renderBanner('#banner_template','#home_banner',banners);
     renderHomeHours('#today_hour_container', '#today_hour_template', today_hours);
     renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
     renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
