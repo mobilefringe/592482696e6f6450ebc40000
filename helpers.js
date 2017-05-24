@@ -35,7 +35,7 @@ function init(e){
     }
     
     $(function(){
-
+    console.log("toggled!");
         $('input').val();
         
         $("#hours-toggle").click(function(){
