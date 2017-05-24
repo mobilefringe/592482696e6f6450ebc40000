@@ -31,6 +31,17 @@ $(document).ready(function(e){
         var banners  = getBanners();
         renderBanner(banner_template,home_banner,banners);
         show_content();
+        
+         if (window.location.pathname.indexOf("/stores") == -1) {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: false,        
+                prevText: "Previous",
+                nextText: "Next"
+            });
+        }; 
+        
     }
 
         var visited = $.cookie("visited")
