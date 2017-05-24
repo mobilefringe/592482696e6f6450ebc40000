@@ -263,7 +263,7 @@
                 <script id="feature_template" type="x-tmpl-mustache/text">
                     <div class="blogfeatureitems">                      
                         <a href='{{url}}'>
-                            Non-Boring Ways to Wear Floral this Spring
+                            {{description}}
                             <br/>
                             <i>Read More</i>
                         </a>    
