@@ -153,68 +153,35 @@
     <section id="content" class="page_content container">
         <nav id="main-nav">    	
             <ul class="main_1 main_menu" id="main_29">
-                
-                 
-                                    
-                    <li class="menu_item" id="main_li_item_0">
-                        
-                    	    <a href="/promotions" class="meniu_item_a ie9gradient">
-                        
-                            Events
-                        
-                            <img ALT="menu_item_0_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/809/original/event_hover.png?1392755811" />
-                        
-                        </a>
-            		</li>
-                                    
-                                    
-                 
-                                    
-                    <li class="menu_item" id="main_li_item_1">
-                        
-                    	    <a href="/stores" class="meniu_item_a ie9gradient">
-                        
-                            Directory
-                        
-                            <img ALT="menu_item_1_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/810/original/directory_hover.png?1392755825" />
-                        
-                        </a>
-            		</li>
-                                    
-                                    
-                 
-                                    
-                    <li class="menu_item" id="main_li_item_2">
-                        
-                    	    <a href="/pages/svc-contact" class="meniu_item_a ie9gradient">
-                        
-                            Contact
-                        
-                            <img ALT="menu_item_2_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/811/original/contact_hover.png?1392755835" />
-                        
-                        </a>
-            		</li>
-                                    
-                                    
-                 
-                    
-                    <li class="menu_item sub_menu_li">
-                        <a href="#" class="toggle_sub_menu meniu_item_a">
-                            Services
-                            <img ALT="sub_menu_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/812/original/service_hover.png?1392755854" />
-                        </a>                
-                        <ul class="sub_menu">                    
-                            
-                                <li class="sub_menu_item"><a href='/pages/svc-customer-service'><span>Customer Service</span></a></li>
-                            
-                                <li class="sub_menu_item"><a href='/pages/svc-leasing'><span>Leasing</span></a></li>
-                            
-                                <li class="sub_menu_item"><a href='/pages/svc-community-booth'><span>Community Booth</span></a></li>
-                            
-                                <li class="sub_menu_item"><a href='/pages/svc-giftcard'><span>Giftcard</span></a></li>
-                            
-                        </ul>
-                    </li>
+                <li class="menu_item" id="main_li_item_0">
+                    <a href="/promotions" class="meniu_item_a ie9gradient">
+                         Events
+                    </a>
+            	</li>
+                <li class="menu_item" id="main_li_item_1">
+                    <a href="/stores" class="meniu_item_a ie9gradient">
+                        Directory
+                        <img ALT="menu_item_1_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/810/original/directory_hover.png?1392755825" />
+                    </a>
+            	</li>
+                 <li class="menu_item" id="main_li_item_2">
+                     <a href="/pages/svc-contact" class="meniu_item_a ie9gradient">
+                        Contact
+                        <img ALT="menu_item_2_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/811/original/contact_hover.png?1392755835" />
+                    </a>
+            	</li>
+                <li class="menu_item sub_menu_li">
+                    <a href="#" class="toggle_sub_menu meniu_item_a">
+                        Services
+                        <img ALT="sub_menu_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/812/original/service_hover.png?1392755854" />
+                    </a>                
+                    <ul class="sub_menu">                    
+                        <li class="sub_menu_item"><a href='/pages/svc-customer-service'><span>Customer Service</span></a></li>
+                        <li class="sub_menu_item"><a href='/pages/svc-leasing'><span>Leasing</span></a></li>
+                        <li class="sub_menu_item"><a href='/pages/svc-community-booth'><span>Community Booth</span></a></li>
+                        <li class="sub_menu_item"><a href='/pages/svc-giftcard'><span>Giftcard</span></a></li>
+                    </ul>
+                </li>
                                     
                  
                                     
