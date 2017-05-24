@@ -422,7 +422,9 @@
                     <li id="footer_info_nav_li_item_155" class="page-type-linked">
                 		<a href="/stores?building=1&menu=0">Building Specs</a>
             		</li> 
-                    <li><a target="_blank" href="http://get.adobe.com/reader/"> Get Acrobat Reader</a></li>
+                    <li>
+                        <a target="_blank" href="http://get.adobe.com/reader/"> Get Acrobat Reader</a>
+                     </li>
                 </ul>
                 <div class="clearfix"></div>
                 <br />
