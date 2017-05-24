@@ -17,7 +17,7 @@ function init(e){
 	$('.accordion_header').click(function(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
-	
+}	
     function getCookie(name) {
       var value = "; " + document.cookie;
       var parts = value.split("; " + name + "=");
