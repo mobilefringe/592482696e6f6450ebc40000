@@ -98,7 +98,7 @@
                                     {{h}} 
                                 {%endraw%}
                             </strong> 
-                            <a href="#" id="hours-toggle"class= "hours_toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
+                            <a href="#" id="hours-toggle" class= "hours_toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
                         </p>
         		    </script>
             	</div>
