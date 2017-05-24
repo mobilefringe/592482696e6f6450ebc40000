@@ -261,19 +261,8 @@
             <br/>
             <div id ="feature_container">
                 <script id="feature_template" type="x-tmpl-mustache/text">
-                    
-                </script>
-            </div>
-            <div class="blogfeatureitems">
-                <a href='http://bit.ly/how-to-wear-yellow'>
-                    How to Wear Yellow If You Hate Colour
-                        <br/>
-                        <i>Read More</i>
-                    </a>    
-                    
-                </div>            
-            
-                <br/>
+                    <div class="blogfeatureitems">
+                
                 <div class="blogfeatureitems">                      
                     <a href='http://bit.ly/non-boring-florals'>
                         Non-Boring Ways to Wear Floral this Spring
@@ -284,6 +273,9 @@
                 </div>            
             
                 <br/>
+                </script>
+            </div>
+            
                 <div class="blogfeatureitems">                      
                     <a href='http://bit.ly/stripes-three-ways'>
                         The New Way to Wear Stripes
