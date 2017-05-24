@@ -553,6 +553,11 @@ a.toggle_sub_menu img{
     box-sizing: initial;
 }
 
+* {
+    /* -webkit-box-sizing: border-box; */
+    -moz-box-sizing: border-box;
+    /* box-sizing: border-box; */
+}
 .home_page{
     background: url(//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495567528000/content-cut.png) repeat-x scroll left bottom white;    
     left: 5px;
