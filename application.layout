@@ -96,17 +96,9 @@
     		
     		<div id="hours-short">
         		<p>
-                    <span class="replace tr-todays"></span> 
-                    HOURS 
-                    <strong>
-                        <div id="today_hour_container">
-                            <script id="today_hour_template" type="x-tmpl-mustache/text">
-                                %raw%}
-                                 {{h}} 
-                                {%endraw%}
-                            </script>
-                        </div>
-                         
+                    <span class="replace tr-todays"></span> HOURS <strong>
+                        
+                            10:00am -  9:00pm
                         
                     </strong> 
                     <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
