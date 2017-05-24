@@ -56,8 +56,7 @@ $(document).ready(function(e){
     function renderAll(){
         show_content();
     }
-    
-    
+
         var visited = $.cookie("visited")
         if (visited == null) {
             $.magnificPopup.open({
