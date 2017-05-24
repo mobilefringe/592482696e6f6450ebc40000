@@ -1,24 +1,10 @@
-
-
 <script>
-$(document).ready(function(e){
+    $(document).ready(function(e){
         init(e);
-        loadMallData(renderAll); 
-        
         $(function(){
             $("#giftcard").show();
+            console.log("")
         })
 
     });
-    
-    function renderAll(){
-        
-        show_content();
-        
-         
-        
-    }
-
-        
- 
 </script>
