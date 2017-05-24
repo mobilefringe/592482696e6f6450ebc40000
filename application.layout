@@ -357,115 +357,115 @@
         </div>
     </section>
     <footer id="footer">
-	<div class="footer-inside">
-		<div class="container">
-			<p class="mobile top">
-				<a href="#hours"><img ALT="back_to_top_image" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495572558000/back_small.png" />Back to Top</a> 
-			</p>	
-			
-        	<ul id="footer_main_nav_29" class="footer_main_nav_1">
-             
-        		<li class="page-type-content">
-                
-        			<a href="/promotions">Events</a>
-                
-        		</li>
-             
-        		<li class="page-type-content">
-                
-        			<a href="/stores">Directory</a>
-                
-        		</li>
-             
-        		<li class="page-type-content">
-                
-        			<a href="/pages/svc-contact">Contact</a>
-                
-        		</li>
-             
-        		<li class="page-type-content">
-                
-        			<a href="/pages/svc-customer-service">Services</a>
-                
-        		</li>
-             
-        		<li class="page-type-content">
-                
-                    <a target="_blank" href="http://www.stvitalcentre.com/spark/">Blog</a>
-                
-        		</li>
-             
-        		<li class="page-type-content">
-                
-        			<a href="/pages/svc-privacy-policy-contest-rules">Privacy Policy/ Contest Rules</a>
-                
-        		</li>
-                    		
-        	</ul>
-            
-            <ul id="service_hover">
-                <li><img ALT="service_hover_image" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495572630000/service_hover.png" /></li>
-            </ul>
-        
-        	<ul id="footer_services_nav_133" class="footer_services_nav_1">
-                
-                          
-                    <li class="">
-                        <a href="/pages/svc-customer-service">Customer Service</a>
-                    </li>
-                          
-                    <li class="">
-                        <a href="/pages/svc-leasing">Leasing</a>
-                    </li>
-                          
-                    <li class="">
-                        <a href="/pages/svc-community-booth">Community Booth</a>
-                    </li>
-                          
-                    <li class="">
-                        <a href="/pages/svc-giftcard">Giftcard</a>
-                    </li>
+    	<div class="footer-inside">
+    		<div class="container">
+    			<p class="mobile top">
+    				<a href="#hours"><img ALT="back_to_top_image" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495572558000/back_small.png" />Back to Top</a> 
+    			</p>	
+    			
+            	<ul id="footer_main_nav_29" class="footer_main_nav_1">
+                 
+            		<li class="page-type-content">
                     
+            			<a href="/promotions">Events</a>
+                    
+            		</li>
+                 
+            		<li class="page-type-content">
+                    
+            			<a href="/stores">Directory</a>
+                    
+            		</li>
+                 
+            		<li class="page-type-content">
+                    
+            			<a href="/pages/svc-contact">Contact</a>
+                    
+            		</li>
+                 
+            		<li class="page-type-content">
+                    
+            			<a href="/pages/svc-customer-service">Services</a>
+                    
+            		</li>
+                 
+            		<li class="page-type-content">
+                    
+                        <a target="_blank" href="http://www.stvitalcentre.com/spark/">Blog</a>
+                    
+            		</li>
+                 
+            		<li class="page-type-content">
+                    
+            			<a href="/pages/svc-privacy-policy-contest-rules">Privacy Policy/ Contest Rules</a>
+                    
+            		</li>
                         		
-        	</ul>
-        
-        	<ul class="footer_info_nav_1">
-                 
-        		<li class="">
-        			<a href="/pages/svc-community">Community</a>
-        		</li>
-                 
-        		<li class="">
-        			<a href="/pages/svc-kids-club">Kids Club</a>
-        		</li>
-                 
-        		<li class="">
-        			<a href="/jobs">Careers</a>
-        		</li>
-                 
-        		<li class="">
-        			<a href="/pages/svc-tenant-login">Tenant Login</a>
-        		</li>
-                            	
-        	</ul>
+            	</ul>
+                
+                <ul id="service_hover">
+                    <li><img ALT="service_hover_image" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495572630000/service_hover.png" /></li>
+                </ul>
             
-            <ul id="footer_info_nav_145" class="footer_info_nav_1">
-                <li id="footer_info_nav_li_item_155" class="page-type-linked">
-            		<a href="/stores?building=1&menu=0">Building Specs</a>
-        		</li> 
-                <li><a target="_blank" href="http://get.adobe.com/reader/"> Get Acrobat Reader</a></li>
-            </ul>
-            <div class="clearfix"></div>
-            <br />
-			<p class="copyright">
-				<span class="phone">204.257.5646</span> <a href="mailto:stvitalcentre@20vic.com" class="email">stvitalcentre@20vic.com</a> 
-				<a href="http://maps.google.com/?q=86-1225+St.+Mary%27s+Road.+Winnipeg%2C+MB+R2M+5E5" class="address">86-1225 St. Mary's Road. Winnipeg, MB R2M 5E5</a>
-				<span class="copyrightline">Copyright &copy; 2011-2012  St. Vital Centre.</span> <span>All&nbsp;rights&nbsp;reserved</span>
-			</p>
-			
-		</div>
-	</div>
-</footer>
+            	<ul id="footer_services_nav_133" class="footer_services_nav_1">
+                    
+                              
+                        <li class="">
+                            <a href="/pages/svc-customer-service">Customer Service</a>
+                        </li>
+                              
+                        <li class="">
+                            <a href="/pages/svc-leasing">Leasing</a>
+                        </li>
+                              
+                        <li class="">
+                            <a href="/pages/svc-community-booth">Community Booth</a>
+                        </li>
+                              
+                        <li class="">
+                            <a href="/pages/svc-giftcard">Giftcard</a>
+                        </li>
+                        
+                            		
+            	</ul>
+            
+            	<ul class="footer_info_nav_1">
+                     
+            		<li class="">
+            			<a href="/pages/svc-community">Community</a>
+            		</li>
+                     
+            		<li class="">
+            			<a href="/pages/svc-kids-club">Kids Club</a>
+            		</li>
+                     
+            		<li class="">
+            			<a href="/jobs">Careers</a>
+            		</li>
+                     
+            		<li class="">
+            			<a href="/pages/svc-tenant-login">Tenant Login</a>
+            		</li>
+                                	
+            	</ul>
+                
+                <ul id="footer_info_nav_145" class="footer_info_nav_1">
+                    <li id="footer_info_nav_li_item_155" class="page-type-linked">
+                		<a href="/stores?building=1&menu=0">Building Specs</a>
+            		</li> 
+                    <li><a target="_blank" href="http://get.adobe.com/reader/"> Get Acrobat Reader</a></li>
+                </ul>
+                <div class="clearfix"></div>
+                <br />
+    			<p class="copyright">
+    				<span class="phone">204.257.5646</span> <a href="mailto:stvitalcentre@20vic.com" class="email">stvitalcentre@20vic.com</a> 
+    				<a href="http://maps.google.com/?q=86-1225+St.+Mary%27s+Road.+Winnipeg%2C+MB+R2M+5E5" class="address">86-1225 St. Mary's Road. Winnipeg, MB R2M 5E5</a>
+    				<span class="copyrightline">Copyright &copy; 2011-2012  St. Vital Centre.</span> <span>All&nbsp;rights&nbsp;reserved</span>
+    			</p>
+    			
+    		</div>
+    	</div>
+    </footer>
 
 
 </body>
