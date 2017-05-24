@@ -226,34 +226,25 @@
                         </li>
                     </ul>
                 </li>
-                     
-                    
-                 
-                    
-                    <li class="menu_item sub_menu_li" id="building_li_3">
-                        <a href="#" class="toggle_sub_menu meniu_item_a">
-                            construction
-                        </a>                
-                        <ul class="sub_menu">                    
-                            
-                                <li class="sub_menu_item">
-                                    <a href='/pages/svc-construction?building=1&menu=3'><span>Hoarding</span></a>
-                                </li>
-                            
-                                <li class="sub_menu_item">
-                                    <a href='/pages/svc-construction--2?building=1&menu=3'><span>Preferred Trades</span></a>
-                                </li>
-                            
-                                <li class="sub_menu_item">
-                                    <a href='/pages/svc-construction--3?building=1&menu=3'><span>Before Construction</span></a>
-                                </li>
-                            
-                                <li class="sub_menu_item">
-                                    <a href='/pages/svc-construction--4?building=1&menu=3'><span>During Construction</span></a>
-                                </li>
-                            
-                        </ul>
-                    </li>
+                <li class="menu_item sub_menu_li" id="building_li_3">
+                    <a href="#" class="toggle_sub_menu meniu_item_a">
+                        construction
+                    </a>                
+                    <ul class="sub_menu">                    
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction?building=1&menu=3'><span>Hoarding</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction--2?building=1&menu=3'><span>Preferred Trades</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction--3?building=1&menu=3'><span>Before Construction</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction--4?building=1&menu=3'><span>During Construction</span></a>
+                        </li>
+                    </ul>
+                </li>
                      
                     
                  
