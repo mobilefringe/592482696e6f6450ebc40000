@@ -19,15 +19,7 @@ function init(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
     
-    if (window.location.pathname.indexOf("/stores") == -1) {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
-        });
-    }; 
+    
 	
 	$('#hours-toggle').click(function(){
             console.log("toggled!");
