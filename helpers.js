@@ -43,6 +43,7 @@ function init(e){
 //        );
         
         $("#hours-toggle").click(function(){
+            console.log("toggled!");
             $("#hours-full").slideToggle();
             if (!view_all){
                 $("#hours-toggle b").html("HIDE HOURS");
