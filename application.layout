@@ -61,7 +61,9 @@
         			<ul id="home_hour_container">
                         <script id="home_hour_template" type="x-tmpl-mustache/text">
                             <li>
-                            Sunday 11:00am -  6:00pm        				
+                                {%raw%}
+                                Sunday 11:00am -  6:00pm   
+                                {%endraw%}
         				    </li>
                         </script>
                             
