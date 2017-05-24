@@ -144,7 +144,7 @@ function init(e){
         }
     }
 
-}
+});
 
 function subscribe_email(){ 
     if (isValidEmailAddress($("#subscribe_email").val())){            
