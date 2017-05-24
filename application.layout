@@ -60,38 +60,12 @@
                 	<h3>Regular Hours</h3>
         			<ul id="home_hour_container">
                         <script id="home_hour_template" type="x-tmpl-mustache/text">
-                            
-                        </script>
-                        
-                        <li>
+                            <li>
                             Sunday 11:00am -  6:00pm        				
-        				</li>
-                        
-                        <li>
-                            Monday 10:00am -  9:00pm        				
-        				</li>
-                        
-                        <li>
-                            Tuesday 10:00am -  9:00pm        				
-        				</li>
-                        
-                        <li>
-                            Wednesday 10:00am -  9:00pm        				
-        				</li>
-                        
-                        <li>
-                            Thursday 10:00am -  9:00pm        				
-        				</li>
-                        
-                        <li>
-                            Friday 10:00am -  9:00pm        				
-        				</li>
-                        
-                        <li>
-                            Saturday  9:30am -  6:00pm        				
-        				</li>
-                        				
-        			</ul>
+        				    </li>
+                        </script>
+                            
+                        </ul>
     			</div>
     	
     			<div class="column span4">
