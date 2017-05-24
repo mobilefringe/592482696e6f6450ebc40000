@@ -76,6 +76,8 @@
                             <li>
                                 {%raw%}
                                     {{formatted_date}} {{h}} 
+                                    <div class="{{active_class}}" style="{{style_now}}">
+                                    <img alt="hours div" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566468000/directory_hover.png" /></div>
                                 {%endraw%}
                             </li>
                         </script>
