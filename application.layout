@@ -86,6 +86,7 @@
     		</div>
     		
     		<div id="hours-short">
+    		<div id="today_hour_container">
     		    <script id="today_hour_template" type="x-tmpl-mustache/text">
     		        <p>
                         <span class="replace tr-todays"></span>
@@ -98,7 +99,7 @@
                         <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
                     </p>
     		    </script>
-        		
+        		</div>
     		</div>
     	</div>
     </div>
