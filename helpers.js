@@ -30,6 +30,7 @@ function init(e){
         $(".newsletter-box").hide();
     }
     var view_all = false;
+    $(function(){
 
         $('input').val();
 
