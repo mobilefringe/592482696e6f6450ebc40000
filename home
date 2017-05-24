@@ -2,7 +2,7 @@
         <div class="page_content">            
             <div class="row-fluid home_page white_bg">
                 <div class="flexslider trim_screen" style="margin-bottom:0px;">
-                  <ul class="slides">            
+                  <ul class="slides" id = "banner_container">            
                          
                             <li>
                                 
