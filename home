@@ -1,20 +1,4 @@
-<div id="main" class="main" role="main">
-    <div class="page_content">            
-        <div class="row-fluid home_page white_bg">
-            <div class="flexslider trim_screen" style="margin-bottom:0px;">
-                    <ul class="slides" id = "home_banner" >     
-                        <script id = "banner_template" type="x-tmpl-mustache/text">
-                            <li style="width: 550px; float: left; display: block;">
-                                <a href="{{url}}" {{css}} onclick="{{noLink}}">
-                                    <img alt="banner image" src="{{image_url}}" />
-                                </a>
-                            </li>
-                        </script>
-                    </ul>
-            </div>
-        </div>
-    </div>        
-</div>
+
 
 <script>
 $(document).ready(function(e){
