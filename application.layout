@@ -62,7 +62,7 @@
                         <script id="home_hour_template" type="x-tmpl-mustache/text">
                             <li>
                                 {%raw%}
-                                 {{day}}{{h}} 
+                                 {{day}} {{h}} 
                                 {%endraw%}
         				    </li>
                         </script>
