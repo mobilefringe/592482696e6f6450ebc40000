@@ -19,7 +19,7 @@ function init(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
     $(function(){
-            $("#giftcard").hide();
+            $("#giftcard").show();
     })
 	
 	$('#hours-toggle').click(function(){
