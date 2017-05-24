@@ -178,6 +178,7 @@ function show_content(){
     renderHomeHours('#today_hour_container', '#today_hour_template', today_hours);
     renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
     renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
+    renderFeatureItems('#feature_container', '#feature_template', feature_items);
 }
 
 function get_day(id){
