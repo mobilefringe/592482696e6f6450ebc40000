@@ -125,7 +125,7 @@
                         
                     </script>
                     <li class="social_icon">
-                        <a href="https://www.facebook.com/StVitalCentre" target="_blank" class="social_facebook_small" >
+                        <a href="{{url}}" target="_blank" class="social_facebook_small" >
                         <h1 style="display:none">social_link</h1>
                         </a>
                     </li>
