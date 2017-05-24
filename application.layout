@@ -91,7 +91,9 @@
                         <span class="replace tr-todays"></span>
                         HOURS
                         <strong>
-                            10:00am -  9:00pm
+                            {%raw%}
+                                {{h}} 
+                            {%endraw%}
                         </strong> 
                         <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
                     </p>
