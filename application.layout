@@ -62,11 +62,12 @@
                         <script id="home_hour_template" type="x-tmpl-mustache/text">
                             <li>
                                 {%raw%}
-                                    {{day}} {{h}} 
+                                 {{day}} {{h}} 
                                 {%endraw%}
         				    </li>
                         </script>
-                    </ul>
+                            
+                        </ul>
     			</div>
     	
     			<div class="column span4">
@@ -75,29 +76,33 @@
                         <script id="home_exp_hour_template" type="x-tmpl-mustache/text">
                             <li>
                                 {%raw%}
-                                    {{day}} {{h}} 
+                                 {{day}} {{h}} 
                                 {%endraw%}
-                                <div class="hoursasterisk">
-                                    <img alt="hours div" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566468000/directory_hover.png" />
-                                </div>
+                                 <div class="hoursasterisk">
+                                        <img alt="hours div" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495566468000/directory_hover.png" />
+                                    </div>
         				    </li>
                         </script>
-                    </ul>
+                            
+                        </ul>
+    					    
+                            
+                                   
+                                
+            			
+                    
     			</div>		
     		</div>
     		
     		<div id="hours-short">
         		<p>
-                    <span class="replace tr-todays"></span> HOURS 
-                        <span="today_hour_container">
+                    <span class="replace tr-todays"></span> HOURS <div id="today_hour_container">
                             <script id="today_hour_template" type="x-tmpl-mustache/text">
                                 {%raw%}
-                                 {{h}}
+                                 <strong> {{h}}</strong> 
                                 {%endraw%}
                             </script>
-                        </span>
-                    
-                    
+                        </div>
                     <a href="#" id="hours-toggle"><span>Toggle: </span><b>VIEW ALL HOURS</b></a>
                 </p>
     		</div>
