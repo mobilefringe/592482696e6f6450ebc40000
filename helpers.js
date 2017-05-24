@@ -204,7 +204,7 @@ function show_content(){
     }
     var today_hours = getTodaysHours();
     var hours = getPropertyHours();
-    renderHomeHours('#hours-short', '#today_hour_template', today_hours);
+    renderHomeHours('#today_hour_container', '#today_hour_template', today_hours);
     renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
     renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
 }
