@@ -1,6 +1,7 @@
 $('document').ready(function() {
     
     if (window.location.pathname.indexOf("/stores") == -1) {
+        console.log("not store");
          $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
