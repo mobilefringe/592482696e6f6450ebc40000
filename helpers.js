@@ -1,5 +1,29 @@
 $('document').ready(function() {
     
+    
+});
+    
+    
+function init(e){
+    $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
+    
+    $(window).scroll(function(e){
+		if ($(this).scrollTop() > 100) {
+			$('.scrollToTop').fadeIn();
+		} else {
+			$('.scrollToTop').fadeOut();
+		}
+	});
+    //Click event to scroll to top
+	$('.scrollToTop').click(function(e){
+		$('html, body').animate({scrollTop : 0},800);
+		e.preventDefault();
+	});
+	
+	$('.accordion_header').click(function(e){
+        $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
+	});
+    
     if (window.location.pathname.indexOf("/stores") == -1) {
         console.log(window.location.pathname,"not store");
         $('.flexslider').flexslider({
@@ -140,30 +164,6 @@ $('document').ready(function() {
         var minutes = 1440;
         date.setTime(date.getTime() + (minutes * 60 * 1000));
         $.cookie('visited', 'yes', { expires: date, path: '/' });
-});
-    
-    
-function init(e){
-    $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
-    
-    $(window).scroll(function(e){
-		if ($(this).scrollTop() > 100) {
-			$('.scrollToTop').fadeIn();
-		} else {
-			$('.scrollToTop').fadeOut();
-		}
-	});
-    //Click event to scroll to top
-	$('.scrollToTop').click(function(e){
-		$('html, body').animate({scrollTop : 0},800);
-		e.preventDefault();
-	});
-	
-	$('.accordion_header').click(function(e){
-        $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
-	});
-    
-    
 	
 	
 }	
