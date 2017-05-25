@@ -811,7 +811,8 @@ function renderStoreTags(container, template, collection){
     $.each( collection , function( key, val ) {
         if(val.tag !== null || val.tag !==undefined)
         {
-            
+            $.each( val.tag , function( keys, tags ) {
+            }
         }
     });
     
