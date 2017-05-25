@@ -5,7 +5,7 @@
     });
     
     function renderAll(){
-        init(e);
+        init();
         $("#giftcard").show();
         show_content();
    
