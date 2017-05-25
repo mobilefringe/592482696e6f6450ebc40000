@@ -140,7 +140,7 @@ $(window).load(function() {
                 prevText: "Previous",
                 nextText: "Next"
             });
-        }; 
+        }
         if (window.location.pathname == "/") {
             
             
@@ -148,10 +148,10 @@ $(window).load(function() {
                 $('.newsletter-box').show();
                 var a = new Date();
                 a = new Date(a.getTime() +1000*60*60*24*30);
-                document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;
+                document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
             } 
         }
-    });
+});
 
  
 function init(e){
