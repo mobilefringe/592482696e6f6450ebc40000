@@ -133,7 +133,7 @@ $('document').ready(function() {
         
         
         // Render homepage templates
-         var today_hours = getTodaysHours();
+        var today_hours = getTodaysHours();
         var hours = getPropertyHours();
         var feature_items = getFeatureList();
         var banners  = getBanners();
