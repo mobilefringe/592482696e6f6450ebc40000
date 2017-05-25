@@ -1,4 +1,4 @@
-$('document').ready(function() {
+$(document).ready(function() {
     
     if (window.location.pathname.indexOf("/stores") == -1) {
         $('flexslider').show();
