@@ -802,7 +802,7 @@ function renderHomeDropdownHours(container, template, collection, type){
     $(container).html(item_rendered.join(''));
 }
 
-function renderStoreTags(container, template, collection, type){
+function renderStoreTags(container, template, collection){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
