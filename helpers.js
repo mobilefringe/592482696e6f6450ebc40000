@@ -1,8 +1,7 @@
 $('document').ready(function() {
     
     if (window.location.pathname.indexOf("/stores") == -1) {
-        console.log("not store");
-         $('.flexslider').flexslider({
+        $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
             directionNav: false,        
@@ -23,6 +22,17 @@ $('document').ready(function() {
             view_all = false;
         }
     });
+        var today_hours = getTodaysHours();
+        var hours = getPropertyHours();
+        var feature_items = getFeatureList();
+        var banners  = getBanners();
+        renderBanner('#banner_template','#home_banner',banners);
+        renderHomeHours('#today_hour_container', '#today_hour_template', today_hours);
+        renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
+        renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
+        renderFeatureItems('#feature_container', '#feature_template', feature_items);
+        
+        
         $('input').placeholder();
         
         
@@ -110,7 +120,7 @@ $('document').ready(function() {
         }
     }
     function search_site(){
-        if($("#SearchTerms").val() !== ""){
+        if($("#SearchTerms").val() != ""){
             window.location.href = "/search?query=" + $("#SearchTerms").val();
         }
     }
@@ -129,20 +139,6 @@ $('document').ready(function() {
         var minutes = 1440;
         date.setTime(date.getTime() + (minutes * 60 * 1000));
         $.cookie('visited', 'yes', { expires: date, path: '/' });
-        
-        
-        
-        
-        // Render homepage templates
-        var today_hours = getTodaysHours();
-        var hours = getPropertyHours();
-        var feature_items = getFeatureList();
-        var banners  = getBanners();
-        renderBanner('#banner_template','#home_banner',banners);
-        renderHomeHours('#today_hour_container', '#today_hour_template', today_hours);
-        renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
-        renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
-        renderFeatureItems('#feature_container', '#feature_template', feature_items);
 });
     
     
