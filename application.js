@@ -819,6 +819,9 @@ function renderStoreTags(container, template, collection){
         }
     });
     item_list=tag_list;
+    
+    collection = [];
+        collection = item_list;
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
