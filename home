@@ -1,6 +1,6 @@
 <script>
     $(document).ready(function(e){
-        init(e);
+        //init(e);
         $("#giftcard").show();
         show_content();
     });
