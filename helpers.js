@@ -1,7 +1,6 @@
 $('document').ready(function() {
     
     if (window.location.pathname.indexOf("/stores") == -1) {
-        $('flexslider').show();
          $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
@@ -9,10 +8,7 @@ $('document').ready(function() {
             prevText: "Previous",
             nextText: "Next"
         });
-    }else {
-        $('flexslider').hide();
-    
-    }
+    }; 
     
     var view_all = false;
     $('#hours-toggle').click(function(){
