@@ -812,7 +812,7 @@ function renderStoreTags(container, template, collection){
         if(val.tag !== null || val.tag !==undefined)
         {
             $.each( val.tag , function( keys, tags ) {
-                if(jQuery.inArray(tags, myarray) !== -1){
+                if(jQuery.inArray(tags, tag_list) !== -1){
                     
                 }
             });
