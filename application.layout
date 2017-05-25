@@ -259,7 +259,7 @@
                             <ul class="slides" id = "home_banner" >     
                                 <script id = "banner_template" type="x-tmpl-mustache/text">
                                     <li style="width: 550px; float: left; display: block;">
-                                    {%raw%}
+                                        {%raw%}
                                         <a href="{{url}}" {{css}} onclick="{{noLink}}">
                                             <img alt="banner image" src="{{image_url}}" />
                                         </a>
