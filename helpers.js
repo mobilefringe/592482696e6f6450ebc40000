@@ -2760,3 +2760,4 @@ $.magnificPopup.registerModule(RETINA_NS, {
 		}
 	}
 });
+});
