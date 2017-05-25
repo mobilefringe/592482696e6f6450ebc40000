@@ -1,7 +1,13 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        $("#giftcard").show();
+        loadMallData(renderAll); 
+    });
+    
+    function renderAll(){
+         $("#giftcard").show();
         show_content();
+   
+    }
     });
 </script>
