@@ -132,25 +132,25 @@ $('document').ready(function() {
 });
     
 $(window).load(function() {
-        if (window.location.pathname.indexOf("/stores") == -1) {
-            $('.flexslider').flexslider({
-                animation: "slide",
-                controlNav: false,
-                directionNav: false,        
-                prevText: "Previous",
-                nextText: "Next"
-            });
-        }
-        if (window.location.pathname == "/") {
-            
-            
-            if (getCookie("visited") != "yes"){
-                $('.newsletter-box').show();
-                var a = new Date();
-                a = new Date(a.getTime() +1000*60*60*24*30);
-                document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
-            } 
-        }
+    if (window.location.pathname.indexOf("/stores") == -1) {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
+    }
+    if (window.location.pathname == "/") {
+        
+        
+        if (getCookie("visited") != "yes"){
+            $('.newsletter-box').show();
+            var a = new Date();
+            a = new Date(a.getTime() +1000*60*60*24*30);
+            document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
+        } 
+    }
 });
 
  
