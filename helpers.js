@@ -150,8 +150,6 @@ $(window).load(function() {
             a = new Date(a.getTime() +1000*60*60*24*30);
             document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
         } 
-    }else {
-        $('.flexslider').hide();
     }
 });
 
