@@ -131,7 +131,29 @@ $('document').ready(function() {
         $.cookie('visited', 'yes', { expires: date, path: '/' });
 });
     
-    
+$(window).load(function() {
+        if (window.location.pathname.indexOf("/stores") == -1) {
+            $('.flexslider').flexslider({
+                animation: "slide",
+                controlNav: false,
+                directionNav: false,        
+                prevText: "Previous",
+                nextText: "Next"
+            });
+        }; 
+        if (window.location.pathname == "/") {
+            
+            
+            if (getCookie("visited") != "yes"){
+                $('.newsletter-box').show();
+                var a = new Date();
+                a = new Date(a.getTime() +1000*60*60*24*30);
+                document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; ;
+            } 
+        }
+    });
+
+ 
 function init(e){
     $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
     
