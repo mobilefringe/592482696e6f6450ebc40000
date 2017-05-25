@@ -1,11 +1,10 @@
 <script>
     $(document).ready(function(e){
-        
+        init(e);
         loadMallData(renderAll); 
     });
     
     function renderAll(){
-        init();
         $("#giftcard").show();
         show_content();
    
