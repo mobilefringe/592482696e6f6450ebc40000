@@ -316,8 +316,6 @@ function getURLParameter(name) {
 }
 
 
-
-
 //****** PLUGIN ************/
 /*!
  * jQuery Cookie Plugin v1.4.1
