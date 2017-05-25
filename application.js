@@ -812,7 +812,8 @@ function renderStoreTags(container, template, collection){
         if(val.tag !== null || val.tag !==undefined)
         {
             $.each( val.tag , function( keys, tags ) {
-            }
+                
+            });
         }
     });
     
