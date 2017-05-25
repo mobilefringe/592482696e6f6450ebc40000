@@ -23,7 +23,7 @@ $('document').ready(function() {
         renderFeatureItems('#feature_container', '#feature_template', feature_items);
         
         
-        $('input').placeholder();
+        $('input').val();
         
         
         $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
