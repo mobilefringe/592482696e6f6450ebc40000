@@ -5,7 +5,7 @@
     });
     
     function renderAll(){
-         $("#giftcard").show();
+        $("#giftcard").show();
         show_content();
    
     }
