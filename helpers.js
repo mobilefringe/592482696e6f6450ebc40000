@@ -1,16 +1,5 @@
 $('document').ready(function() {
     
-    if (window.location.pathname.indexOf("/stores") == -1) {
-        console.log(window.location.pathname,"not store");
-        $(".flexslider").flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
-        });
-    }
-    
     var view_all = false;
     $('#hours-toggle').click(function(){
         console.log("toggled!");
