@@ -1,9 +1,7 @@
 <script>
     $(document).ready(function(e){
         init(e);
-        $(function(){
-            $("#giftcard").show();
-        })
+        $("#giftcard").show();
         show_content();
     });
 </script>
