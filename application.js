@@ -823,6 +823,11 @@ function renderStoreTags(container, template, collection){
     collection = [];
     collection = item_list;
     
+    $.each( collection , function( key, val ) {
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+
+    });
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
