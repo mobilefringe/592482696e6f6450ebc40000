@@ -818,7 +818,7 @@ function renderStoreTags(container, template, collection){
             });
         }
     });
-    
+    item_list=tag_list;
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
