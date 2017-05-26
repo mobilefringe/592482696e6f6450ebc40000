@@ -830,7 +830,7 @@ function renderStoreTags(container, template, collection){
     });
     */
 
-    generateAlphaLis(item_list);
+    generateAlphaList(item_list);
     collection = [];
     collection = item_list;
     
