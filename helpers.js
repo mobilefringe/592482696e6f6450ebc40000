@@ -315,7 +315,7 @@ function getURLParameter(name) {
     );
 }
 
-function generateAlphaStoreList (collection){
+function generateAlphaList (collection){
             alpha_list = new Array;
             alpha_array = new Array;
              $.each( collection , function( key, val ) {
