@@ -861,7 +861,7 @@ function renderStoreTags(container, template, collection){
         
         }
     
-    
+    generateAlphaStoreLis(item_list);
     collection = [];
     collection = item_list;
     
