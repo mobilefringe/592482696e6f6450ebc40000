@@ -825,8 +825,8 @@ function renderStoreTags(container, template, collection){
     //item_list.sort();
     //item_list=tag_list;
   item_list.sort(function(a, b) {
-    var textA = a.DepartmentName.toUpperCase();
-    var textB = b.DepartmentName.toUpperCase();
+    var textA = a.name.toUpperCase();
+    var textB = b.name.toUpperCase();
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 });
     collection = [];
