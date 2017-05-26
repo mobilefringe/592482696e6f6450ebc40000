@@ -813,8 +813,8 @@ function renderStoreTags(container, template, collection){
         {
             $.each( val.tags , function( keys, tag ) {
               if($.inArray(tag, tag_list) == -1){
-                 // console.log(tag);
-                  tag.name=tag;
+                    // console.log(tag);
+                    tag.name=tag;
                     tag_list.push(tag);
                 }
             });
