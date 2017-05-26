@@ -341,6 +341,7 @@ function generateAlphaList (collection){
                       }
                   })
                 val.store_ids = store_ids
+                console.log(val.name);
              })
             
             return(alpha_array)
