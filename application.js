@@ -825,7 +825,7 @@ function renderStoreTags(container, template, collection){
     //item_list.sort();
     //item_list=tag_list;
     item_list.sort(function(a,b) {
-        return a.val - b.val;
+        return a.name - b.name;
     });
     
     collection = [];
