@@ -825,6 +825,7 @@ function renderStoreTags(container, template, collection){
     //item_list.sort();
     //item_list=tag_list;
     item_list.sort(function(a, b){
+        console.log($(b).text(),$(a).text())
         return ($(b).text()) < ($(a).text());
     });
     
