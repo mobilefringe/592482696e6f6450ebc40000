@@ -829,6 +829,39 @@ function renderStoreTags(container, template, collection){
         return (b.name < a.name);
     });
     */
+      function generateAlphaStoreList (collection){
+            alpha_list = new Array;
+            alpha_array = new Array;
+             $.each( collection , function( key, val ) {
+                 first_letter = (val.name).charAt(0)
+                 if (jQuery.inArray(first_letter, alpha_list)== -1){
+                     obj = {};
+                     obj.name = first_letter
+                     obj.id = first_letter
+                     alpha_array.push(obj);
+                     alpha_list.push(first_letter)
+                 } else {
+                     
+                 }
+             })
+             
+           
+            
+            $.each( alpha_array , function( key, val ) {
+                var store_ids = []
+                  $.each( collection , function( key2, val2 ) {
+                      if (val.name == (val2.name).charAt(0)){
+                          store_ids.push(val2.id)
+                      }
+                  })
+                val.store_ids = store_ids
+             })
+            
+            return(alpha_array)
+        
+        }
+    
+    
     collection = [];
     collection = item_list;
     
