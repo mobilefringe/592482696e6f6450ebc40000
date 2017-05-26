@@ -807,27 +807,27 @@ function renderStoreTags(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
-    //var tag_list = [];
+    var tag_list = [];
     $.each( collection , function( key, val ) {
         if(val.tags !== null || val.tags !==undefined)
         {
             $.each( val.tags , function( keys, tag ) {
-              if($.inArray(tag, item_list) == -1){
-                    console.log(tag);
-                    var value=tag;
-                    tag.name=value;
-                    item_list.push(tag);
+              if($.inArray(tag, tag_list) == -1){
+                    // console.log(tag);
+                    var value={};
+                    value.name=tag;
+                    tag_list.push(value);
                 }
             });
         }
     });
-    //item_list=tag_list;
+    item_list=tag_list;
     
     collection = [];
     collection = item_list;
     
     $.each( collection , function( key, val ) {
-        console.log(val,val.name);
+        console.log(val.name);
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
 
