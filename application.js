@@ -824,13 +824,11 @@ function renderStoreTags(container, template, collection){
     });
     //item_list.sort();
     //item_list=tag_list;
-    /*item_list.sort(function(a, b){
-        //console.log(b.name,a.name);
-        return (b.name < a.name);
-    });
-    */
-
-    generateAlphaList(item_list);
+  item_list.sort(function(a, b) {
+    var textA = a.DepartmentName.toUpperCase();
+    var textB = b.DepartmentName.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+});
     collection = [];
     collection = item_list;
     
