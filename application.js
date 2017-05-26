@@ -809,11 +809,11 @@ function renderStoreTags(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var tag_list = [];
     $.each( collection , function( key, val ) {
-        if(val.tag !== null || val.tag !==undefined)
+        if(val.tags !== null || val.tags !==undefined)
         {
-            $.each( val.tag , function( keys, tags ) {
-                if(jQuery.inArray(tags, tag_list) !== -1){
-                    tag_list.push(tags);
+            $.each( val.tags , function( keys, tag ) {
+                if(jQuery.inArray(tag, tag_list) !== -1){
+                    tag_list.push(tag);
                 }
             });
         }
