@@ -824,11 +824,11 @@ function renderStoreTags(container, template, collection){
     });
     //item_list.sort();
     //item_list=tag_list;
-    item_list.sort(function(a, b){
+    /*item_list.sort(function(a, b){
         //console.log(b.name,a.name);
         return (b.name < a.name);
     });
-    
+    */
     collection = [];
     collection = item_list;
     
