@@ -812,6 +812,7 @@ function renderStoreTags(container, template, collection){
         if(val.tags !== null || val.tags !==undefined)
         {
             $.each( val.tags , function( keys, tag ) {
+                console.log(tag);
                 if(jQuery.inArray(tag, tag_list) !== -1){
                     tag_list.push(tag);
                 }
