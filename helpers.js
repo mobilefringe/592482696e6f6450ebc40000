@@ -319,7 +319,7 @@ function generateAlphaList (collection){
             alpha_list = new Array;
             alpha_array = new Array;
              $.each( collection , function( key, val ) {
-                 first_letter = (val.name).charAt(0).toUpperCase();
+                 first_letter = (val.name).toUpperCase();
                  if (jQuery.inArray(first_letter, alpha_list)== -1){
                      obj = {};
                      obj.name = first_letter
