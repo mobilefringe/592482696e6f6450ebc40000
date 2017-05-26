@@ -827,6 +827,7 @@ function renderStoreTags(container, template, collection){
     collection = item_list;
     
     $.each( collection , function( key, val ) {
+        console.log(val);
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
 
