@@ -812,16 +812,16 @@ function renderStoreTags(container, template, collection){
         if(val.tags !== null || val.tags !==undefined)
         {
             $.each( val.tags , function( keys, tag ) {
-              if($.inArray(tag, tag_list) == -1){
+              if($.inArray(tag, item_list) == -1){
                     // console.log(tag);
                     var value=tag;
                     tag.name=value;
-                    tag_list.push(tag);
+                    item_list.push(tag);
                 }
             });
         }
     });
-    item_list=tag_list;
+    //item_list=tag_list;
     
     collection = [];
     collection = item_list;
