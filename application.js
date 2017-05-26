@@ -814,9 +814,9 @@ function renderStoreTags(container, template, collection){
             $.each( val.tags , function( keys, tag ) {
               if($.inArray(tag, tag_list) == -1){
                     // console.log(tag);
-                    var value="";
-                    value.name=tag;
-                    tag_list.push(value);
+                    var value=tag;
+                    tag.name=value;
+                    tag_list.push(tag);
                 }
             });
         }
