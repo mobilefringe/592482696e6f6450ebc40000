@@ -824,8 +824,8 @@ function renderStoreTags(container, template, collection){
     });
     //item_list.sort();
     //item_list=tag_list;
-    item_list.sort(function(a,b) {
-        return a.name - b.name;
+    item_list.sort(function(a, b){
+        return ($(b).text()) < ($(a).text());
     });
     
     collection = [];
