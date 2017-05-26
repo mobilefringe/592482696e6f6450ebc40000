@@ -824,7 +824,9 @@ function renderStoreTags(container, template, collection){
     });
     //item_list.sort();
     //item_list=tag_list;
-    
+    status.sort(function(a,b) {
+        return a.val - b.val;
+    });
     collection = [];
     collection = item_list;
     
