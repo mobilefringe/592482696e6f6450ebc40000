@@ -822,7 +822,7 @@ function renderStoreTags(container, template, collection){
             });
         }
     });
-    item_list.sort();
+    //item_list.sort();
     //item_list=tag_list;
     
     collection = [];
