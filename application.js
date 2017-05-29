@@ -225,7 +225,7 @@ function renderStoreListCatetories(container, template, category_list,stores){
                 if (count == 0){
                     store.show  = "display:block"; 
                     
-            val.class_show = "first_letter";
+                    store.class_show = "first_letter";
                 }else{
                     store.show  = "display:none"; 
                 }
