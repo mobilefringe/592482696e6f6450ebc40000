@@ -373,15 +373,16 @@ var item_list = [];
         item_rendered.push(rendered);
 
     });
-    
-    $(container).show();
-    $(container).html(item_rendered.join(''));
-}
-item_list.sort(function(a, b) {
+    item_list.sort(function(a, b) {
     var textA = a.name.toUpperCase();
     var textB = b.name.toUpperCase();
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 });
+
+    $(container).show();
+    $(container).html(item_rendered.join(''));
+}
+
 function renderHours(container, template, collection, type){
     var item_list = [];
     var item_rendered = [];
