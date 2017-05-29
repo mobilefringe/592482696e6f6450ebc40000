@@ -173,10 +173,9 @@ function renderStoreList(container, template, collection, type,starter, breaker)
             val.initial = current_initial;
             store_initial = current_initial;
             
-            /*if(current_initial=="0") {
+            if(val.initial=="0") {
                 val.initial = "#";
-                store_initial = "#";
-            }*/
+            }
             
             val.show = "display:block;";
             val.class_show = "first_letter";
