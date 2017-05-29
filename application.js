@@ -147,8 +147,7 @@ function renderPropertyDetails(container, template, collection){
     item_rendered.push(repo_rendered);
     $(container).html(item_rendered.join(''));
 }
-
-function renderStoreList(container, template, collection, type){
+function renderStoreList(container, template, collection, type,starter, breaker){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
@@ -157,7 +156,7 @@ function renderStoreList(container, template, collection, type){
     $.each( collection , function( key, val ) {
         if (type == "stores" || type == "category_stores"){
             if(!val.store_front_url ||  val.store_front_url.indexOf('missing.png') > -1 || val.store_front_url.length === 0){
-                val.alt_store_front_url = "";
+                val.alt_store_front_url = "//codecloud.cdn.speedyrails.net/sites/56056be06e6f641a1d020000/image/png/1446826281000/stc-logo-holiday-360 copy.png";
             } else {
                 val.alt_store_front_url = getImageURL(val.store_front_url);    
             }
@@ -165,7 +164,7 @@ function renderStoreList(container, template, collection, type){
         }
         //var categories = getStoreCategories();
         var current_initial = val.name[0];
-        val.cat_list = val.categories.join(',')
+        
         if(store_initial.toLowerCase() == current_initial.toLowerCase()){
             val.initial = "";
             val.show = "display:none;";
@@ -174,37 +173,25 @@ function renderStoreList(container, template, collection, type){
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "display:block;";
-            val.class_show="first_letter";
-        }
-        if(val.is_coming_soon_store == true){
-            val.coming_soon_store = "display:inline";
-        }
-        else{
-            val.coming_soon_store = "display:none";
-        }
-        if(val.is_new_store == true){
-            val.new_store = "display:inline";
-        }
-        else{
-            val.new_store = "display:none";
         }
         if (val.promotions.length > 0){
-            val.promotion_exist = "display:inline";
-            var store_promo = getPromotionsForIds(val.promotions).sortBy(function(o){ return o.start_date })[0];
-            if (store_promo != undefined){
-                val.promo_btn = "/promotions/" + store_promo.slug;
-            }
+            val.promotion_exist = "display:inline-block";
         }
         else{
             val.promotion_exist = "display:none";
         }
-        if(val.phone.length < 1){
-            val.phone_exist = "display:none";
+        if (val.jobs.length > 0){
+            val.job_exist = "display:inline-block";
+        }
+        else{
+            val.job_exist = "display:none";
         }
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
-        item_rendered.push(rendered);
+        if (upper_current_initial.charCodeAt(0) <= breaker.charCodeAt(0) && upper_current_initial.charCodeAt(0) >= starter.charCodeAt(0)){
+            item_rendered.push(rendered);
+        }
 
     });
     
