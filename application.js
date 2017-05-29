@@ -378,7 +378,16 @@ var item_list = [];
     var textB = b.name.toUpperCase();
     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
 });
+collection = [];
+        collection = item_list;
+        
+        
+    $.each( collection , function( key, val ) {
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
 
+    });
+    
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
