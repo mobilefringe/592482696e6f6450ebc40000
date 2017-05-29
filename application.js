@@ -372,6 +372,7 @@ var item_list = [];
         item_list.push(val);
 
     });
+    
     item_list.sort(function(a, b) {
     var textA = a.name.toUpperCase();
     var textB = b.name.toUpperCase();
