@@ -170,6 +170,9 @@ function renderStoreList(container, template, collection, type,starter, breaker)
             val.show = "display:none;";
         }
         else{
+            if(current_initial=="0") {
+                
+            }
             val.initial = current_initial;
             store_initial = current_initial;
             val.show = "display:block;";
