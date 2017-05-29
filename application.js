@@ -374,8 +374,8 @@ var item_list = [];
     });
     
     item_list.sort(function(a, b) {
-        var textA = a.unit.toUpperCase();
-        var textB = b.unit.toUpperCase();
+        var textA = a.unit;
+        var textB = b.unit;
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
     
