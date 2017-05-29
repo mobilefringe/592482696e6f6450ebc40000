@@ -386,7 +386,6 @@ var item_list = [];
     $.each( collection , function( key, val ) {
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
-        console.log(val.unit);
     });
     
     $(container).show();
