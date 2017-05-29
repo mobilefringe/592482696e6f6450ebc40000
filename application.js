@@ -315,7 +315,7 @@ function renderStoreDetails(container, template, collection, slug){
     $(container).html(item_rendered.join(''));
 }
 
-function renderStoreList(container, template, collection, type,starter, breaker){
+function renderStoreListByUnit(container, template, collection, type,starter, breaker){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
