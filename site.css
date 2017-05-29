@@ -2416,6 +2416,23 @@ input[type=text]{
 	box-shadow: -1px 1px 2px 0px #1D1D1D;
 }
 
+/******** loader ***********/
+.custom_backdrop{
+    opacity:0.5;
+    text-align:center;
+}
+.custom_backdrop img{
+    width:80px;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
 /****** mobile ********/
 @media (max-width: 767px) {
     
