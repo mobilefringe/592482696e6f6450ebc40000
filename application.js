@@ -372,7 +372,11 @@ function renderStoreListByUnit(container, template, collection, type,starter, br
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
-
+item_list.sort(function(a, b) {
+    var textA = a.name.toUpperCase();
+    var textB = b.name.toUpperCase();
+    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+});
 function renderHours(container, template, collection, type){
     var item_list = [];
     var item_rendered = [];
