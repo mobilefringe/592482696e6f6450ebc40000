@@ -368,8 +368,7 @@ var item_list = [];
             val.phone_exist = "display:none";
         }
         val.block = current_initial + '-block';
-        var rendered = Mustache.render(template_html,val);
-        var upper_current_initial = current_initial.toUpperCase();
+        
         item_list.push(val);
 
     });
