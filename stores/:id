@@ -224,15 +224,7 @@
      function expend_all(){
          $(".unit_info ul, .unit_info p").show();
      }
-     
-    
-    
-        
-        var pathArray = window.location.pathname.split( '/' );
-        var slug =getStoreDetailsBySlug(slug);
-        var store = getStoreBySlug();
-        renderStoreDetails("#store_detail", "#store_detail_template",store);
-        
+
         show_content();
     }
 </script>
