@@ -294,7 +294,6 @@ function renderStoreDetails(container, template, collection, slug){
             val.unit_show = "display:none";
         }
         if (val.tags !== null && val.tags.length > 0){
-            console.log(val.tags);
             val.taglist="";
              $.each( val.tags , function( tag_key, tag ) {
                 val.taglist = val.taglist + " " + tag;
