@@ -43,7 +43,7 @@
             
             <h4 style="{{payment_show}}">accepted methods of payment</h4>
             
-            <ul class="payment">
+            <ul style="{{payment_show}}" class="payment">
             
                 <li>- {{payment}}</li>
            
