@@ -325,7 +325,7 @@
         </p>
     
         <div class="clear"></div>
-        <iframe class="hidden-phone" src="http://www.2017canadagames.ca/sites/default/files/sponsor_728x90_en.html" style="display:block;max-width: 728px;height:90px;border:1px solid #000000;box-sizing:border-box;overflow:hidden;margin-left: auto;margin-right: auto;width: 100%;" frameborder="0" scrolling="no"></iframe> 
+        <!--<iframe class="hidden-phone" src="http://www.2017canadagames.ca/sites/default/files/sponsor_728x90_en.html" style="display:block;max-width: 728px;height:90px;border:1px solid #000000;box-sizing:border-box;overflow:hidden;margin-left: auto;margin-right: auto;width: 100%;" frameborder="0" scrolling="no"></iframe> -->
         <div id="bottom">
             <ul class="quick-contact">
         		<li class="email"><a href="mailto:stvitalcentre@20vic.com">stvitalcentre@20vic.com</a></li>
