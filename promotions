@@ -387,6 +387,7 @@
     function toggle_detail(promo_div){
         $("#"+promo_div+" .info_toggle").toggle();
     }
+    
     function renderAll(){
         show_content();
    
