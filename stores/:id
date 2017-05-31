@@ -24,7 +24,7 @@
                 {% if store.website %}
                 <strong>Website: </strong> <a href="{{store.website}}">{{store.website}}</a> <br/>
                 {% endif %}
-                <strong>Phone: </strong> {{phone}}<br/>
+                <stron phone_showg>Phone: </strong> {{phone}}<br/>
                
                     
                 <strong>Address: </strong> <br/>
