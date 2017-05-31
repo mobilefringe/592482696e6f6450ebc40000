@@ -114,6 +114,19 @@
 </script>
 <!-- End Promotions Template -->
 
+<!-- Jobs Template-->
+<script id="jobs_template" type="x-tmpl-mustache/text">
+    <div class="row">
+        <div class="col-md-12">
+            <p class="colored_link">{{name}}</p>
+            <h3 class="publish_date">{{dates}}</h3>
+            <a href="/jobs/{{slug}}" class="read_more">View Requirements</a>
+        </div>
+    </div>
+    <hr class="promo_separator" />
+</script>
+<!-- End Jobs Template-->
+
 <script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734604000/jquery.js"></script>
 <script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734613000/raphael.js"></script>
 <script type="text/javascript" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495734619000/jquery.mousewheel.js"></script>
