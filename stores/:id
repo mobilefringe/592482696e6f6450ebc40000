@@ -155,7 +155,7 @@
             $('#promotions_header').hide();
         }
         
-        var store_job_ids = store_details.jobs
+        var store_job_ids = store.jobs
         var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
         var published_jobs = [];
         $.each( store_jobs , function( key, val ){
