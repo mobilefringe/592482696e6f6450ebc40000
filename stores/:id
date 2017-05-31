@@ -61,7 +61,7 @@
             <div id="jobs_container"></div>
                 
             <p class="back store_list_padding">
-                <a href="/stores"><img src="{{1846 | get_image_url}}">Back to Directory</a>
+                <a href="/stores"><img src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1496256809000/back.png">Back to Directory</a>
             </p>
         </div>   
                 
