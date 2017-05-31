@@ -35,12 +35,11 @@
             <p>
                 {{description}}
             </p>
-            {% if store.tags and store.tags != blank %}
-            <h4>brands</h4>
+            
+            <h4 style="{{tags–show}}>brands</h4>
             <p>
                -{{tags}}-
             </p>
-            {% endif %}
             
             {% if store.payment_methods and store.payment_methods != ""  %}
             <h4>accepted methods of payment</h4>
