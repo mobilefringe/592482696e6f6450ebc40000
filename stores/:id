@@ -35,7 +35,7 @@
                 {{description}}
             </p>
             
-            <h4 style="{{tags_show}}>brands</h4>
+            <h4 style="{{tags_show}}">brands</h4>
             <p >
                -{{tags}}-
             </p>
