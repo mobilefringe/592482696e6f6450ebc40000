@@ -53,12 +53,12 @@
             <h4 style="return_show">return/exchange policy</h4>
             <p>{{return_policy}}</p>
            
-                <h3>Sales & Promotions</h3>
-                <ul class="stoore_links store_list_padding">
-                    {% for promo in store.current_promotions %}
-                    <li>- <a href="/promotions/{{promo.slug}}">{{promo.name}}</a></li>
-                    {% endfor %}
-                </ul>
+            <h3>Sales & Promotions</h3>
+            <ul class="stoore_links store_list_padding">
+                {% for promo in store.current_promotions %}
+                <li>- <a href="/promotions/{{promo.slug}}">{{promo.name}}</a></li>
+                {% endfor %}
+            </ul>
             {% assign job_size = store.current_jobs | size %}
             {% if job_size  > 0 %}    
                 <h3>Job Postings</h3>
