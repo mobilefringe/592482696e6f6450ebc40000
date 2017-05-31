@@ -1,4 +1,4 @@
-<div class="store_detail">
+<div class="store_detail" id="store_detail">
     <script id="store_detail_template" type="x-tmpl-mustache/text">
         <div class="map_area">
         
