@@ -32,13 +32,6 @@
             </span>
         </h3>
         
-        {% if @can_edit == "true" %}            
-        <div>
-            <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promo.name}}?" class="btn btn-danger" href="/{{promo.type}}s/{{promo.slug}}">Delete</a>
-            <a class="btn btn-primary" href="/{{promo.type}}s/{{promo.slug}}/edit">Edit</a>            
-        </div>
-        {% endif %}
-        
         <div class="event_detail" id="promo{{promo.id}}">                     
             <div class="event_info info_toggle">
                 {% if promo.promo_image_path contains "missing.png" %}
