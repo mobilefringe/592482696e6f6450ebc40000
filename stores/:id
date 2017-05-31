@@ -160,8 +160,7 @@
             responsive:true,
             zoomLimit: [-1,5]
         });
-        
-        $(function(){
+
     //        $("#main_li_item_2").hide();
             $(".flexslider").remove();  
             $(".unit_info ul li").each(function(){
@@ -200,9 +199,7 @@
             } else{
                 $(".store_detail_info").show();
             }
-            
-            
-         })
+
          
          var map_hide = true;
          function toggle_map(){                
