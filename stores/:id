@@ -161,44 +161,43 @@
             zoomLimit: [-1,5]
         });
 
-    //        $("#main_li_item_2").hide();
-            $(".flexslider").remove();  
-            $(".unit_info ul li").each(function(){
-                $(this).prepend("- ")
+
+        $(".unit_info ul li").each(function(){
+            $(this).prepend("- ")
+        })
+        
+        
+        if (getURLParameter("building") == "1"){
+            $(".unit_info").show();            
+
+            $(".map_area h2.store_profile").html("{{store.name}} <span>UNIT {{store.unit}} ({{store.name_2}} FT<sup>2</sup>)</span>");
+            if (store.neighbourhood ) {
+                $(".map_area h3.store_title").html("Design Requirements - {{store.neighbourhood | escape}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");}
+            else {
+                $(".map_area h3.store_title").html("Design Requirements")
+            }
+            
+            $(".unit_info h2").each(function(){
+                var title = $(this).text();
+                $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
+                $("<p class='readless'>read less</p>").insertBefore( $(this) );
+            })
+            $(".readless").first().remove();
+            $(".unit_info h2").click(function(){
+                $(this).nextUntil( "h2" ).show();
             })
             
+            $(".readless").on("click",function(){
+                $(this).hide();
+                $(this).prevUntil( "h2" ).hide();
+            })
             
-            if (getURLParameter("building") == "1"){
-                $(".unit_info").show();            
-    
-                $(".map_area h2.store_profile").html("{{store.name}} <span>UNIT {{store.unit}} ({{store.name_2}} FT<sup>2</sup>)</span>");
-                if (store.neighbourhood ) {
-                    $(".map_area h3.store_title").html("Design Requirements - {{store.neighbourhood | escape}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");}
-                else {
-                    $(".map_area h3.store_title").html("Design Requirements")
-                }
-                
-                $(".unit_info h2").each(function(){
-                    var title = $(this).text();
-                    $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
-                    $("<p class='readless'>read less</p>").insertBefore( $(this) );
-                })
-                $(".readless").first().remove();
-                $(".unit_info h2").click(function(){
-                    $(this).nextUntil( "h2" ).show();
-                })
-                
-                $(".readless").on("click",function(){
-                    $(this).hide();
-                    $(this).prevUntil( "h2" ).hide();
-                })
-                
-                $(".unit_info ul, .unit_info p").hide(); 
-                $(".unit_info ul li ul").show();
-                $(".download_design_spec, .back").show();            
-            } else{
-                $(".store_detail_info").show();
-            }
+            $(".unit_info ul, .unit_info p").hide(); 
+            $(".unit_info ul li ul").show();
+            $(".download_design_spec, .back").show();            
+        } else{
+            $(".store_detail_info").show();
+        }
 
          
          var map_hide = true;
