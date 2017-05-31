@@ -54,7 +54,8 @@
             <p>{{return_policy}}</p>
            
             <h3 id="promotions_header">Sales & Promotions</h3>
-            div =""
+            div id="promotions_container">
+            </div>
             <ul class="stoore_links store_list_padding">
                 {% for promo in store.current_promotions %}
                 <li>- <a href="/promotions/{{promo.slug}}">{{promo.name}}</a></li>
