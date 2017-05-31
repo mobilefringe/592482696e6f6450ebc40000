@@ -119,7 +119,7 @@
     });
     function renderAll(){
          var pathArray = window.location.pathname.split( '/' );
-        var slug =getStoreDetailsBySlug(slug);
+        var slug = pathArray[pathArray.length-1];
         var store =getStoreDetailsBySlug(slug);
         renderStoreDetails("#store_detail", "#store_detail_template",store);
         var svgH;
