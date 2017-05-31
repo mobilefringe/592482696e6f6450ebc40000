@@ -112,7 +112,6 @@
             <a href="/jobs/{{slug}}" class="read_more">View Requirements</a>
         </div>
     </div>
-    <hr class="promo_separator" />
 </script>
 
 <!-- End Jobs Template-->
