@@ -311,7 +311,7 @@ function renderStoreDetails(container, template, collection, slug){
         else{
             val.show_line = "display:block";
         }
-        if((val.twitter === null || val.twitter == "") && (val.facebook == "" || val.facebook == null)){
+        if((val.twitter === null || val.twitter === "") && (val.facebook === "" || val.facebook === null)){
             val.hide_social = "display:none;";
         }
         if (val.facebook !== null && val.facebook.length > 0){
