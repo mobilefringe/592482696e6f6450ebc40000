@@ -227,8 +227,13 @@
      
     
     function renderAll(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug =getStoreDetailsBySlug(slug);
         var store = getStoreBySlug();
         renderStoreDetails("#store_detail", "#store_detail_template",store);
+        
+        var store_details = 
+        renderStoreDetails('#store_details_container','#store_details_template', store_details);
         show_content();
     }
 </script>
