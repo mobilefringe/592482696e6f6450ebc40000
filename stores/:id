@@ -137,7 +137,7 @@
             svgH = 375;
             svgW = 970;
         }
-        
+        console.log(svgH,svgW);
         reg = {}
         if(store.svgmap_region != null && typeof(store.svgmap_region)  != 'undefined'){
             obj = {};
