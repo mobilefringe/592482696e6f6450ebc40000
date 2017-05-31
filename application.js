@@ -294,6 +294,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.unit_show = "display:none";
         }
         if (val.tags !== null && val.tags.length > 0){
+            console.log(tags);
             val.tags_show = "display:inline-block";
         }
         else{
