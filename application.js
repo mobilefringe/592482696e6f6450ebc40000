@@ -296,7 +296,8 @@ function renderStoreDetails(container, template, collection, slug){
         if (val.tags !== null && val.tags.length > 0){
             console.log(val.tags);
             val.taglist="";
-             $.each( item_list , function( key, val ) {
+             $.each( val.tags , function( key, val ) {
+                 
              });
             val.tags_show = "display:inline-block";
         }
