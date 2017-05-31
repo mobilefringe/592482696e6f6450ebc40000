@@ -41,7 +41,7 @@
             </p>
             
             
-            <h4 style="payment_show">accepted methods of payment</h4>
+            <h4 >accepted methods of payment</h4>
             
             <ul class="payment">
             
@@ -49,8 +49,8 @@
            
             </ul>
             
-            {% if store.return_policy %}
-            <h4>return/exchange policy</h4>
+            
+            <h4 style="return_show">return/exchange policy</h4>
             <p>{{store.return_policy}}</p>
             {% endif %} 
             
