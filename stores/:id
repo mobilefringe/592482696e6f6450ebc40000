@@ -25,7 +25,7 @@
                 <strong style="{{phone_show}}">Phone: </strong> {{phone}}<br/>
                 <strong>Address: </strong> <br/>
                 
-                Unit {{unit}}<br/>
+                unitUnit {{unit}}<br/>
                 
                 {{store.property.address1}}<br/>
                 {{store.property.city}}, {{store.property.province_state}}<br/>
