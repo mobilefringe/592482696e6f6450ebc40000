@@ -243,13 +243,6 @@
         } else{
             $(".store_detail_info").show();
         }
-
-         
-         var map_hide = true;
-         
-         
-         
-
         show_content();
     }
     function toggle_map(){                
