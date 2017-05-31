@@ -314,7 +314,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.return_show = "display:inline-block";
         }
         else{
-            val.payment_show = "display:none";
+            val.return_show = "display:none";
         }
         
         if (val.twitter !== null && val.twitter.length > 0){
