@@ -4,7 +4,7 @@
         
         <div class="store_img">
             
-            <img src="{{alt_store_front_url}}" />
+            <img src="{{store_front_url}}" alt={{alt_store_front_url}}" />
             
             <div id="mapsvg"></div>             
             <span id="compass">&nbsp;</span>
