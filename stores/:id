@@ -44,7 +44,7 @@
             {% if store.tags and store.tags != blank %}
             <h4>brands</h4>
             <p>
-               -{{store.tags}}-
+               -{{tags}}-
             </p>
             {% endif %}
             
