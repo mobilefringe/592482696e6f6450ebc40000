@@ -155,7 +155,25 @@
             $('#promotions_header').hide();
         }
         
-        
+        var store_job_ids = store_details.jobs
+        var store_jobs = getJobsForIds(store_job_ids).sortBy(function(o){ return o.start_date });
+        var published_jobs = [];
+        $.each( store_jobs , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                published_jobs.push(val)
+            } 
+        });
+        if (published_jobs.length > 0){
+            renderJobs('#jobs_container', '#jobs_template', published_jobs);
+        }
+        else {
+            $('#jobs_header').hide();
+        }
         var svgH;
         var svgW;
         if ($(window).width() <= 479){
