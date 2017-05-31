@@ -53,9 +53,6 @@
             <h4 style="return_show">return/exchange policy</h4>
             <p>{{return_policy}}</p>
            
-            
-            {% assign promosize = store.current_promotions | size %}
-            {% if promosize  > 0 %}    
                 <h3>Sales & Promotions</h3>
                 <ul class="stoore_links store_list_padding">
                     {% for promo in store.current_promotions %}
