@@ -120,6 +120,7 @@
     function renderAll(){
          var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
+        console.log(slug);
         var store =getStoreDetailsBySlug(slug);
         renderStoreDetails("#store_detail", "#store_detail_template",store);
         var svgH;
