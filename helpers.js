@@ -133,7 +133,6 @@ $(window).load(function() {
     }
     if (window.location.pathname == "/") {
         
-        
         if (getCookie("visited") != "yes"){
             $('.newsletter-box').show();
             var a = new Date();
