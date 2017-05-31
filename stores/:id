@@ -115,7 +115,7 @@
         loadMallData(renderAll); 
     });
     function renderAll(){
-         var pathArray = window.location.pathname.split( '/' );
+        var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         var store =getStoreDetailsBySlug(slug);
         renderStoreDetails("#store_detail", "#store_detail_template",store,slug);
