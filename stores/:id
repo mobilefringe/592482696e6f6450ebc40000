@@ -121,7 +121,7 @@
          var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         var store =getStoreDetailsBySlug(slug);
-        renderStoreDetails("#store_detail", "#store_detail_template",store);
+        renderStoreDetails("#store_detail", "#store_detail_template",store,slug);
         var svgH;
         var svgW;
         if ($(window).width() <= 479){
