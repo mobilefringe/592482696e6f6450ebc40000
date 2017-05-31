@@ -311,7 +311,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.payment_show = "display:none";
         }
         if (val.return !== null && val.return.length > 0){
-            val.payment_show = "display:inline-block";
+            val.return_show = "display:inline-block";
         }
         else{
             val.payment_show = "display:none";
