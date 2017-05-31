@@ -54,7 +54,7 @@
             <p>{{return_policy}}</p>
            
             <h3 id="promotions_header">Sales & Promotions</h3>
-            div id="promotions_container">
+            <div id="promotions_container">
                 <script id="promotions_template" type="x-tmple-mustache/text">
                 <ul class="stoore_links store_list_padding">
                 
