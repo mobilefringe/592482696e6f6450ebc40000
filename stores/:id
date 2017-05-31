@@ -1,5 +1,5 @@
 <div class="store_detail">
-    <script id="store_detail_template" type="x-tmpl-mustache/tetx">
+    <script id="store_detail_template" type="x-tmpl-mustache/text">
         <div class="map_area">
         
         <div class="store_img">
