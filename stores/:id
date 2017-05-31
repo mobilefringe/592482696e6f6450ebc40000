@@ -56,13 +56,14 @@
             <h3 id="promotions_header">Sales & Promotions</h3>
             div id="promotions_container">
                 <script id="promotions_template" type="x-tmple-mustache/text">
-                </script>
-            </div>
-            <ul class="stoore_links store_list_padding">
+                <ul class="stoore_links store_list_padding">
                 {% for promo in store.current_promotions %}
                 <li>- <a href="/promotions/{{promo.slug}}">{{promo.name}}</a></li>
                 {% endfor %}
             </ul>
+                </script>
+            </div>
+            
             {% assign job_size = store.current_jobs | size %}
             {% if job_size  > 0 %}    
                 <h3>Job Postings</h3>
