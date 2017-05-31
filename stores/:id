@@ -228,7 +228,7 @@
     
     function renderAll(){
         var store = getStoreBySlug();
-        renderStoreDetails("#store_detail_container", "#store_detail_template",store);
+        renderStoreDetails("#store_detail", "#store_detail_template",store);
         show_content();
     }
 </script>
