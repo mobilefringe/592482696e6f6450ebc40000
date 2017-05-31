@@ -122,13 +122,13 @@ $('document').ready(function() {
 });
     
 $(window).load(function() {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
-        });
+    $('.flexslider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        directionNav: false,        
+        prevText: "Previous",
+        nextText: "Next"
+    });
     if (window.location.pathname == "/") {
         
         if (getCookie("visited") != "yes"){
