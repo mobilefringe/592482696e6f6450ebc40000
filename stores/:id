@@ -1,5 +1,11 @@
 <div class="store_detail">
     <div class="map_area">
+        <div id="store_detail_container">
+        <script id="store_detail_template" type="x-tmpl-mustache">
+            
+        </script>
+            
+        </div>
         <div class="store_img">
             {% if store.store_front_url contains "missing.png" %}
             {% else%}
