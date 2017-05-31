@@ -152,8 +152,7 @@
             popover: 'auto',
             disableAll: true,
             viewBox: [520,150,1350,1400],
-            regions: reg
-            },
+            regions: reg,
             tooltipsMode:   'custom',
             zoom: false,
             pan:false,
