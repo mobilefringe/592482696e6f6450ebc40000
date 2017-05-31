@@ -174,9 +174,9 @@
     
                 $(".map_area h2.store_profile").html("{{store.name}} <span>UNIT {{store.unit}} ({{store.name_2}} FT<sup>2</sup>)</span>");
                 if (store.neighbourhood ) {
-                $(".map_area h3.store_title").html("Design Requirements - {{store.neighbourhood | escape}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");}
+                    $(".map_area h3.store_title").html("Design Requirements - {{store.neighbourhood | escape}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");}
                 else {
-                $(".map_area h3.store_title").html("Design Requirements")
+                    $(".map_area h3.store_title").html("Design Requirements")
                 }
                 
                 $(".unit_info h2").each(function(){
