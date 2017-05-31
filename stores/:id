@@ -57,15 +57,13 @@
             <div id="promos_container">
             </div>
             
-            {% assign job_size = store.current_jobs | size %}
-            {% if job_size  > 0 %}    
+             
                 <h3>Job Postings</h3>
                 <ul class="stoore_links store_list_padding">
                     {% for job in store.current_jobs %}
                     <li>- <a href="/jobs/{{job.slug}}">{{job.name}}</a></li>
                     {% endfor %}
                 </ul>
-            {% endif %}
             <p class="back store_list_padding">
                 <a href="/stores"><img src="{{1846 | get_image_url}}">Back to Directory</a>
             </p>
