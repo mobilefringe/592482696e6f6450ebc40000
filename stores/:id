@@ -1,3 +1,120 @@
+<div class="store_detail">
+    <div class="map_area">
+        <div class="store_img">
+            {% if store.store_front_url contains "missing.png" %}
+            {% else%}
+            <img src="{{store.store_front_url}}" />
+            {% endif %}
+            <div id="mapsvg"></div>             
+            <span id="compass">&nbsp;</span>
+            <a id="mapshot-toggle" href="javascript:toggle_map();"></a>
+        </div>
+        
+        <div class="store_list_padding">
+            <h2 class="store_profile">Store profile</h2>            
+        </div>
+                
+        <h3 class="store_title">{{store.name}}</h3>
+        
+        <div class="store_list_padding store_detail_info">
+            <h4>contact information</h4>
+            <p>
+                {% if store.website %}
+                <strong>Website: </strong> <a href="{{store.website}}">{{store.website}}</a> <br/>
+                {% endif %}
+                
+                {% if store.phone %}
+                <strong>Phone: </strong> {{store.phone}}<br/>
+                {% endif %}
+                    
+                <strong>Address: </strong> <br/>
+                {% if store.unit %}
+                Unit {{store.unit}}<br/>
+                {% endif %}
+                {{store.property.address1}}<br/>
+                {{store.property.city}}, {{store.property.province_state}}<br/>
+                {{store.property.postal_code}}<br/>
+            </p>
+            
+            <p>
+                {{store.description}}
+            </p>
+            {% if store.tags and store.tags != blank %}
+            <h4>brands</h4>
+            <p>
+               -{{store.tags}}-
+            </p>
+            {% endif %}
+            
+            {% if store.payment_methods and store.payment_methods != ""  %}
+            <h4>accepted methods of payment</h4>
+            {% assign payments = store.payment_methods | split: "," %}
+            <ul class="payment">
+            {% for payment in payments %}
+                <li>- {{payment}}</li>
+            {% endfor %}
+            </ul>
+            {% endif %}
+            
+            {% if store.return_policy %}
+            <h4>return/exchange policy</h4>
+            <p>{{store.return_policy}}</p>
+            {% endif %} 
+            
+            {% assign promosize = store.current_promotions | size %}
+            {% if promosize  > 0 %}    
+                <h3>Sales & Promotions</h3>
+                <ul class="stoore_links store_list_padding">
+                    {% for promo in store.current_promotions %}
+                    <li>- <a href="/promotions/{{promo.slug}}">{{promo.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            {% assign job_size = store.current_jobs | size %}
+            {% if job_size  > 0 %}    
+                <h3>Job Postings</h3>
+                <ul class="stoore_links store_list_padding">
+                    {% for job in store.current_jobs %}
+                    <li>- <a href="/jobs/{{job.slug}}">{{job.name}}</a></li>
+                    {% endfor %}
+                </ul>
+            {% endif %}
+            <p class="back store_list_padding">
+                <a href="/stores"><img src="{{1846 | get_image_url}}">Back to Directory</a>
+            </p>
+        </div>   
+                
+                    
+        <div class="store_list_padding unit_info">
+            {{store.description_2}}
+            <h2 class="hidden"></h2>
+            
+            <p class="download_design_spec">
+                {% if store.neighbourhood %}
+                    {% assign neighbourhood =  store.neighbourhood | downcase %}
+                    {% assign repo = "svc-building-design-specs" | get_repo_by_slug %}
+                    {% for file in repo.site_images %}
+                        {% assign filename = file.name | downcase %}
+                        {% if neighbourhood  == filename %}
+                            <a href="{{file.image_url}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                                                 
+                        {% endif %}
+                    {% endfor %}                    
+                {% else %}
+                    <i>Sorry, no design requirements are available for this unit.</i>
+                {% endif %}
+            </p>
+            <p class="back">
+                <a href="/stores?building=1&enu=0"><img src="{{1846 | get_image_url}}">List tenants...</a>
+            </p>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
 <script>
     $(document).ready(function(e){
         init(e); 
