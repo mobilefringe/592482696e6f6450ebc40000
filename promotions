@@ -323,7 +323,12 @@
         init(e);
         loadMallData(renderAll); 
     });
-    $(function(){
+
+    function toggle_detail(promo_div){
+        $("#"+promo_div+" .info_toggle").toggle();
+    }
+    
+    function renderAll(){
         $(".all_events_promo, .mall_events, .store_event, .property_event").hide();
         $(".selector-wrap select").hover(
             function(){
@@ -382,13 +387,6 @@
             }            
         })
         
-    })
-
-    function toggle_detail(promo_div){
-        $("#"+promo_div+" .info_toggle").toggle();
-    }
-    
-    function renderAll(){
         show_content();
    
     }
