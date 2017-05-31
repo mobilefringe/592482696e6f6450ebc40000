@@ -59,7 +59,6 @@
                     <li>- <a href="/promotions/{{promo.slug}}">{{promo.name}}</a></li>
                     {% endfor %}
                 </ul>
-            {% endif %}
             {% assign job_size = store.current_jobs | size %}
             {% if job_size  > 0 %}    
                 <h3>Job Postings</h3>
