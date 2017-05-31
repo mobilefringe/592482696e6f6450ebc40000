@@ -148,7 +148,7 @@
         }
        
         $('#mapsvg').mapSvg({
-            source: '{{site.property.svgmap_file_path}}',    // Path to SVG map
+            source: '//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/svg+xml/1495736476000/StVital_Map_2016-09-30.svg',    // Path to SVG map
             colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: 0},
             width: svgW,
             height:svgH,
