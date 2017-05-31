@@ -292,11 +292,11 @@ function renderStoreDetails(container, template, collection, slug){
         else{
             val.unit_show = "display:none";
         }
-        if (val.unit != null && val.unit.length > 0){
-            val.unit_show = "display:inline-block";
+        if (val.tags != null && val.tags.length > 0){
+            val.tags_show = "display:inline-block";
         }
         else{
-            val.unit_show = "display:none";
+            val.tags_show = "display:none";
         }
         if (val.twitter != null && val.twitter.length > 0){
             val.twitter_show = "display:inline-block";
