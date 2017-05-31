@@ -24,9 +24,9 @@
                 <strong style="{{show}}">Website: </strong> <a href="{{store.website}}">{{store.website}}</a> <br/>
                 <strong style="{{phone_show}}">Phone: </strong> {{phone}}<br/>
                 <strong>Address: </strong> <br/>
-                {% if store.unit %}
-                Unit {{store.unit}}<br/>
-                {% endif %}
+                
+                Unit {{unit}}<br/>
+                
                 {{store.property.address1}}<br/>
                 {{store.property.city}}, {{store.property.province_state}}<br/>
                 {{store.property.postal_code}}<br/>
