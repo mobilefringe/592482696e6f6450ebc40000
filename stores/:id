@@ -60,11 +60,7 @@
              jobs_container
                 <h3 id="jobs_header">Job Postings</h3>
                 <div id="jobs_container"></div>
-                <ul class="stoore_links store_list_padding">
-                    {% for job in store.current_jobs %}
-                    <li>- <a href="/jobs/{{job.slug}}">{{job.name}}</a></li>
-                    {% endfor %}
-                </ul>
+                
             <p class="back store_list_padding">
                 <a href="/stores"><img src="{{1846 | get_image_url}}">Back to Directory</a>
             </p>
