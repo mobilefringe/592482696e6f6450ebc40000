@@ -117,7 +117,7 @@
         $(".flexslider").remove();
         loadMallData(renderAll); 
     });
-    
+    function renderAll(){
     var svgH;
     var svgW;
     if ($(window).width() <= 479){
@@ -226,7 +226,7 @@
      }
      
     
-    function renderAll(){
+    
         
         var pathArray = window.location.pathname.split( '/' );
         var slug =getStoreDetailsBySlug(slug);
