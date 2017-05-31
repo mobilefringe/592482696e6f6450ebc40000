@@ -255,13 +255,13 @@
         show_content();
     }
     function toggle_map(){                
-            $(".store_img img").toggle();
-            if (map_hide){            
-                $(".store_img a").addClass("mapview");            
-                map_hide = false;
-            } else{
-                $("#mapshot-toggle").removeClass("mapview");            
-                map_hide = true;
-            }
-         }
+        $(".store_img img").toggle();
+        if (map_hide){            
+            $(".store_img a").addClass("mapview");            
+            map_hide = false;
+        } else{
+            $("#mapshot-toggle").removeClass("mapview");            
+            map_hide = true;
+        }
+    }
 </script>
