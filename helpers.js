@@ -122,7 +122,6 @@ $('document').ready(function() {
 });
     
 $(window).load(function() {
-    if (window.location.pathname.indexOf("/stores") == -1) {
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
@@ -130,7 +129,6 @@ $(window).load(function() {
             prevText: "Previous",
             nextText: "Next"
         });
-    }
     if (window.location.pathname == "/") {
         
         if (getCookie("visited") != "yes"){
