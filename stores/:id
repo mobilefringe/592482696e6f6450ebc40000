@@ -55,7 +55,7 @@
            
             <h3 id="promotions_header">Sales & Promotions</h3>
             div id="promotions_container">
-                <script id="promotions_template" 
+                <script id="promotions_template" type="x-tmple-mustache/text">
             </div>
             <ul class="stoore_links store_list_padding">
                 {% for promo in store.current_promotions %}
