@@ -136,12 +136,12 @@
         }
         
         reg = {}
-        if(val.svgmap_region != null && typeof(val.svgmap_region)  != 'undefined'){
+        if(store.svgmap_region != null && typeof(store.svgmap_region)  != 'undefined'){
             obj = {};
-            obj["tooltip"] = "<label class='store_name_map'> "+val.name +"</label>"
+            obj["tooltip"] = "<label class='store_name_map'> "+store.name +"</label>"
             obj["attr"] = {}
-            obj["attr"]["href"] = '/stores/'+val.slug 
-            reg[val.svgmap_region] = obj
+            obj["attr"]["href"] = '/stores/'+store.slug 
+            reg[store.svgmap_region] = obj
         }
        
         $('#mapsvg').mapSvg({
