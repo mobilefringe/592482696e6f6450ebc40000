@@ -21,9 +21,9 @@
         <div class="store_list_padding store_detail_info">
             <h4>contact information</h4>
             <p>
-                {% if store.website %}
-                <strong>Website: </strong> <a href="{{store.website}}">{{store.website}}</a> <br/>
-                {% endif %}
+               
+                <strong style="{{phone_show}}">Website: </strong> <a href="{{store.website}}">{{store.website}}</a> <br/>
+               
                 <strong style="{{phone_show}}">Phone: </strong> {{phone}}<br/>
                
                     
