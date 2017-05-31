@@ -1,11 +1,5 @@
 $('document').ready(function() {
-    $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        directionNav: false,        
-        prevText: "Previous",
-        nextText: "Next"
-    });
+    
     var view_all = false;
     $('#hours-toggle').click(function(){
         console.log("toggled!");
