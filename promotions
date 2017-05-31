@@ -1,9 +1,392 @@
+<div class="promo_page">
+    <h2 id="promomainheading" class="store_list_padding">Centre Events</h2>
+    <div class="searchdiv store_list_padding">
+        <label for="event_select">SEARCH EVENTS</label>
+        <span class="selector-wrap" id="event_select">
+            <span class="select_event">Narrow Your Search</span>
+            <label for="narrow_your_search" style="display:none">narrow your search</label>
+            <select id="narrow_your_search">
+                <option value="">Narrow Your Search</option>                
+                <option value="all">View All Chronologically</option>
+                <option value="event">Centre Events</option>
+                <option value="property_promo">Kids Club Events</option>
+                <option value="store_promo">Sales and Promotions</option>
+            </select>
+            <span class="select_icon"></span>
+        </span>
+    </div>
+    <br/>
+    <div class="event_list all_events_promo">
+    {% for promo in site.property.combined_events_promos_date_sorted %}
+        <h3>
+            <div class="event_time">
+                <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
+                <span class="event_month">{{promo.start_date | date: "%b" }}</span>
+                <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
+            </div>
+                {{promo.parent.name}} - {{promo.name}}
+            <span class="event_period">
+                {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
+                -                  
+                {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
+            </span>
+        </h3>
+        
+        {% if @can_edit == "true" %}            
+        <div>
+            <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promo.name}}?" class="btn btn-danger" href="/{{promo.type}}s/{{promo.slug}}">Delete</a>
+            <a class="btn btn-primary" href="/{{promo.type}}s/{{promo.slug}}/edit">Edit</a>            
+        </div>
+        {% endif %}
+        
+        <div class="event_detail" id="promo{{promo.id}}">                     
+            <div class="event_info info_toggle">
+                {% if promo.promo_image_path contains "missing.png" %}
+                    <div class="event_summary full_width">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% else %}
+                    <img alt="promo image" src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                    <div class="event_summary">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% endif %}
+                               
+            </div>
+            
+            {% if promo.extra %}
+            {% assign info = promo.extra | split: ","%}
+            {% else %}
+            {% assign info = ""%}
+            {% endif %}
+            <div class="details">
+                
+                <div class="action">
+                    <a href="javascript:toggle_detail('promo{{promo.id}}');" class="toggle">Read more</a>
+                    
+                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn facebook"><span style="display:none">facebook</span></a>
+                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn twitter"><span style="display:none">twitter</span></a>
+                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" class="share_btn email"><span style="display:none">share</span></a>
+                    <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
+                    <a href="/{{promo.type}}s/{{promo.slug}}" class="share_btn link"><span style="display:none">show</span></a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}    
+    </div>
+    
+    <br/>
+    <div class="event_list mall_events">
+    {% assign propevents = site.property.current_events | sort: 'start_date' %}
+    {% for promo in propevents %}
+        <h3>
+            <div class="event_time">
+                <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
+                <span class="event_month">{{promo.start_date | date: "%b" }}</span>
+                <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
+            </div>
+            
+            {{promo.name}}
+            <span class="event_period">
+                {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
+                -                  
+                {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
+            </span>
+        </h3>
+        
+        {% if @can_edit == "true" %}            
+        <div>
+            <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promo.name}}?" class="btn btn-danger" href="/events/{{promo.slug}}">Delete</a>
+            <a class="btn btn-primary" href="/events/{{promo.slug}}/edit">Edit</a>            
+        </div>
+        {% endif %}
+        
+        <div class="event_detail" id="promo{{promo.id}}">                     
+            <div class="event_info info_toggle">
+                {% if promo.promo_image_path contains "missing.png" %}
+                    <div class="event_summary full_width">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% else %}
+                    <img src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                    <div class="event_summary">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% endif %}
+                               
+            </div>
+            
+            {% if promo.extra %}
+            {% assign info = promo.extra | split: ","%}
+            {% else %}
+            {% assign info = ""%}
+            {% endif %}
+            <div class="details">
+                
+                <div class="action">
+                    <a href="javascript:toggle_detail('promo{{promo.id}}');" class="toggle">Read more</a>
+                    
+                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/events/{{promo.slug}}" target="_blank" class="share_btn facebook"><span style="display:none">facebook</span></a>
+                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/events/{{promo.slug}}" target="_blank" class="share_btn twitter"><span style="display:none">twitter</span></a>
+                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/events/{{promo.slug}}" class="share_btn email"><span style="display:none">share via email</span></a>
+                    <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
+                    <a href="/events/{{promo.slug}}" class="share_btn link"><span style="display:none">show</span></a>
+                </div>
+            </div>
+        </div>
+    {% endfor %}    
+    </div>
+    
+    <div class="event_list store_event">
+    {% for promo in store_promotions %}
+        <h3>
+            <div class="event_time">
+                <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
+                <span class="event_month">{{promo.start_date | date: "%b" }}</span>
+                <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
+            </div>
+            
+            {{promo.name}}
+            <span class="event_period">
+                {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
+                -                  
+                {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
+            </span>
+        </h3>
+        
+        
+        {% if @can_edit == "true" %}            
+        <div>
+            <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promo.name}}?" class="btn btn-danger" href="/promotions/{{promo.slug}}">Delete</a>
+            <a class="btn btn-primary" href="/promotions/{{promo.slug}}/edit">Edit</a>            
+        </div>
+        {% endif %}
+        
+        
+        <div class="event_detail" id="promo{{promo.id}}">                     
+            <div class="event_info info_toggle">
+                {% if promo.promo_image_path contains "missing.png" %}
+                    <div class="event_summary full_width">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% else %}
+                    <img alt="promo_image_alt_tag" src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                    <div class="event_summary">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% endif %}     
+            </div>
+            
+            {% if promo.extra %}
+            {% assign info = promo.extra | split: ","%}
+            {% else %}
+            {% assign info = ""%}
+            {% endif %}
+            
+            <div class="details">                
+                
+                <div class="action">
+                    <a href="javascript:toggle_detail('promo{{promo.id}}');" class="toggle">Read more</a>
+                    
+                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/promotions/{{promo.slug}}" target="_blank" class="share_btn facebook"> <h style="display:none"> share_facebook </h> </a>
+                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/promotions/{{promo.slug}}" target="_blank" class="share_btn twitter"> <h style="display:none"> share_twitter </h> </a>
+                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/promotions/{{promo.slug}}" class="share_btn email"> <h style="display:none"> share_email </h> </a>
+                    <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"> <h style="display:none"> share_save </h> </a>
+                    <a href="/promotions/{{promo.slug}}" class="share_btn link"> <h style="display:none"> share_link </h></a>
+                </div>
+            </div>
+            
+        </div>
+        
+    {% endfor %}
+    </div>
+    
+    <div class="event_list property_event">
+    {% for promo in property_promotions %}
+        <h3>
+            <div class="event_time">
+                <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
+                <span class="event_month">{{promo.start_date | date: "%b" }}</span>
+                <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
+            </div>
+            
+            {{promo.name}}
+            <span class="event_period">
+                {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
+                -                  
+                {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
+            </span>
+        </h3>
+        
+        {% if @can_edit == "true" %}            
+        <div>
+            <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promo.name}}?" class="btn btn-danger" href="/promotions/{{promo.slug}}">Delete</a>
+            <a class="btn btn-primary" href="/promotions/{{promo.slug}}/edit">Edit</a>            
+        </div>
+        {% endif %}
+        
+        <div class="event_detail" id="promo{{promo.id}}">                     
+            <div class="event_info info_toggle">
+                {% if promo.promo_image_path contains "missing.png" %}
+                <div class="event_summary full_width">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% else %}
+                    <img alt="promo_image_alt_tag" src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                    <div class="event_summary">
+                        <h4>Event Summary:</h4>
+                        {{promo.description}}                    
+                    </div>
+                {% endif %}                
+            </div>
+            
+            {% if promo.extra %}
+            {% assign info = promo.extra | split: ","%}
+            {% else %}
+            {% assign info = ""%}
+            {% endif %}
+        
+            <div class="details">
+                
+                <div class="action">
+                    <a href="javascript:toggle_detail('promo{{promo.id}}');" class="toggle">Read more</a>
+                    
+                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/promotions/{{promo.slug}}" target="_blank" class="share_btn facebook"> <h style="display:none"> share_facebook </h> </a>
+                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/promotions/{{promo.slug}}" target="_blank" class="share_btn twitter"> <h style="display:none"> share_twitter </h> </a>
+                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/promotions/{{promo.slug}}" class="share_btn email"> <h style="display:none"> share_email </h> </a>
+                    <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"> <h style="display:none"> share_save </h> </a>
+                    <a href="/promotions/{{promo.slug}}" class="share_btn link"> <h style="display:none"> share_link </h> </a>
+                </div>
+            </div>
+            
+        </div>
+        
+    {% endfor %}
+    </div>
+    
+    
+    
+     {% if @can_edit == "true" %}
+    <!-- future events  -->
+    <hr />
+        <h1 class="page_title">Future Promotions</h1>
+        {% for promo in future_promotions %}
+            <div class="store_promo">
+                <div id="img{{promo.slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class='lightbox-content'>
+                    {% if promo.promo_image_path contains "original/missing.png" %}
+                        <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
+                    {% else %}
+                        <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
+                    {% endif %}    
+                    </div>
+                </div>
+                <a data-toggle="lightbox" href="#img{{promo.slug}}">                
+                    {% if promo.promo_image_path contains "original/missing.png" %}
+                        <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
+                    {% else %}
+                        <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
+                    {% endif %}    
+                </a>
+                <div class="promo_info">
+                    <h2>
+                        <a href="/stores/{{promo.promotionable.slug}}">
+                        {{promo.promotionable.name}} - {{promo.name}}                        
+                        </a>
+                    </h2>
+                    <span class="promo_date">
+                        {{promo.start_date | get_date}} - {{promo.end_date | get_date}} 
+                    </span>
+                    {% if @can_edit == "true" %}            
+                        <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promotion.name}}?" class="btn btn-danger" href="/promotions/{{promo.slug}}">Delete</a>
+                        <a class="btn btn-primary" href="/promotions/{{promo.slug}}/edit">Edit</a>            
+                    {% endif %}   
+                    <p>{{promo.description}}</p>
+                </div>
+            </div>
+            
+            <div class="line_break">&nbsp;</div>
+        {% endfor %}
+    {% endif %}
+    
+    
+</div>
 <script>
     $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
     });
-    
+    $(function(){
+        $(".all_events_promo, .mall_events, .store_event, .property_event").hide();
+        $(".selector-wrap select").hover(
+            function(){
+                $(this).next().css("background-color","#F3047A")
+            },
+            function(){
+                $(this).next().css("background-color","#05E7E4")
+            }
+        );
+        
+        $("#event_select select").change(function(){
+            if ($(this).val() == "event"){
+                window.location = "/events"
+            } else if ($(this).val() == "store_promo"){
+                $(".all_events_promo").hide();
+                $(".property_event").hide();
+                $(".mall_events").hide();
+                $(".store_event").show();             
+                $("#promomainheading").text("Sales and Promotions");
+            } else if ($(this).val() == "property_promo"){
+                $(".all_events_promo").hide();
+                $(".store_event").hide();
+                $(".mall_events").hide();
+                $(".property_event").show();                
+                $("#promomainheading").text("Kids Club Events");
+            } else if ($(this).val() == "all"){
+                window.location = "/promotions"
+            }
+            
+            var cat_name = $(this).find("option:selected").text();            
+            $("#category_select .select_name").text(cat_name);
+        })
+        
+        if (getURLParameter("show") == "kids-club"){
+            $(".all_events_promo").remove();
+            $(".store_event").remove();
+            $(".mall_events").remove();
+            $(".property_event").show();
+        } else if (getURLParameter("show") == "sales"){
+            $(".all_events_promo").remove();
+            $(".mall_events").remove();
+            $(".store_event").show();
+            $(".property_event").show();
+        } else{
+            $(".store_event").remove();
+            $(".property_event").remove();
+            $(".mall_events").remove();
+            $(".all_events_promo").show();
+        }
+        
+        $("a.toggle").click(function(){
+            if ($(this).text().indexOf("more") != -1){
+                $(this).text("Read less"); 
+            } else {
+                $(this).text("Read more");    
+            }            
+        })
+        
+    })
+
+    function toggle_detail(promo_div){
+        $("#"+promo_div+" .info_toggle").toggle();
+    }
     function renderAll(){
         show_content();
    
