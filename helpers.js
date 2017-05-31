@@ -129,6 +129,7 @@ $(window).load(function() {
         prevText: "Previous",
         nextText: "Next"
     });
+    
     if (window.location.pathname == "/") {
         
         if (getCookie("visited") != "yes"){
