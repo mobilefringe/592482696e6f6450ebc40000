@@ -3,10 +3,9 @@
         <div class="map_area">
         
         <div class="store_img">
-            {% if store.store_front_url contains "missing.png" %}
-            {% else%}
-            <img src="{{store.store_front_url}}" />
-            {% endif %}
+            
+            <img src="{{alt_store_front_url}}" />
+            
             <div id="mapsvg"></div>             
             <span id="compass">&nbsp;</span>
             <a id="mapshot-toggle" href="javascript:toggle_map();"></a>
