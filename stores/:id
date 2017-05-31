@@ -152,14 +152,7 @@
             popover: 'auto',
             disableAll: true,
             viewBox: [520,150,1350,1400],
-            regions: {
-                {% if store.svgmap_region %}
-                {{ store.svgmap_region }}:{
-    				tooltip: false,				
-                    selected: true,
-                    popover : "<label class='store_name_map store_name_map_detail'>{{ store.name }}</label>"
-    			},        	
-                {% endif %}
+            regions: reg
             },
             tooltipsMode:   'custom',
             zoom: false,
