@@ -51,7 +51,7 @@
             
             
             <h4 style="return_show">return/exchange policy</h4>
-            <p>{{store.return_policy}}</p>
+            <p>{{return_policy}}</p>
             {% endif %} 
             
             {% assign promosize = store.current_promotions | size %}
