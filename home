@@ -1,4 +1,3 @@
-<script src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/text/javascript/1495729152000/jquery.cookie.js"></script>
 <script>
     $(document).ready(function(e){
         init(e);
