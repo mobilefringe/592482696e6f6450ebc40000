@@ -248,9 +248,7 @@
          var map_hide = true;
          
          
-         function expend_all(){
-             $(".unit_info ul, .unit_info p").show();
-         }
+         
 
         show_content();
     }
@@ -264,4 +262,7 @@
             map_hide = true;
         }
     }
+    function expend_all(){
+             $(".unit_info ul, .unit_info p").show();
+         }
 </script>
