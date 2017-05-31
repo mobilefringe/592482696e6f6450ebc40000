@@ -16,7 +16,7 @@
             <h2 class="store_profile">Store profile</h2>            
         </div>
                 
-        <h3 class="store_title">{{store.name}}</h3>
+        <h3 class="store_title">{{name}}</h3>
         
         <div class="store_list_padding store_detail_info">
             <h4>contact information</h4>
