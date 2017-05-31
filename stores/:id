@@ -246,7 +246,15 @@
 
          
          var map_hide = true;
-         function toggle_map(){                
+         
+         
+         function expend_all(){
+             $(".unit_info ul, .unit_info p").show();
+         }
+
+        show_content();
+    }
+    function toggle_map(){                
             $(".store_img img").toggle();
             if (map_hide){            
                 $(".store_img a").addClass("mapview");            
@@ -256,11 +264,4 @@
                 map_hide = true;
             }
          }
-         
-         function expend_all(){
-             $(".unit_info ul, .unit_info p").show();
-         }
-
-        show_content();
-    }
 </script>
