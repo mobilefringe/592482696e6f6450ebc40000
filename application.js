@@ -290,7 +290,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.unit_show = "display:inline-block";
         }
         else{
-            val.facebook_show = "display:none";
+            val.unit_show = "display:none";
         }
         if (val.twitter != null && val.twitter.length > 0){
             val.twitter_show = "display:inline-block";
