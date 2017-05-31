@@ -26,9 +26,9 @@
                 
                 Unit {{unit}}<br/>
                 
-                {{store.property.address1}}<br/>
-                {{store.property.city}}, {{store.property.province_state}}<br/>
-                {{store.property.postal_code}}<br/>
+                {{property.address1}}<br/>
+                {{property.city}}, {{property.province_state}}<br/>
+                {{property.postal_code}}<br/>
             </p>
             
             <p>
