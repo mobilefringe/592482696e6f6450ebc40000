@@ -39,7 +39,7 @@
             </p>
             
             <p>
-                {{store.description}}
+                {{description}}
             </p>
             {% if store.tags and store.tags != blank %}
             <h4>brands</h4>
