@@ -304,6 +304,14 @@ function renderStoreDetails(container, template, collection, slug){
         else{
             val.tags_show = "display:none";
         }
+        if (val.payment !== null && val.payment.length > 0){
+            val.payment_show = "display:inline-block";
+        }
+        else{
+            val.payment_show = "display:none";
+        }
+        
+        
         if (val.twitter !== null && val.twitter.length > 0){
             val.twitter_show = "display:inline-block";
         }
