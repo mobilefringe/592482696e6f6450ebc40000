@@ -74,8 +74,8 @@
                 </a>
                 <div class="promo_info">
                     <h2>
-                        <a href="/stores/{{promo.promotionable.slug}}">
-                        {{promo.promotionable.name}} - {{promo.name}}                        
+                        <a href="/stores/{slug}}">
+                        {{store_name}} - {{name}}                        
                         </a>
                     </h2>
                     <span class="promo_date">
