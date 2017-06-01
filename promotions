@@ -62,7 +62,7 @@
     
     <div id="future_promo_container">
         <script id="future_promo_template" type="x-tmpl-mustache/text">
-            <!-- future events  -->
+           
             <hr />
             <h1 class="page_title">Future Promotions</h1>
             <div class="store_promo">
