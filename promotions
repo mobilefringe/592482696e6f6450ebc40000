@@ -18,55 +18,55 @@
     <br/>
     <div class="event_list all_events_promo" id="event_promo_container">
         <script id="event_promo_template" type="x-tmpl-mustache/text">
-        <h3>
-            <div class="event_time">
-                <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
-                <span class="event_month">{{promo.start_date | date: "%b" }}</span>
-                <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
-            </div>
-                {{promo.parent.name}} - {{promo.name}}
-            <span class="event_period">
-                {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
-                -                  
-                {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
-            </span>
-        </h3>
-        
-        <div class="event_detail" id="promo{{promo.id}}">                     
-            <div class="event_info info_toggle">
-                {% if promo.promo_image_path contains "missing.png" %}
-                    <div class="event_summary full_width">
-                        <h4>Event Summary:</h4>
-                        {{promo.description}}                    
-                    </div>
-                {% else %}
-                    <img alt="promo image" src="{{promo.promo_image_path}}" class="promoeventimage" />                
-                    <div class="event_summary">
-                        <h4>Event Summary:</h4>
-                        {{promo.description}}                    
-                    </div>
-                {% endif %}
-                               
-            </div>
+            <h3>
+                <div class="event_time">
+                    <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
+                    <span class="event_month">{{promo.start_date | date: "%b" }}</span>
+                    <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
+                </div>
+                    {{promo.parent.name}} - {{promo.name}}
+                <span class="event_period">
+                    {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
+                    -                  
+                    {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
+                </span>
+            </h3>
             
-            {% if promo.extra %}
-            {% assign info = promo.extra | split: ","%}
-            {% else %}
-            {% assign info = ""%}
-            {% endif %}
-            <div class="details">
+            <div class="event_detail" id="promo{{promo.id}}">                     
+                <div class="event_info info_toggle">
+                    {% if promo.promo_image_path contains "missing.png" %}
+                        <div class="event_summary full_width">
+                            <h4>Event Summary:</h4>
+                            {{promo.description}}                    
+                        </div>
+                    {% else %}
+                        <img alt="promo image" src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                        <div class="event_summary">
+                            <h4>Event Summary:</h4>
+                            {{promo.description}}                    
+                        </div>
+                    {% endif %}
+                                   
+                </div>
                 
-                <div class="action">
-                    <a href="javascript:toggle_detail('promo{{promo.id}}');" class="toggle">Read more</a>
+                {% if promo.extra %}
+                {% assign info = promo.extra | split: ","%}
+                {% else %}
+                {% assign info = ""%}
+                {% endif %}
+                <div class="details">
                     
-                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn facebook"><span style="display:none">facebook</span></a>
-                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn twitter"><span style="display:none">twitter</span></a>
-                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" class="share_btn email"><span style="display:none">share</span></a>
-                    <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
-                    <a href="/{{promo.type}}s/{{promo.slug}}" class="share_btn link"><span style="display:none">show</span></a>
+                    <div class="action">
+                        <a href="javascript:toggle_detail('promo{{promo.id}}');" class="toggle">Read more</a>
+                        
+                        <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn facebook"><span style="display:none">facebook</span></a>
+                        <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn twitter"><span style="display:none">twitter</span></a>
+                        <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" class="share_btn email"><span style="display:none">share</span></a>
+                        <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
+                        <a href="/{{promo.type}}s/{{promo.slug}}" class="share_btn link"><span style="display:none">show</span></a>
+                    </div>
                 </div>
             </div>
-        </div>
       </script> 
     </div>
     
