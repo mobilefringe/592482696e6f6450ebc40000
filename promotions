@@ -345,6 +345,7 @@
         });
         
         $("#event_promo_container h3").each(function(){
+            console.log("loads colour");
             if (n % 4 == 1 ){
                 $(this).addClass("yellow");    
                 $(this).addClass("ph"+n);    
