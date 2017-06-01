@@ -6,12 +6,12 @@
     
     function renderAll(){
         $('.flexslider').flexslider({
-        animation: "slide",
-        controlNav: false,
-        directionNav: false,        
-        prevText: "Previous",
-        nextText: "Next"
-    });
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
         $("#giftcard").show();
         show_content();
    
