@@ -141,7 +141,7 @@ $(window).load(function() {
             } 
             
             n = n+1;
-        });
+    });
     var today_hours = getTodaysHours();
     var hours = getPropertyHours();
     var feature_items = getFeatureList();
