@@ -623,8 +623,7 @@ function renderPromotions(container, template, collection){
         else{
             val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
         }
-        val.day = start.format("ddd");
-        console.log(val.day);
+        val.day = start.format("ddd").toLowerCase();
         val.month = start.format("MMM");
         val.date = start.format("DD");
         val.main_host= getPropertyDetails().mm_host;
