@@ -197,7 +197,7 @@
             } 
         });
         if (published_promos.length > 0){
-            renderPromotions("#event_promo_container","#event_promo_template", published_promos);
+            renderPromotions("#future_promo_container","#future_promo_template", published_promos);
         }
         show_content();
    
