@@ -18,8 +18,6 @@
     <br/>
     <div class="event_list all_events_promo" id="event_promo_container">
         <script id="event_promo_template" type="x-tmpl-mustache/text">
-            
-        
         <h3>
             <div class="event_time">
                 <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
