@@ -39,11 +39,6 @@
                     </div>
                 </div>
                 
-                {% if promo.extra %}
-                {% assign info = promo.extra | split: ","%}
-                {% else %}
-                {% assign info = ""%}
-                {% endif %}
                 <div class="details">
                     
                     <div class="action">
