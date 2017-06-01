@@ -48,12 +48,12 @@
                         <span style="display:none">twitter</span>
                     </a>
                     <a title="Email this event" href="mailto:?subject={{name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/promotions/{{slug}}" class="share_btn email">
-                            <span style="display:none">share</span>
-                        </a>
-                        <a href="/save_promotions/{{slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
-                        <a href="/promotoins/{{slug}}" class="share_btn link"><span style="display:none">show</span></a>
-                    </div>
+                        <span style="display:none">share</span>
+                    </a>
+                    <a href="/save_promotions/{{slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
+                    <a href="/promotoins/{{slug}}" class="share_btn link"><span style="display:none">show</span></a>
                 </div>
+            </div>
             </div>
       </script> 
     </div>
