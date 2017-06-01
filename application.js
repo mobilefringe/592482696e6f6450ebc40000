@@ -625,6 +625,7 @@ function renderPromotions(container, template, collection){
         }
         val.day = start.format("ddd");
         val.month = start.format("MMM");
+        val.day = start.format("ddd")
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
