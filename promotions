@@ -24,7 +24,7 @@
                     <span class="event_month">{{start_date}}</span>
                     <span class="event_date">{{start_date}}</span>                
                 </div>
-                    {{promo.parent.name}} - {{promo.name}}
+                    store_name - {{promo.name}}
                 <span class="event_period">
                     {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
                     -                  
