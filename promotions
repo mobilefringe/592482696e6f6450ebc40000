@@ -381,6 +381,7 @@
         if (published_promos.length > 0){
             renderPromotions("#event_promo_container","#event_promo_template", published_promos);
         }
+        var main_host= getPropertyDetails().mm_host;
         show_content();
    
     }
