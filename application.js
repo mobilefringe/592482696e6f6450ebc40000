@@ -624,7 +624,7 @@ function renderPromotions(container, template, collection){
             val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
         }
         val.day = start.format("ddd");
-        console.log(day);
+        console.log(val.day);
         val.month = start.format("MMM");
         val.date = start.format("DD");
         val.main_host= getPropertyDetails().mm_host;
