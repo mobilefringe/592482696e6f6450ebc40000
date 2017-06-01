@@ -20,9 +20,9 @@
         <script id="event_promo_template" type="x-tmpl-mustache/text">
             <h3>
                 <div class="event_time">
-                    <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
-                    <span class="event_month">{{promo.start_date | date: "%b" }}</span>
-                    <span class="event_date">{{promo.start_date | date: "%d" }}</span>                
+                    <span class="weekday {{start_date}}"> </span>
+                    <span class="event_month">{{start_date}}</span>
+                    <span class="event_date">{{start_date}}</span>                
                 </div>
                     {{promo.parent.name}} - {{promo.name}}
                 <span class="event_period">
