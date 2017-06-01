@@ -623,7 +623,8 @@ function renderPromotions(container, template, collection){
         else{
             val.dates = start.format("MMMM D") + " - " + end.format("MMMM D")
         }
-        val.day = start.format("ddd")
+        val.day = start.format("ddd");
+        val.month = start.format("MMM");
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
