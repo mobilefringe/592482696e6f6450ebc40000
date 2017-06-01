@@ -59,12 +59,10 @@
     </div>
     
     <br/>
-    
-    <div id="future_promo_container">
-        <script id="future_promo_template" type="x-tmpl-mustache/text">
-           
-            <hr />
-            <h1 class="page_title">Future Promotions</h1>
+    <hr />
+    <h1 class="page_title">Future Promotions</h1>
+        <div id="future_promo_container">
+        <script id="future_promo_template" type="x-tmpl-mustache/text">    
             <div class="store_promo">
                 <div id="img{{slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
                     <div class='lightbox-content'>
