@@ -60,7 +60,7 @@
     
     <br/>
     <hr />
-    <h1 class="page_title">Future Promotions</h1>
+    <h1 class="page_title future_promo">Future Promotions</h1>
         <div id="future_promo_container">
             <script id="future_promo_template" type="x-tmpl-mustache/text">    
                 <div class="store_promo">
@@ -192,7 +192,7 @@
             renderPromotions("#future_promo_container","#future_promo_template", future_promos);
         }
         else {
-            
+            $(".future_promo").hide();
         }
         show_content();
    
