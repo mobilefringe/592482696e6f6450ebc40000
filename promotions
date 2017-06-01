@@ -364,7 +364,27 @@
             } else {
                 $(this).text("Read more");    
             }            
-        })
+        });
+        
+        $(".home_page h3").each(function(){
+            if (n % 4 == 1 ){
+                $(this).addClass("yellow");    
+                $(this).addClass("ph"+n);    
+            } 
+            if (n % 4 == 2 ){
+                $(this).removeClass("yellow");  
+                $(this).addClass("purple");  
+                $(this).addClass("ph"+n);    
+            }
+            if (n % 4 == 3 ){
+                $(this).removeClass("yellow");  
+                $(this).removeClass("purple");  
+                $(this).addClass("red");    
+                $(this).addClass("ph"+n);    
+            } 
+            
+            n = n+1;
+        });
         var promotions = getPromotionsList();
         var store_promos = promotions.sortBy(function(o){ return o.start_date });
         var published_promos = [];
