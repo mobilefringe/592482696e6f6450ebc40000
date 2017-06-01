@@ -68,12 +68,9 @@
                         <img ALT="promo_image" src="{{image_url}}"/>   
                     </div>
                 </div>
-                <a data-toggle="lightbox" href="#img{{promo.slug}}">                
-                    {% if promo.promo_image_path contains "original/missing.png" %}
-                        <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
-                    {% else %}
-                        <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
-                    {% endif %}    
+                <a data-toggle="lightbox" href="#img{{slug}}">                
+                    <img ALT="promo_image" src="{{image_url}}"/>                
+                    
                 </a>
                 <div class="promo_info">
                     <h2>
