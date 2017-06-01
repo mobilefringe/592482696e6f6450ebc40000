@@ -79,7 +79,7 @@
                         </a>
                     </h2>
                     <span class="promo_date">
-                        {{promo.start_date | get_date}} - {{promo.end_date | get_date}} 
+                        {{dates}} 
                     </span>
                     
                     <p>{{promo.description}}</p>
