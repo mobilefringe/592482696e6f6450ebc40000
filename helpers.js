@@ -39,8 +39,7 @@ $('document').ready(function() {
                 $("#service_hover").hide();
             }
         );
-        
-        var n = 0;
+       
         
         if (getURLParameter("building") == "1"){           
             $(".building_menu").show();         
@@ -122,6 +121,8 @@ $(window).load(function() {
             document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
         } 
     }
+     
+        var n = 0;
     $(".home_page h3").each(function(){
             //console.log("loads colour");
             if (n % 4 == 1 ){
