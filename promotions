@@ -57,8 +57,8 @@
     
     <br/>
     
-    <div class="event_list all_events_promo" id="event_promo_container">
-        <script id="event_promo_template" type="x-tmpl-mustache/text">
+    <div class="event_list all_events_promo" id="future_promo_container">
+        <script id="future_promo_template" type="x-tmpl-mustache/text">
     <!-- future events  -->
     <hr />
         <h1 class="page_title">Future Promotions</h1>
