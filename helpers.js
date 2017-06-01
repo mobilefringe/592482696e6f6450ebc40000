@@ -42,6 +42,7 @@ $('document').ready(function() {
         
         var n = 0;
         $(".home_page h3").each(function(){
+            console.log("loads colour");
             if (n % 4 == 1 ){
                 $(this).addClass("yellow");    
                 $(this).addClass("ph"+n);    
