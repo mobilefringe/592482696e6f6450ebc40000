@@ -62,30 +62,30 @@
     <hr />
     <h1 class="page_title">Future Promotions</h1>
         <div id="future_promo_container">
-        <script id="future_promo_template" type="x-tmpl-mustache/text">    
-            <div class="store_promo">
-                <div id="img{{slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                    <div class='lightbox-content'>
-                        <img ALT="promo_image" src="{{image_url}}"/>   
+            <script id="future_promo_template" type="x-tmpl-mustache/text">    
+                <div class="store_promo">
+                    <div id="img{{slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+                        <div class='lightbox-content'>
+                            <img ALT="promo_image" src="{{image_url}}"/>   
+                        </div>
+                    </div>
+                    <a data-toggle="lightbox" href="#img{{slug}}">                
+                        <img ALT="promo_image" src="{{image_url}}"/>                
+                        
+                    </a>
+                    <div class="promo_info">
+                        <h2>
+                            <a href="/stores/{slug}}">
+                            {{store_name}} - {{name}}                        
+                            </a>
+                        </h2>
+                        <span class="promo_date">
+                            {{dates}} 
+                        </span>
+                        
+                        <p>{{description}}</p>
                     </div>
                 </div>
-                <a data-toggle="lightbox" href="#img{{slug}}">                
-                    <img ALT="promo_image" src="{{image_url}}"/>                
-                    
-                </a>
-                <div class="promo_info">
-                    <h2>
-                        <a href="/stores/{slug}}">
-                        {{store_name}} - {{name}}                        
-                        </a>
-                    </h2>
-                    <span class="promo_date">
-                        {{dates}} 
-                    </span>
-                    
-                    <p>{{description}}</p>
-                </div>
-            </div>
             <div class="line_break">&nbsp;</div>
         </script>
     </div>
