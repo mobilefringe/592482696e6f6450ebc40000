@@ -185,7 +185,7 @@
             today = moment();
             webDate = moment(val.show_on_web_date);
             if (today < webDate) {
-                published_promos.push(val)
+                future_promos.push(val)
             } 
         });
         if (published_promos.length > 0){
