@@ -26,7 +26,7 @@
                 </div>
                     store_name - {{name}}
                 <span class="event_period">
-                    {{promo.start_date | date: "%B"}} {{promo.start_date | date: "%-d"}} 
+                    {{dates}} {{start_date | date: "%-d"}} 
                     -                  
                     {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
                 </span>
