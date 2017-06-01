@@ -36,8 +36,8 @@
                     <div class="event_summary">
                     <h4>Event Summary:</h4>
                         {{description}}
-                    </div>
                 </div>
+            </div>
                 
                 <div class="details">
                     
