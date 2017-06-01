@@ -32,18 +32,11 @@
             
             <div class="event_detail" id="promo{{promo.id}}">                     
                 <div class="event_info info_toggle">
-                    {% if promo.promo_image_path contains "missing.png" %}
-                        <div class="event_summary full_width">
-                            <h4>Event Summary:</h4>
-                            {{promo.description}}                    
-                        </div>
-                    {% else %}
-                        <img alt="promo image" src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                    <img alt="promo image" src="{{promo.promo_image_path}}" class="promoeventimage" />                
                         <div class="event_summary">
                             <h4>Event Summary:</h4>
-                            {{promo.description}}                    
+                            {{description}}                    
                         </div>
-                    {% endif %}
                                    
                 </div>
                 
