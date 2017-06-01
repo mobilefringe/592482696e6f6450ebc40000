@@ -98,8 +98,6 @@
             </div>
             
             <div class="line_break">&nbsp;</div>
-        {% endfor %}
-    {% endif %}
     </script>
     </div>
     
