@@ -45,10 +45,10 @@
                         <a href="javascript:toggle_detail('promo{{id}}');" class="toggle">Read more</a>
                         
                         <a href="http://www.facebook.com/sharer.php?u={{main_host}}/promotions/{{slug}}" target="_blank" class="share_btn facebook"><span style="display:none">facebook</span></a>
-                        <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" target="_blank" class="share_btn twitter"><span style="display:none">twitter</span></a>
-                        <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/{{promo.type}}s/{{promo.slug}}" class="share_btn email"><span style="display:none">share</span></a>
-                        <a href="/save_promotions/{{promo.slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
-                        <a href="/{{promo.type}}s/{{promo.slug}}" class="share_btn link"><span style="display:none">show</span></a>
+                        <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/promotions/{{slug}}" target="_blank" class="share_btn twitter"><span style="display:none">twitter</span></a>
+                        <a itle="Email this event" href="mailto:?subject={{name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/promotions/{{slug}}" class="share_btn email"><span style="display:none">share</span></a>
+                        <a href="/save_promotions/{{slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
+                        <a href="/promotoins/{{slug}}" class="share_btn link"><span style="display:none">show</span></a>
                     </div>
                 </div>
             </div>
