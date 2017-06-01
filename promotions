@@ -89,10 +89,7 @@
                     <span class="promo_date">
                         {{promo.start_date | get_date}} - {{promo.end_date | get_date}} 
                     </span>
-                    {% if @can_edit == "true" %}            
-                        <a rel="nofollow" data-method="delete" data-confirm="Are you sure you want to delete {{promotion.name}}?" class="btn btn-danger" href="/promotions/{{promo.slug}}">Delete</a>
-                        <a class="btn btn-primary" href="/promotions/{{promo.slug}}/edit">Edit</a>            
-                    {% endif %}   
+                    
                     <p>{{promo.description}}</p>
                 </div>
             </div>
