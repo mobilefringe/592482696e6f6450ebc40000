@@ -16,8 +16,8 @@
         </span>
     </div>
     <br/>
-    <div class="event_list all_events_promo">
-    {% for promo in site.property.combined_events_promos_date_sorted %}
+    <div class="event_list all_events_promo" id="event_promo_container">
+    
         <h3>
             <div class="event_time">
                 <span class="weekday {{promo.start_date | date: "%a" | downcase}}"> </span>
@@ -67,7 +67,7 @@
                 </div>
             </div>
         </div>
-    {% endfor %}    
+       
     </div>
     
     <br/>
