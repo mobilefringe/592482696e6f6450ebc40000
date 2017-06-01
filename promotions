@@ -186,7 +186,6 @@
                 {{promo.end_date | date: "%B"}} {{promo.end_date | date: "%-d"}}
             </span>
         </h3>
-       
         
         <div class="event_detail" id="promo{{promo.id}}">                     
             <div class="event_info info_toggle">
