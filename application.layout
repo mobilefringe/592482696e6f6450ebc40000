@@ -53,7 +53,7 @@
             setEndPoint('//svc.mallmaverick.com/api/v3/svc/all.json');
         </script>
     
-        
+        <title>St.Vital Centre</title>
     </head>
 
 <body>
