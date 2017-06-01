@@ -32,7 +32,7 @@
             
             <div class="event_detail" id="promo{{promo.id}}">                     
                 <div class="event_info info_toggle">
-                    <img alt="promo image" src="{{promo.promo_image_path}}" class="promoeventimage" />                
+                    <img alt="promo image" src="{{promo_image_path}}" class="promoeventimage" />                
                         <div class="event_summary">
                             <h4>Event Summary:</h4>
                             {{description}}                    
