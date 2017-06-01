@@ -63,35 +63,35 @@
             <hr />
             <h1 class="page_title">Future Promotions</h1>
             <div class="store_promo">
-                    <div id="img{{promo.slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
-                        <div class='lightbox-content'>
-                        {% if promo.promo_image_path contains "original/missing.png" %}
-                            <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
-                        {% else %}
-                            <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
-                        {% endif %}    
-                        </div>
-                    </div>
-                    <a data-toggle="lightbox" href="#img{{promo.slug}}">                
-                        {% if promo.promo_image_path contains "original/missing.png" %}
-                            <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
-                        {% else %}
-                            <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
-                        {% endif %}    
-                    </a>
-                    <div class="promo_info">
-                        <h2>
-                            <a href="/stores/{{promo.promotionable.slug}}">
-                            {{promo.promotionable.name}} - {{promo.name}}                        
-                            </a>
-                        </h2>
-                        <span class="promo_date">
-                            {{promo.start_date | get_date}} - {{promo.end_date | get_date}} 
-                        </span>
-                        
-                        <p>{{promo.description}}</p>
+                <div id="img{{promo.slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+                    <div class='lightbox-content'>
+                    {% if promo.promo_image_path contains "original/missing.png" %}
+                        <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
+                    {% else %}
+                        <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
+                    {% endif %}    
                     </div>
                 </div>
+                <a data-toggle="lightbox" href="#img{{promo.slug}}">                
+                    {% if promo.promo_image_path contains "original/missing.png" %}
+                        <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
+                    {% else %}
+                        <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
+                    {% endif %}    
+                </a>
+                <div class="promo_info">
+                    <h2>
+                        <a href="/stores/{{promo.promotionable.slug}}">
+                        {{promo.promotionable.name}} - {{promo.name}}                        
+                        </a>
+                    </h2>
+                    <span class="promo_date">
+                        {{promo.start_date | get_date}} - {{promo.end_date | get_date}} 
+                    </span>
+                    
+                    <p>{{promo.description}}</p>
+                </div>
+            </div>
                 
                 <div class="line_break">&nbsp;</div>
     </script>
