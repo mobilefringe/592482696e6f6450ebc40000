@@ -130,7 +130,7 @@ $(window).load(function() {
             prevText: "Previous",
             nextText: "Next"
         });
-        console.log("slidey slide")
+        console.log("slidey slide");
     }
     if (window.location.pathname == "/") {
         
