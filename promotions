@@ -382,7 +382,8 @@
                 $(this).text("Read more");    
             }            
         })
-        
+        var promotions = ;
+        event_promo_container
         show_content();
    
     }
