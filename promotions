@@ -63,13 +63,9 @@
             <hr />
             <h1 class="page_title">Future Promotions</h1>
             <div class="store_promo">
-                <div id="img{{promo.slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
+                <div id="img{{slug}}" class="lightbox hide fade"  tabindex="-1" role="dialog" aria-hidden="true">
                     <div class='lightbox-content'>
-                    {% if promo.promo_image_path contains "original/missing.png" %}
-                        <img ALT="promo_image_missing" src="{{site.logo_image_path}}" />                 
-                    {% else %}
-                        <img ALT="promo_image" src="{{promo.promo_image_path}}"/>                
-                    {% endif %}    
+                        <img ALT="promo_image" src="{{image_url}}"/>   
                     </div>
                 </div>
                 <a data-toggle="lightbox" href="#img{{promo.slug}}">                
