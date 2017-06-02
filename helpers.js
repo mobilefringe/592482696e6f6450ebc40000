@@ -177,8 +177,6 @@ function init(e){
         
         n = n+1;
     });
-	
-	
 }
 
 function getCookie(name) {
