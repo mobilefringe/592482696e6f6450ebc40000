@@ -1,8 +1,8 @@
 <div class="promo_page">
     <h2 class="store_list_padding">Centre Events</h2>
     
-    <div class="event_list" id="promo_dets_container">
-        <script id="promo_dets_template" type="x-tmple-mustache/text">
+    <div class="event_list" id="event_dets_container">
+        <script id="event_dets_template" type="x-tmple-mustache/text">
             <h3>
                 <div class="event_time">
                     <span class="weekday {{day}}"> </span>
