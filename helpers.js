@@ -201,7 +201,7 @@ function show_content(){
     }
     
     var n = 0;
-	console.log("loading show_content(e)",n);
+	console.log("loading show_content()",n);
     $("div.home_page h3").each(function(){
         if (n % 4 == 1 ){
             $(this).addClass("yellow");    
