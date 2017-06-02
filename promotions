@@ -51,7 +51,7 @@
                             <span style="display:none">share</span>
                         </a>
                         <a href="/save_promotions/{{slug}}"  class="share_btn ical"><span style="display:none">calender</span></a>
-                        <a href="/promotions/{{slug}}" class="share_btn link"><span style="display:none">show</span></a>
+                        <a href="/{promotions}{type}}/{{slug}}" class="share_btn link"><span style="display:none">show</span></a>
                     </div>
                 </div>
             </div>
