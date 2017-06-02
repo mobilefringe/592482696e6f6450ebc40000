@@ -32,38 +32,6 @@
 <script>
     $(document).ready(function() {
         init()
-        function renderAll (){
-            init_hours();
-            var hours = getPropertyHours();
-            var all_promos =[];
-            $.each( getPromotionsList().reverse() , function( key, val ){
-                today = new Date();
-                webDate = new Date(val.show_on_web_date);
-                if (today >= webDate) {
-                    all_promos.push(val);
-                } 
-            });
-            var latest_store_event = all_promos[0];
-            var latest_mall_event  = getEventsList().sortBy(function(o){ return new Date(o.end_date) })[0];
-            var mh=0
-            if (latest_mall_event){
-                mh=mh+1;
-                renderSideEvents('#latest_mall_event_container', '#latest_mall_event_template', latest_mall_event, 'event');
-            }
-            if (latest_store_event){
-                mh=mh+1
-                renderSideEvents('#latest_store_event_container', '#latest_store_event_template', latest_store_event, 'promo');
-            } 
-                       if (mh == 1){
-                $('.mid_section').css('min-height','920px')
-            }
-            else if(mh>1 && $(window).width() > 767){
-                $('.mid_section').css('min-height','1100px')
-            }  
-            var propertyDetails = getPropertyDetails();
-            renderpageHTML();
-            $(".modal-backdrop").remove();
-        }
         
         function renderpageHTML(){
             var pathArray = window.location.pathname.split( '/' );
