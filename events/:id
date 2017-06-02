@@ -17,20 +17,12 @@
         </h3>
         
         <div class="event_detail" id="event{{id}}">         
-            {% assign event_detail = event.description | split: "Details:" %}            
             <div class="event_info info_toggle">
-                {% if event.promo_image_path contains "missing.png" %}
-                    <div class="event_summary full_width">
-                        <h4>Event Summary:</h4>
-                        {{event.description}}                
-                    </div>
-                {% else %}
-                    <img src="{{event.promo_image_path}}" class="promoeventimage" />                
-                    <div class="event_summary">
-                        <h4>Event Summary:</h4>
-                        {{event.description}}                    
-                    </div>
-                {% endif %}        
+                <img src="{{event.promo_image_path}}" class="promoeventimage" />                
+                <div class="event_summary">
+                    <h4>Event Summary:</h4>
+                    {{event.description}}                    
+                </div> 
             </div>
             
             {% if event.extra %}
