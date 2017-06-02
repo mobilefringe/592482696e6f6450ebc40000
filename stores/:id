@@ -63,9 +63,7 @@
             <p class="back store_list_padding">
                 <a href="/stores"><img src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1496256809000/back.png">Back to Directory</a>
             </p>
-        </div>   
-                
-                    
+        </div>
         <div class="store_list_padding unit_info">
             {{store.description_2}}
             <h2 class="hidden"></h2>
