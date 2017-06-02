@@ -25,7 +25,7 @@
             // console.log(data.body);
             
             $("#page_title").html(data.title)
-            $('#mm_page_content').html(data.body);
+            $('#page_body_content').html(data.body);
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                 $("#404_msg").fadeIn("fast");
