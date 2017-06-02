@@ -69,7 +69,7 @@
             <h2 class="hidden"></h2>
             
             <p class="download_design_spec">
-                {% if store.neighbourhood %}
+                {% if storeneighbourhood %}
                     {% assign neighbourhood =  store.neighbourhood | downcase %}
                     {% assign repo = "svc-building-design-specs" | get_repo_by_slug %}
                     {% for file in repo.site_images %}
