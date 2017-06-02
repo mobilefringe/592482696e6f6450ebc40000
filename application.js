@@ -553,7 +553,7 @@ function renderJobDetails(container, template, collection){
         }
         else{
             val.store_name = "St. Vital Centre";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
         }
         
         var show_date = moment(val.show_on_web_date);
@@ -750,7 +750,7 @@ function renderEvents(container, template, collection){
         }
         else{
             val.store_name = "St. Vital Centre";
-            val.image_url = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
+            val.image_url = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
         }
         if(val.event_image_url_abs.indexOf('missing.png') < 0){
             val.logo = val.event_image_url_abs;
@@ -760,7 +760,7 @@ function renderEvents(container, template, collection){
                 val.logo = val.image_url;
             }
             else{
-                val.logo = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
+                val.logo = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
             }
         }
         var show_date = moment(val.show_on_web_date);
