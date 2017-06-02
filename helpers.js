@@ -93,8 +93,6 @@ $('document').ready(function() {
         n = n+1;
     });
     
-    
-    
     if($.cookie("popup_viewed") != "true"){
         $.cookie("popup_viewed", "true", { expires: 1 });
         $.magnificPopup.open({
