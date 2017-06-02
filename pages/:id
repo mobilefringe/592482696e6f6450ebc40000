@@ -8,7 +8,7 @@
 <script>
     $(document).ready(function(e) {
         init(e);
-        
+        loadMallDataCached(renderAll); 
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
@@ -16,7 +16,7 @@
             prevText: "Previous",
             nextText: "Next"
         });
-    
+    });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
@@ -35,6 +35,4 @@
         }); 
         show_content();
     }
-    loadMallDataCached(renderAll); 
-    });
 </script>
