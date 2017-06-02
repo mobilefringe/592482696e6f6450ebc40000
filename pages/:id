@@ -1,5 +1,6 @@
-<div id="page_body_content">
+<div >
         <h2 id="page_title">title</h2>
+        <div id="page_body_content"></div>
 </div>
 
 <script>
