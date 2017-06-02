@@ -81,28 +81,7 @@ $('document').ready(function() {
         });
         $.cookie('visited', 'yes'); 
     }
-    var n = 0;
-	console.log("loading init(e)",n);
-    $("div.home_page h3").each(function(){
-        console.log("loads colour");
-        if (n % 4 == 1 ){
-            $(this).addClass("yellow");    
-            $(this).addClass("ph"+n);    
-        } 
-        if (n % 4 == 2 ){
-            $(this).removeClass("yellow");  
-            $(this).addClass("purple");  
-            $(this).addClass("ph"+n);    
-        }
-        if (n % 4 == 3 ){
-            $(this).removeClass("yellow");  
-            $(this).removeClass("purple");  
-            $(this).addClass("red");    
-            $(this).addClass("ph"+n);    
-        } 
         
-        n = n+1;
-    });    
     var date = new Date();
     var minutes = 1440;
     date.setTime(date.getTime() + (minutes * 60 * 1000));
