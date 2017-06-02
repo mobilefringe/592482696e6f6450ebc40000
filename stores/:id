@@ -69,7 +69,7 @@
             <h2 class="hidden"></h2>
             
             <p class="download_design_spec">
-                    <a style="{{no_repo_show}}" href="{{repo}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                        
+                    <a style="{{repo_show}}" href="{{repo}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                        
                
                     <i style="{{no_repo_show}}">Sorry, no design requirements are available for this unit.</i>
              
