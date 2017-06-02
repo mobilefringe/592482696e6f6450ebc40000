@@ -32,37 +32,26 @@
 <script>
     $(document).ready(function() {
         init()
-        
-        function renderpageHTML(){
-            var pathArray = window.location.pathname.split( '/' );
-            var slug = pathArray[pathArray.length-1];
-            prefix = get_prefix();
-            var pages_json = prefix+"/pages/" + slug + ".json"
-            $.getJSON(pages_json).done(function(data) {
-                //var pages_data = JSON.parse(data);
-                // console.log(data.body);
-                
-                $("#page_title").html(data.title)
-                $('#mm_page_content').html(data.body);
-            }).fail(function(jqXHR) {
-                if (jqXHR.status == 404) {
-                    $("#404_msg").fadeIn("fast");
-                }
-            }); 
-        }
-        
-        $('#mm_page_content').on('click', function () {
-            console.log('iframe clicked remove');
-           $('iframe').removeClass('scrolloff');
-       });
-       $(".hidden-phone p iframe").mouseleave(function () {
-            console.log('iframe clicked add');
-           $('iframe').addClass('scrolloff');
-       });
-        
-
-        loadMallDataCached(renderAll); 
-		
+         loadMallDataCached(renderAll); 
     });
+    function renderAll(){
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        prefix = get_prefix();
+        var pages_json = prefix+"/pages/" + slug + ".json"
+        $.getJSON(pages_json).done(function(data) {
+            //var pages_data = JSON.parse(data);
+            // console.log(data.body);
+            
+            $("#page_title").html(data.title)
+            $('#mm_page_content').html(data.body);
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#404_msg").fadeIn("fast");
+            }
+        }); 
+    }
+
+
 
 </script>
