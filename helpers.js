@@ -140,8 +140,9 @@ function init(e){
 	$('.accordion_header').click(function(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
-	console.log("loading init(e)");
+	
 	var n = 0;
+	console.log("loading init(e)",n);
     $(".home_page h3").each(function(){
         console.log("loads colour");
         if (n % 4 == 1 ){
