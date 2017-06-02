@@ -95,7 +95,6 @@
     $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
-        
     });
 
     function toggle_detail(promo_div){
