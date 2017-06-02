@@ -46,7 +46,8 @@ $('document').ready(function() {
         
         var menu_index = getURLParameter("menu");
         $("#building_li_"+ menu_index + " a").addClass("building_menu_highlight");
-    } else {
+    }
+    else {
          $(".main_menu").show();
     }
     
