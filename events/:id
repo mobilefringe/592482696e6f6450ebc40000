@@ -86,7 +86,7 @@ $(document).ready(function(e){
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         event_details = getEventDetailsBySlug(slug);
-        renderPromoDetails('#event_dets_container', '#event_dets_template', event_details);
+        renderEventDetails('#event_dets_container', '#event_dets_template', event_details);
         
         show_content();
     }
