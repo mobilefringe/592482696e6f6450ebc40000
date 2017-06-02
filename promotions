@@ -41,7 +41,7 @@
                 <div class="details">
                     <div class="action">
                         <a href="javascript:toggle_detail('promo{{id}}');" class="toggle">Read more</a>
-                        <a href="http://www.facebook.com/sharer.php?u={{main_host}}/promotions/{{slug}}" target="_blank" class="share_btn facebook">
+                        <a href="http://www.facebook.com/sharer.php?u={{main_host}}/{{type}}/{{slug}}" target="_blank" class="share_btn facebook">
                             <span style="display:none">facebook</span>
                         </a>
                         <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/{{type}}/{{slug}}" target="_blank" class="share_btn twitter">
