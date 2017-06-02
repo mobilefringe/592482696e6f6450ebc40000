@@ -8,13 +8,7 @@
 <script>
     $(document).ready(function(e) {
         init(e);
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
-        });
+        
         loadMallDataCached(renderAll); 
         
     });
