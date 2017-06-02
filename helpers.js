@@ -71,28 +71,6 @@ $('document').ready(function() {
             });
     });
     
-    var n = 0;
-    $(".home_page h3").each(function(){
-        console.log("loads colour");
-        if (n % 4 == 1 ){
-            $(this).addClass("yellow");    
-            $(this).addClass("ph"+n);    
-        } 
-        if (n % 4 == 2 ){
-            $(this).removeClass("yellow");  
-            $(this).addClass("purple");  
-            $(this).addClass("ph"+n);    
-        }
-        if (n % 4 == 3 ){
-            $(this).removeClass("yellow");  
-            $(this).removeClass("purple");  
-            $(this).addClass("red");    
-            $(this).addClass("ph"+n);    
-        } 
-        
-        n = n+1;
-    });
-    
     if($.cookie("popup_viewed") != "true"){
         $.cookie("popup_viewed", "true", { expires: 1 });
         $.magnificPopup.open({
