@@ -65,7 +65,7 @@
             </p>
         </div>
         <div class="store_list_padding unit_info">
-            {{store.description_2}}
+            {{description_2}}
             <h2 class="hidden"></h2>
             
             <p class="download_design_spec">
@@ -213,7 +213,7 @@
         
         if (getURLParameter("building") == "1"){
             $(".unit_info").show();            
-
+            console.log("building");
             $(".map_area h2.store_profile").html("{{store.name}} <span>UNIT {{store.unit}} ({{store.name_2}} FT<sup>2</sup>)</span>");
             if (store.neighbourhood ) {
                 $(".map_area h3.store_title").html("Design Requirements - {{store.neighbourhood | escape}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");}
