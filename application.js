@@ -76,7 +76,7 @@ function renderVendorScroll(container, template, collection){
         if(val.show_logo === true){
             val.image_url = val.store_front_url_abs;
             if(val.image_url.indexOf('missing.png') > 0){
-                val.image_url  = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
+                val.image_url = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
             }
             if(item_list.empty) {
                 val.first_class="first_image";
