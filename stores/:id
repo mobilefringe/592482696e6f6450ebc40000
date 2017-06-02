@@ -222,6 +222,7 @@
             }
             else {
                 $("#neighbour_store_title").hide();
+                $(".store_title").hide();
                 $("#no_neighbour_store_title").show();
                 //$(".map_area h3.store_title").html("Design Requirements")
             }
