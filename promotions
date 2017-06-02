@@ -110,7 +110,13 @@
     }
     
     function renderAll(){
-        
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
         $(".all_events_promo, .mall_events, .store_event, .property_event").hide();
         $(".selector-wrap select").hover(
             function(){
