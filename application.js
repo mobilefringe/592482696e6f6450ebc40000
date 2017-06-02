@@ -341,6 +341,9 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         var repo = getRepoDetailsByName("Building Design Specs");
+        $.each( repo , function( repo_key, repo_val ) {
+            val.taglist = val.taglist + " " + tag;
+        });
         
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
