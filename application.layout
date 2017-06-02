@@ -178,7 +178,7 @@
                 <li class="menu_item sub_menu_li">
                     <a href="#" class="toggle_sub_menu meniu_item_a">
                         Services
-                        <img ALT="sub_menu_image" src="https://www.mallmaverick.com/system/site_images/photos/000/001/812/original/service_hover.png?1392755854" />
+                        <img ALT="sub_menu_image" src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495572630000/service_hover.png" />
                     </a>                
                     <ul class="sub_menu">                    
                         <li class="sub_menu_item"><a href='/pages/svc-customer-service'><span>Customer Service</span></a></li>
