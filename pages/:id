@@ -35,5 +35,6 @@
                 $("#404_msg").fadeIn("fast");
             }
         }); 
+        show_content();
     }
 </script>
