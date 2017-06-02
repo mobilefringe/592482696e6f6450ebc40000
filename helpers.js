@@ -92,19 +92,7 @@ $('document').ready(function() {
         n = n+1;
     });
     
-    function validate_pop_up(){
-        if($('#subscribe_newsletter_popup').is(":checked"))
-        return true;
-        else{
-            alert("Please check the 'Subscribe to recieve newsletter' checkbox")
-            return false;
-        }
-    }
-    function search_site(){
-        if($("#SearchTerms").val() !== ""){
-            window.location.href = "/search?query=" + $("#SearchTerms").val();
-        }
-    }
+    
     
       if($.cookie("popup_viewed") != "true"){
           $.cookie("popup_viewed", "true", { expires: 1 });
@@ -211,7 +199,19 @@ function subscribe_email(){
         alert("Please enter a valid email address. ")
     }
 }
-
+function validate_pop_up(){
+    if($('#subscribe_newsletter_popup').is(":checked"))
+    return true;
+    else{
+        alert("Please check the 'Subscribe to recieve newsletter' checkbox")
+        return false;
+    }
+}
+function search_site(){
+    if($("#SearchTerms").val() !== ""){
+        window.location.href = "/search?query=" + $("#SearchTerms").val();
+    }
+}
 function show_content(){
     $('.yield').fadeIn();
     $(".modal-backdrop").remove();
