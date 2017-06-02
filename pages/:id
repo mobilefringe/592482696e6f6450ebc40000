@@ -9,7 +9,7 @@
 <script>
     $(document).ready(function() {
         init()
-         loadMallDataCached(renderAll); 
+        loadMallDataCached(renderAll); 
     });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
