@@ -69,7 +69,7 @@
             <h2 class="hidden"></h2>
             
             <p class="download_design_spec">
-                <a href="{{image_url}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                      
+                <a href="{{repo}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                      
             </p>
             <p class="back">
                 <a href="/stores?building=1&enu=0"><img src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1496256809000/back.png">List tenants...</a>
