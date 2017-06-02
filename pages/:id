@@ -11,6 +11,7 @@
         loadMallDataCached(renderAll); 
     });
     function renderAll(){
+        
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
