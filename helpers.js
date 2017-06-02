@@ -161,8 +161,6 @@ function init(e){
       if (parts.length == 2) return parts.pop().split(";").shift();
     }
     
-    
-    
     function close_popup() {
         $(".newsletter-box").hide();
     }
