@@ -1,5 +1,5 @@
 <div id="page_body_content">
-        <div class="page_heading"></div>
+        <h2 class="page_title">{{page.title}}</h2>
 </div>
 <div class="content_container">
     <h4 class="page_heading2" id="page_title"></h4>
