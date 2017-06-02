@@ -95,6 +95,13 @@
     $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
+        $("a.toggle").click(function(){
+            if ($(this).text().indexOf("more") != -1){
+                $(this).text("Read less"); 
+            } else {
+                $(this).text("Read more");    
+            }            
+        });
     });
 
     function toggle_detail(promo_div){
@@ -153,13 +160,7 @@
             $(".all_events_promo").show();
         }
         
-        $("a.toggle").click(function(){
-            if ($(this).text().indexOf("more") != -1){
-                $(this).text("Read less"); 
-            } else {
-                $(this).text("Read more");    
-            }            
-        });
+        
 
         var promotions = getPromotionsList();
         var store_promos = promotions.concat(getEventsList()).sortBy(function(o){ return o.start_date });
