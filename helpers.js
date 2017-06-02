@@ -190,9 +190,6 @@ function getCookie(name) {
 function close_popup() {
     $(".newsletter-box").hide();
 }
-    
-    
- 
 
 function subscribe_email(){ 
     if (isValidEmailAddress($("#subscribe_email").val())){            
