@@ -343,7 +343,10 @@ function renderStoreDetails(container, template, collection, slug){
         var repo = getRepoDetailsByName("Building Design Specs");
         $.each( repo , function( repo_key, repo_val ) {
             if(repo_val.name == val.neighbourhood.toLowerCase())
-            val.repo = val.taglist + " " + tag;
+            {
+                val.repo = repo_val.photo_url_abs;
+            }
+            
         });
         
         var rendered = Mustache.render(template_html,val);
