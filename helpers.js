@@ -104,6 +104,7 @@ $('document').ready(function() {
             });
             $.cookie('visited', 'yes'); 
         }
+        
         var date = new Date();
         var minutes = 1440;
         date.setTime(date.getTime() + (minutes * 60 * 1000));
