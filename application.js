@@ -614,7 +614,7 @@ function renderPromotions(container, template, collection){
             val.image_url  = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
         }
         if(val.eventable_id){
-            
+            val.type="events";
         }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
