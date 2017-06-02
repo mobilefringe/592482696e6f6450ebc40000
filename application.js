@@ -667,12 +667,10 @@ function renderPromoDetails(container, template, collection){
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        }
-        else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
-        }
+        val.day = start.format("ddd").toLowerCase();
+        val.month = start.format("MMM");
+        val.date = start.format("DD");
+        val.main_host= getPropertyDetails().mm_host;
         val.day = start.format("ddd").toLowerCase();
         val.month = start.format("MMM");
         val.date = start.format("DD");
