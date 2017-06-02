@@ -220,6 +220,13 @@ function show_content(){
         
         n = n+1;
     });
+    $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
     
 }
 
