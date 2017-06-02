@@ -81,32 +81,6 @@ $('document').ready(function() {
         });
         $.cookie('visited', 'yes'); 
     }
-        
-        var date = new Date();
-        var minutes = 1440;
-        date.setTime(date.getTime() + (minutes * 60 * 1000));
-        $.cookie('visited', 'yes', { expires: date, path: '/' });
-});
-    
-$(window).load(function() {
-    if (window.location.pathname.indexOf("/stores") == -1) {
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
-        });
-    }
-    if (window.location.pathname == "/") {
-        
-        if (getCookie("visited") != "yes"){
-            $('.newsletter-box').show();
-            var a = new Date();
-            a = new Date(a.getTime() +1000*60*60*24*30);
-            document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
-        } 
-    }
     var n = 0;
 	console.log("loading init(e)",n);
     $(".home_page h3").each(function(){
@@ -128,7 +102,33 @@ $(window).load(function() {
         } 
         
         n = n+1;
-    });
+    });    
+    var date = new Date();
+    var minutes = 1440;
+    date.setTime(date.getTime() + (minutes * 60 * 1000));
+    $.cookie('visited', 'yes', { expires: date, path: '/' });
+});
+    
+$(window).load(function() {
+    if (window.location.pathname.indexOf("/stores") == -1) {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
+    }
+    if (window.location.pathname == "/") {
+        
+        if (getCookie("visited") != "yes"){
+            $('.newsletter-box').show();
+            var a = new Date();
+            a = new Date(a.getTime() +1000*60*60*24*30);
+            document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
+        } 
+    }
+    
     var today_hours = getTodaysHours();
     var hours = getPropertyHours();
     var feature_items = getFeatureList();
