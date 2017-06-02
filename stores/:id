@@ -215,9 +215,11 @@
             $(".store_profile").hide();
             //$(".map_area h2.store_profile").html("{{name}} <span>UNIT {{unit}} ({{name_2}} FT<sup>2</sup>)</span>");
             if (store.neighbourhood ) {
-                $(".map_area h3.store_title").html("Design Requirements - {{neighbourhood}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");}
+                //$(".map_area h3.store_title").html("Design Requirements - {{neighbourhood}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");
+                $("#no_neighbour_store_title").show();}
             else {
-                $(".map_area h3.store_title").html("Design Requirements")
+                $("#no_neighbour_store_title").show();
+                //$(".map_area h3.store_title").html("Design Requirements")
             }
             
             $(".unit_info h2").each(function(){
