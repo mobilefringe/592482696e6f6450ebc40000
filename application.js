@@ -342,6 +342,7 @@ function renderStoreDetails(container, template, collection, slug){
         
         var repo = getRepoDetailsByName("Building Design Specs");
         $.each( repo , function( repo_key, repo_val ) {
+            console.log(repo_val);
             if(repo_val.name == val.neighbourhood.toLowerCase())
             {
                 console.log("something",repo_val.name);
