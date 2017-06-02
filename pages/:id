@@ -8,7 +8,6 @@
 <script>
     $(document).ready(function() {
         init()
-        loadMallDataCached(renderAll); 
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
@@ -16,6 +15,8 @@
             prevText: "Previous",
             nextText: "Next"
         });
+        loadMallDataCached(renderAll); 
+        
     });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
