@@ -95,7 +95,7 @@
     $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
-        $("a.toggle").click(function(){
+        $(".toggle").click(function(){
             console.log("toggle,toggle");
             if ($(this).text().indexOf("more") != -1){
                 $(this).text("Read less"); 
