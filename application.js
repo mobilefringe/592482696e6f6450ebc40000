@@ -616,6 +616,9 @@ function renderPromotions(container, template, collection){
         if(val.eventable_id){
             val.type="events";
         }
+        else {
+            val.type="promotions";
+        }
         var show_date = moment(val.show_on_web_date);
         var start = moment(val.start_date).tz(getPropertyTimeZone());
         var end = moment(val.end_date).tz(getPropertyTimeZone());
