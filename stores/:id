@@ -218,6 +218,7 @@
                 //$(".map_area h3.store_title").html("Design Requirements - {{neighbourhood}} <a class='expend_all' href='javascript:expend_all();'>expand all</a>");
                 $("#neighbour_store_title").show();
                 $("#no_neighbour_store_title").hide();
+                $(".store_title").hide();
             }
             else {
                 $("#neighbour_store_title").hide();
