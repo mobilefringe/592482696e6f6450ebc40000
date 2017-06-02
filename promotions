@@ -30,7 +30,7 @@
                 </span>
             </h3>
             
-            <div class="event_detail" id="promo{{promo.id}}">                     
+            <div class="event_detail" id="promo{{id}}">                     
                 <div class="event_info info_toggle">
                     <img alt="promo image" src="{{image_url}}" class="promoeventimage" />                
                     <div class="event_summary">
