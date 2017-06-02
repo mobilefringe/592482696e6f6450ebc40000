@@ -9,6 +9,13 @@
     $(document).ready(function() {
         init()
         loadMallDataCached(renderAll); 
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
     });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
