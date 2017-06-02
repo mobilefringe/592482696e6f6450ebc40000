@@ -1,0 +1,93 @@
+<div class="promo_page">
+    <h2 class="store_list_padding">Centre Events</h2>
+    
+    <div class="event_list" id="promo_dets_container">
+    <script id="promo_dets_template" type="x-tmple-mustache/text">
+        <h3>
+            <div class="event_time">
+                <span class="weekday {{day}}"> </span>
+                <span class="event_month">{{month}}</span>
+                <span class="event_date">{{date}}</span>                
+            </div>
+            
+            {{name}}
+            <span class="event_period">
+                {{dates}}
+            </span>
+        </h3>
+        
+        <div class="event_detail" id="event{{id}}">         
+            {% assign event_detail = event.description | split: "Details:" %}            
+            <div class="event_info info_toggle">
+                {% if event.promo_image_path contains "missing.png" %}
+                    <div class="event_summary full_width">
+                        <h4>Event Summary:</h4>
+                        {{event.description}}                
+                    </div>
+                {% else %}
+                    <img src="{{event.promo_image_path}}" class="promoeventimage" />                
+                    <div class="event_summary">
+                        <h4>Event Summary:</h4>
+                        {{event.description}}                    
+                    </div>
+                {% endif %}        
+            </div>
+            
+            {% if event.extra %}
+            {% assign info = event.extra | split: ","%}
+            {% else %}
+            {% assign info = ""%}
+            {% endif %}
+            <div class="details">
+                
+                <div class="action">                    
+                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/events/{{event.slug}}" target="_blank" class="share_btn facebook"></a>
+                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/events/{{event.slug}}" target="_blank" class="share_btn twitter"></a>
+                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/events/{{event.slug}}" class="share_btn email"></a>
+                    <a href="/save_promotions/{{event.slug}}"  class="share_btn ical"></a>
+                    <a href="#" class="share_btn link"></a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="line_break">&nbsp;</div>
+        
+        <p class="back">
+            {% if promo_nav == "true" %}
+            <a href="/promotions">
+            {% else %}
+            <a href="/events">
+            {% endif %}
+            <img src="{{1846 | get_image_url}}">Back</a>
+            
+        </p>
+        </script>
+    </div>
+    
+    
+</div>
+
+<script>
+$(document).ready(function(e){
+        init(e);
+        loadMallData(renderAll); 
+        $(".info_toggle").show();
+    });
+    
+    function renderAll(){
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
+        
+        var pathArray = window.location.pathname.split( '/' );
+        var slug = pathArray[pathArray.length-1];
+        promo_details = getPromotionDetailsBySlug(slug);
+        renderPromoDetails('#promo_dets_container', '#promo_dets_template', promo_details);
+        
+        show_content();
+    }
+</script>
