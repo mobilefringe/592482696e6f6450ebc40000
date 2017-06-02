@@ -199,6 +199,7 @@ function subscribe_email(){
         alert("Please enter a valid email address. ")
     }
 }
+
 function validate_pop_up(){
     if($('#subscribe_newsletter_popup').is(":checked"))
     return true;
