@@ -1,26 +1,3 @@
-<style>
-    .site_content_container{
-        background: none;
-        min-height: 800px;
-    }
-    .h1, .h2, .h3, h1, h2, h3{
-        margin-top:0;
-    }
-    #404_msg{
-        display:none;
-    }
-    
-    #mm_page_content span {
-        color: black;
-        font-family: Helvetica Neue,Helvetica,Arial,sans-serif !important;
-    }
-    @media only screen and (max-width: 767px) {  
-        .site_content_container{
-            min-height: 450px;
-        }   
-        
-    }
-</style>
 <div class="position_relative page_header margin_bottom_none">
         <div class="page_heading"></div>
 </div>
