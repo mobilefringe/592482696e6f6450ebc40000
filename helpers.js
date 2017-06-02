@@ -122,7 +122,6 @@ $(window).load(function() {
         } 
     }
     
-    
     var today_hours = getTodaysHours();
     var hours = getPropertyHours();
     var feature_items = getFeatureList();
