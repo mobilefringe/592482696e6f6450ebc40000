@@ -8,7 +8,7 @@
 <script>
     $(document).ready(function(e) {
         init(e);
-        loadMallDataCached(renderAll); 
+        
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
@@ -35,4 +35,5 @@
         }); 
         show_content();
     }
+    loadMallDataCached(renderAll); 
 </script>
