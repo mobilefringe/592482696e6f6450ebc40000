@@ -97,7 +97,7 @@
         loadMallData(renderAll);
         
         var n = 0;
-    	console.log("loading h3 colours(e)",n);
+    	console.log("loading h3 colours",n);
         $('.promo_page h3').each(function(){
             console.log("loads colour");
             if (n % 4 == 1 ){
