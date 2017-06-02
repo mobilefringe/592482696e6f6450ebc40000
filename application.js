@@ -343,8 +343,8 @@ function renderStoreDetails(container, template, collection, slug){
         var repo = getRepoDetailsByName("Building Design Specs").images;
         $.each( repo , function( repo_key, repo_val ) {
             console.log(repo_val.name, val.neighbourhood.toLowerCase());
-            if(repo_val.name == val.neighbourhood.toLowerCase())
-            {
+            if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
+            { 
                 console.log("something",repo_val.name);
                 val.repo = repo_val.photo_url_abs;
                 val.repo_show= "display:block;";
