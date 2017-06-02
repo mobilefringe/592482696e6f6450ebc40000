@@ -345,6 +345,8 @@ function renderStoreDetails(container, template, collection, slug){
             if(repo_val.name == val.neighbourhood.toLowerCase())
             {
                 val.repo = repo_val.photo_url_abs;
+                val.repo_show= "display:block;";
+                val.no_repo_show="display:none;";
             }
             
         });
