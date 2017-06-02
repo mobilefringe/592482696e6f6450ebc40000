@@ -141,6 +141,30 @@ function init(e){
 	$('.accordion_header').click(function(e){
         $(this).find('i').toggleClass('fa-caret-down fa-caret-up');
 	});
+	
+	var n = 0;
+    $(".home_page h3").each(function(){
+        console.log("loads colour");
+        if (n % 4 == 1 ){
+            $(this).addClass("yellow");    
+            $(this).addClass("ph"+n);    
+        } 
+        if (n % 4 == 2 ){
+            $(this).removeClass("yellow");  
+            $(this).addClass("purple");  
+            $(this).addClass("ph"+n);    
+        }
+        if (n % 4 == 3 ){
+            $(this).removeClass("yellow");  
+            $(this).removeClass("purple");  
+            $(this).addClass("red");    
+            $(this).addClass("ph"+n);    
+        } 
+        
+        n = n+1;
+    });
+	
+	
 }
 
 function getCookie(name) {
