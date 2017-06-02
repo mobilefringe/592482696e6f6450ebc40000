@@ -40,11 +40,8 @@
         <div class="line_break">&nbsp;</div>
         
         <p class="back">
-            {% if promo_nav == "true" %}
+           
             <a href="/promotions">
-            {% else %}
-            <a href="/events">
-            {% endif %}
             <img src="{{1846 | get_image_url}}">Back</a>
             
         </p>
