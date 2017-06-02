@@ -93,8 +93,9 @@
 </div>
 <script>
     $(document).ready(function(e){
-        loadMallData(renderAll); 
         init(e);
+        loadMallData(renderAll); 
+        
     });
 
     function toggle_detail(promo_div){
