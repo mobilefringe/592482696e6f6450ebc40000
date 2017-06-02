@@ -123,7 +123,28 @@ $(window).load(function() {
  
 function init(e){
     $('<div class="modal-backdrop custom_backdrop"><img src="http://kodekloud.s3.amazonaws.com/sites/554a79236e6f64713f000000/69e8cd982124dc73de1f5a67a627ee75/loading.gif" class="" alt=""></div>').appendTo(document.body);
-    
+    var n = 0;
+	console.log("loading init(e)",n);
+    $("div.home_page h3").each(function(){
+        console.log("loads colour");
+        if (n % 4 == 1 ){
+            $(this).addClass("yellow");    
+            $(this).addClass("ph"+n);    
+        } 
+        if (n % 4 == 2 ){
+            $(this).removeClass("yellow");  
+            $(this).addClass("purple");  
+            $(this).addClass("ph"+n);    
+        }
+        if (n % 4 == 3 ){
+            $(this).removeClass("yellow");  
+            $(this).removeClass("purple");  
+            $(this).addClass("red");    
+            $(this).addClass("ph"+n);    
+        } 
+        
+        n = n+1;
+    });
     $(window).scroll(function(e){
 		if ($(this).scrollTop() > 100) {
 			$('.scrollToTop').fadeIn();
