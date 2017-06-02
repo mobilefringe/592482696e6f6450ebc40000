@@ -85,8 +85,8 @@ $(document).ready(function(e){
         
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
-        promo_details = getPromotionDetailsBySlug(slug);
-        renderPromoDetails('#promo_dets_container', '#promo_dets_template', promo_details);
+        promo_details = getEventDetailsBySlug(slug);
+        renderPromoDetails('#event_dets_container', '#event_dets_template', promo_details);
         
         show_content();
     }
