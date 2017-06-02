@@ -80,7 +80,7 @@ $('document').ready(function() {
         }
     }
     function search_site(){
-        if($("#SearchTerms").val() != ""){
+        if($("#SearchTerms").val() !== ""){
             window.location.href = "/search?query=" + $("#SearchTerms").val();
         }
     }
