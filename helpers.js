@@ -107,7 +107,28 @@ $(window).load(function() {
             document.cookie = 'visited=yes; expires='+a.toGMTString()+';'; 
         } 
     }
-    
+    var n = 0;
+	console.log("loading init(e)",n);
+    $(".home_page h3").each(function(){
+        console.log("loads colour");
+        if (n % 4 == 1 ){
+            $(this).addClass("yellow");    
+            $(this).addClass("ph"+n);    
+        } 
+        if (n % 4 == 2 ){
+            $(this).removeClass("yellow");  
+            $(this).addClass("purple");  
+            $(this).addClass("ph"+n);    
+        }
+        if (n % 4 == 3 ){
+            $(this).removeClass("yellow");  
+            $(this).removeClass("purple");  
+            $(this).addClass("red");    
+            $(this).addClass("ph"+n);    
+        } 
+        
+        n = n+1;
+    });
     var today_hours = getTodaysHours();
     var hours = getPropertyHours();
     var feature_items = getFeatureList();
