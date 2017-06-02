@@ -1,5 +1,5 @@
 <div id="page_body_content">
-        <h2 class="page_title" id="page_title">title</h2>
+        <h2 id="page_title">title</h2>
 </div>
 
 <script>
