@@ -13,42 +13,42 @@ $('document').ready(function() {
         }
     });
         
-        $('input').val();
-        
-        
-        $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
-            function(){
-                $(this).find("img").show();
-            },function(){
-                $(this).find("img").hide();
-            }
-        );
-        
-        $(".sub_menu_li").hover(
-            function(){
-                $(this).find("ul").show();
-            }, function(){
-                $(this).find("ul").hide();
-            }
-        );
-        
-        $(".page-type-content:nth-child(4)").hover(
-            function(){
-                $("#service_hover").show();
-            }, function(){
-                $("#service_hover").hide();
-            }
-        );
-       
-        
-        if (getURLParameter("building") == "1"){           
-            $(".building_menu").show();         
-            
-            var menu_index = getURLParameter("menu");
-            $("#building_li_"+ menu_index + " a").addClass("building_menu_highlight");
-        } else {
-             $(".main_menu").show();
+    $('input').val();
+    
+    
+    $("#main-nav ul li.menu_item, .toggle_sub_menu").hover(
+        function(){
+            $(this).find("img").show();
+        },function(){
+            $(this).find("img").hide();
         }
+    );
+    
+    $(".sub_menu_li").hover(
+        function(){
+            $(this).find("ul").show();
+        }, function(){
+            $(this).find("ul").hide();
+        }
+    );
+    
+    $(".page-type-content:nth-child(4)").hover(
+        function(){
+            $("#service_hover").show();
+        }, function(){
+            $("#service_hover").hide();
+        }
+    );
+   
+    
+    if (getURLParameter("building") == "1"){           
+        $(".building_menu").show();         
+        
+        var menu_index = getURLParameter("menu");
+        $("#building_li_"+ menu_index + " a").addClass("building_menu_highlight");
+    } else {
+         $(".main_menu").show();
+    }
     
     //Campaign Monitor Sign Up
     $('#subForm').submit(function (e) {
