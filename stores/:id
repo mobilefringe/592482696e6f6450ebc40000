@@ -239,6 +239,7 @@
         } else{
             $(".store_detail_info").show();
             $("#store_profile_unit").hide();
+            $(".store_profile").show();
         }
         show_content();
     }
