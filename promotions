@@ -95,13 +95,7 @@
     $(document).ready(function(e){
         init(e);
         loadMallData(renderAll); 
-        $("a.toggle").click(function(){
-            if ($(this).text().indexOf("more") != -1){
-                $(this).text("Read less"); 
-            } else {
-                $(this).text("Read more");    
-            }            
-        });
+        
     });
 
     function toggle_detail(promo_div){
@@ -116,6 +110,7 @@
             prevText: "Previous",
             nextText: "Next"
         });
+        
         $(".all_events_promo, .mall_events, .store_event, .property_event").hide();
         $(".selector-wrap select").hover(
             function(){
@@ -125,7 +120,13 @@
                 $(this).next().css("background-color","#05E7E4")
             }
         );
-        
+        $("a.toggle").click(function(){
+            if ($(this).text().indexOf("more") != -1){
+                $(this).text("Read less"); 
+            } else {
+                $(this).text("Read more");    
+            }            
+        });
         $("#event_select select").change(function(){
             if ($(this).val() == "event"){
                 window.location = "/events"
