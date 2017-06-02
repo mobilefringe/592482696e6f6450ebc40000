@@ -29,27 +29,26 @@
             $("#page_title").html(data.title)
             $('#page_body_content').html(data.body);
             var n = 0;
-    	console.log("loading init(e)",n);
-        $("div#page_body_content h3").each(function(){
-            console.log("loads colour");
-            if (n % 4 == 1 ){
-                $(this).addClass("yellow");    
-                $(this).addClass("ph"+n);    
-            } 
-            if (n % 4 == 2 ){
-                $(this).removeClass("yellow");  
-                $(this).addClass("purple");  
-                $(this).addClass("ph"+n);    
-            }
-            if (n % 4 == 3 ){
-                $(this).removeClass("yellow");  
-                $(this).removeClass("purple");  
-                $(this).addClass("red");    
-                $(this).addClass("ph"+n);    
-            } 
-            
-            n = n+1;
-        });
+    	
+            $("div#page_body_content h3").each(function(){
+                if (n % 4 == 1 ){
+                    $(this).addClass("yellow");    
+                    $(this).addClass("ph"+n);    
+                } 
+                if (n % 4 == 2 ){
+                    $(this).removeClass("yellow");  
+                    $(this).addClass("purple");  
+                    $(this).addClass("ph"+n);    
+                }
+                if (n % 4 == 3 ){
+                    $(this).removeClass("yellow");  
+                    $(this).removeClass("purple");  
+                    $(this).addClass("red");    
+                    $(this).addClass("ph"+n);    
+                } 
+                
+                n = n+1;
+            });
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
                 $("#404_msg").fadeIn("fast");
