@@ -237,6 +237,7 @@
             $(".download_design_spec, .back").show();            
         } else{
             $(".store_detail_info").show();
+            $("#store_profile_unit").hide();
         }
         show_content();
     }
