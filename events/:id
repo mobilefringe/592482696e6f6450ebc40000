@@ -2,48 +2,48 @@
     <h2 class="store_list_padding">Centre Events</h2>
     
     <div class="event_list" id="promo_dets_container">
-    <script id="promo_dets_template" type="x-tmple-mustache/text">
-        <h3>
-            <div class="event_time">
-                <span class="weekday {{day}}"> </span>
-                <span class="event_month">{{month}}</span>
-                <span class="event_date">{{date}}</span>                
-            </div>
+        <script id="promo_dets_template" type="x-tmple-mustache/text">
+            <h3>
+                <div class="event_time">
+                    <span class="weekday {{day}}"> </span>
+                    <span class="event_month">{{month}}</span>
+                    <span class="event_date">{{date}}</span>                
+                </div>
+                
+                {{name}}
+                <span class="event_period">
+                    {{dates}}
+                </span>
+            </h3>
             
-            {{name}}
-            <span class="event_period">
-                {{dates}}
-            </span>
-        </h3>
-        
-        <div class="event_detail" id="event{{id}}">         
-            <div class="event_info info_toggle">
-                <img src="{{image_url}}" class="promoeventimage" />                
-                <div class="event_summary">
-                    <h4>Event Summary:</h4>
-                    {{description}}                    
-                </div> 
-            </div>
-            
-            <div class="details">
-                <div class="action">                    
-                    <a href="http://www.facebook.com/sharer.php?u={{main_host}}/events/{{slug}}" target="_blank" class="share_btn facebook"></a>
-                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/events/{{slug}}" target="_blank" class="share_btn twitter"></a>
-                    <a itle="Email this event" href="mailto:?subject={{name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/events/{{slug}}" class="share_btn email"></a>
-                    <a href="/save_promotions/{{slug}}"  class="share_btn ical"></a>
-                    <a href="#" class="share_btn link"></a>
+            <div class="event_detail" id="event{{id}}">         
+                <div class="event_info info_toggle">
+                    <img src="{{image_url}}" class="promoeventimage" />                
+                    <div class="event_summary">
+                        <h4>Event Summary:</h4>
+                        {{description}}                    
+                    </div> 
+                </div>
+                
+                <div class="details">
+                    <div class="action">                    
+                        <a href="http://www.facebook.com/sharer.php?u={{main_host}}/events/{{slug}}" target="_blank" class="share_btn facebook"></a>
+                        <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/events/{{slug}}" target="_blank" class="share_btn twitter"></a>
+                        <a itle="Email this event" href="mailto:?subject={{name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/events/{{slug}}" class="share_btn email"></a>
+                        <a href="/save_promotions/{{slug}}"  class="share_btn ical"></a>
+                        <a href="#" class="share_btn link"></a>
+                    </div>
                 </div>
             </div>
-        </div>
-        
-        <div class="line_break">&nbsp;</div>
-        
-        <p class="back">
-           
-            <a href="/promotions">
-            <img src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1496256809000/back.png">Back</a>
             
-        </p>
+            <div class="line_break">&nbsp;</div>
+            
+            <p class="back">
+               
+                <a href="/promotions">
+                <img src="//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1496256809000/back.png">Back</a>
+                
+            </p>
         </script>
     </div>
 </div>
