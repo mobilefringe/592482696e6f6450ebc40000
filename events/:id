@@ -17,7 +17,7 @@
             </h3>
             
             <div class="event_detail" id="event{{id}}">         
-                <div class="event_info info_toggle">
+                <div class="event_info">
                     <img src="{{image_url}}" class="promoeventimage" />                
                     <div class="event_summary">
                         <h4>Event Summary:</h4>
