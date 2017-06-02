@@ -58,17 +58,17 @@ $('document').ready(function() {
 //            $("#agree_terms").focus();
 //            return false;
 //        }
-        e.preventDefault();
-        $.getJSON(
-            this.action + "?callback=?",
-            $(this).serialize(),
-                function (data) {
-                    if (data.Status === 400) {
-                        alert("Please try again later.");
-                    } else { // 200
-                        alert("Thank you for signing up.");
-                    }
-        });
+    e.preventDefault();
+    $.getJSON(
+        this.action + "?callback=?",
+        $(this).serialize(),
+            function (data) {
+                if (data.Status === 400) {
+                    alert("Please try again later.");
+                } else { // 200
+                    alert("Thank you for signing up.");
+                }
+            });
     });
     
     var n = 0;
