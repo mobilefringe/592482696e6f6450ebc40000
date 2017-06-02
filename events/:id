@@ -28,10 +28,10 @@
             <div class="details">
                 
                 <div class="action">                    
-                    <a href="http://www.facebook.com/sharer.php?u={{site.main_host}}/events/{{event.slug}}" target="_blank" class="share_btn facebook"></a>
-                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/events/{{event.slug}}" target="_blank" class="share_btn twitter"></a>
-                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{site.main_host}}/events/{{event.slug}}" class="share_btn email"></a>
-                    <a href="/save_promotions/{{event.slug}}"  class="share_btn ical"></a>
+                    <a href="http://www.facebook.com/sharer.php?u={{main_host}}/events/{{slug}}" target="_blank" class="share_btn facebook"></a>
+                    <a href="http://twitter.com/?status=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/events/{{slug}}" target="_blank" class="share_btn twitter"></a>
+                    <a itle="Email this event" href="mailto:?subject={{promo.name}}&body=Check%20out%20what%27s%20going%20on%20at%20St.%20Vital%20Centre%21%20{{main_host}}/events/{{slug}}" class="share_btn email"></a>
+                    <a href="/save_promotions/{{slug}}"  class="share_btn ical"></a>
                     <a href="#" class="share_btn link"></a>
                 </div>
             </div>
