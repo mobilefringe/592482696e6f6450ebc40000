@@ -207,11 +207,13 @@ function validate_pop_up(){
         return false;
     }
 }
+
 function search_site(){
     if($("#SearchTerms").val() !== ""){
         window.location.href = "/search?query=" + $("#SearchTerms").val();
     }
 }
+
 function show_content(){
     $('.yield').fadeIn();
     $(".modal-backdrop").remove();
