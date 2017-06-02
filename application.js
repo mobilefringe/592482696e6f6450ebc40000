@@ -340,7 +340,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.facebook_show = "display:none";
         }
         
-        var repo = getRepoDetailsByName("Building Design Specs");
+        var repo = getRepoDetailsByName("Building Design Specs")[0];
         $.each( repo , function( repo_key, repo_val ) {
             console.log(repo_val.name);
             if(repo_val.name == val.neighbourhood.toLowerCase())
