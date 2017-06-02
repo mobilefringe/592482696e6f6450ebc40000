@@ -28,13 +28,7 @@
             
             $("#page_title").html(data.title)
             $('#page_body_content').html(data.body);
-        }).fail(function(jqXHR) {
-            if (jqXHR.status == 404) {
-                $("#404_msg").fadeIn("fast");
-            }
-        });
-        show_content();
-        var n = 0;
+            var n = 0;
     	console.log("loading init(e)",n);
         $("div#page_body_content h3").each(function(){
             console.log("loads colour");
@@ -56,5 +50,12 @@
             
             n = n+1;
         });
+        }).fail(function(jqXHR) {
+            if (jqXHR.status == 404) {
+                $("#404_msg").fadeIn("fast");
+            }
+        });
+        show_content();
+        
     }
 </script>
