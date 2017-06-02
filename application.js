@@ -611,7 +611,7 @@ function renderPromotions(container, template, collection){
         }
         
         if(val.image_url.indexOf('missing.png') > 0){
-            val.image_url  = "//codecloud.cdn.speedyrails.net/sites/5914aa456e6f642702040000/image/png/1494532252000/logo_hopedale.png";
+            val.image_url  = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
         }
         
         var show_date = moment(val.show_on_web_date);
