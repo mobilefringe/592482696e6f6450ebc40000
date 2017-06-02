@@ -35,7 +35,7 @@
                     <img alt="promo image" src="{{image_url}}" class="promoeventimage" />                
                     <div class="event_summary">
                         <h4>Event Summary:</h4>
-                           <p> {{description}}</p>
+                           <p style="font-size:14px"> {{description}}</p>
                     </div>
                 </div>
                 <div class="details">
