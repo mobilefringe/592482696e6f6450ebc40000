@@ -12,8 +12,6 @@
             prevText: "Previous",
             nextText: "Next"
         });
-        
-        
         $("#giftcard").show();
         show_content();
         
