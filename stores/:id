@@ -229,7 +229,7 @@
             
             $(".unit_info span").each(function(){
                 var title = $(this).text();
-                //console.log(title);
+                console.log(title);
                 $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
                 $("<p class='readless'>read less</p>").insertBefore( $(this) );
             })
