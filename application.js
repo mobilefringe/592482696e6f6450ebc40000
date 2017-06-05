@@ -359,6 +359,15 @@ function renderStoreDetails(container, template, collection, slug){
             val.neighbourhood = "Food Court Southside";
         //console.log(val.neighbourhood,"Design Requirements - "+ val.neighbourhood);
         var repoDesign = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood).images;
+        $.each( repoDesign , function( repo_key, repo_val ) {
+            if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
+            { 
+                val.repo = repo_val.photo_url_abs;
+                val.repo_show= "display:block;";
+                val.no_repo_show="display:none;";
+            }
+            
+        });
         //console.log(repoDesign);
         //parse description_2
        /* var separate_des2 = val.description_2.match(/[^\r\n]+/g);
