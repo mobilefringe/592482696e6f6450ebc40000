@@ -362,7 +362,7 @@ function renderStoreDetails(container, template, collection, slug){
         $.each( separate_des2 , function( des2_key, des2_val ) {
             if(des2_val != " ")
             {
-                
+                if(des2_val.indexOf(/^[0-9].+$/) !== -1)
                 console.log(des2_key ,des2_val);
             }
         });
