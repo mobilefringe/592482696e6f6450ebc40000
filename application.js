@@ -367,8 +367,9 @@ function renderStoreDetails(container, template, collection, slug){
                 if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
                 {
                     //console.log("h2",des2_val);
-                    if(paragraph.lenght > 0)
-                     design_desc.push(paragraph);
+                    if(paragraph.lenght > 0){
+                        design_desc.push(paragraph);
+                    }
                     title="<strong>"+des2_val+"</strong> <span>read more</span>";
                 }
                 else {
