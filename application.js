@@ -372,6 +372,7 @@ function renderStoreDetails(container, template, collection, slug){
                         design_desc.push(paragraph);
                     }
                     title="<strong>"+des2_val+"</strong> <span>read more</span>";
+                    design_title.push(title);
                 }
                 else {
                     //console.log("text",des2_val);
