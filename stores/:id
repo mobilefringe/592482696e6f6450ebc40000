@@ -247,8 +247,8 @@
                                 design_desc.push(temp);
                                 paragraph = "";
                             }
-                            title="<h2><strong>"+des2_val+"</strong> <span>read more</span><h/h2>";
-                             //$(this).html("<h2><strong>"+des2_val+"</strong> <span>read more</span><h/h2>"); 
+                            title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
+                             $(this).html("<h2><strong>"+des2_val+"</strong> <span>read more</span><h/h2>"); 
                             design_title.push(title);
                             design_desc.push(title);
                         }
@@ -259,7 +259,7 @@
                         //console.log(des2_key ,des2_val);
                     }
                 });
-                $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
+                //$(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
                 $("<p class='readless'>read less</p>").insertBefore( $(this) );
             })
             $(".readless").first().remove();
