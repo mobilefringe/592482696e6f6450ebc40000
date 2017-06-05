@@ -356,7 +356,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.no_repo_show="display:block;";
         }
         
-        
+        //parse description_2
         
         
         var rendered = Mustache.render(template_html,val);
