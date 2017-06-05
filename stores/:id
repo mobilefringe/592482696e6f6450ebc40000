@@ -246,6 +246,7 @@
                             if(paragraph.length > 0){
                                 var temp = "<span>" + paragraph + "</span><br/>";
                                 design_desc.push(temp);
+                                $(title).appendTo(".unit_info span"); 
                                 paragraph = "";
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
