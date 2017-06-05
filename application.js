@@ -362,12 +362,12 @@ function renderStoreDetails(container, template, collection, slug){
         $.each( separate_des2 , function( des2_key, des2_val ) {
             if(des2_val != " ")
             {
-                if((des2_val).startsWith(" 1"))
+                if((/^\d/).test(des2_val )
                 {
                     console.log("h2",des2_val);
                 }
                 else {
-                    console.log("text" + des2_val);
+                    console.log("text",des2_val);
                 }
                 //console.log(des2_key ,des2_val);
             }
