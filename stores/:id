@@ -70,7 +70,7 @@
             </p>
         </div>
         <div class="store_list_padding unit_info">
-            {{{description_2}}}
+            
             <h2 class="hidden">{{{description_2}}}</h2>
             
             <p class="download_design_spec">
