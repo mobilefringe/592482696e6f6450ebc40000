@@ -371,6 +371,7 @@ function renderStoreDetails(container, template, collection, slug){
                 }
                 else {
                     console.log("text",des2_val);
+                    paragraph += des2_val;
                 }
                 //console.log(des2_key ,des2_val);
             }
