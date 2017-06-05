@@ -212,7 +212,7 @@
             $(".unit_info").show();            
             //console.log("building");
             $("#store_profile_unit").show();
-            $(".store_profile").hide();
+            $("#store_profile").hide();
             $("#neighbour_store_title").hide();
                 $("#no_neighbour_store_title").hide();
             //$(".map_area h2.store_profile").html("{{name}} <span>UNIT {{unit}} ({{name_2}} FT<sup>2</sup>)</span>");
@@ -250,7 +250,7 @@
         } else{
             $(".store_detail_info").show();
             $("#store_profile_unit").hide();
-            $(".store_profile").show();
+            $("#store_profile").show();
         }
         show_content();
     }
