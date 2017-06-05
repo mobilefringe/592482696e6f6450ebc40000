@@ -357,7 +357,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         //parse description_2
-        var separate_des2 = val.description_2.split(/\d+/g+/\r?\n/);
+        var separate_des2 = val.description_2.split(/\d+/g);
         console.log(separate_des2);
         $.each( separate_des2 , function( des2_key, des2_val ) {
             console.log(des2_key ,des2_val);
