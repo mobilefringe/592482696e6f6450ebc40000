@@ -263,7 +263,7 @@
                     }
                 });
                 //$(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
-                $("<p class='readless'>read less</p>").insertBefore( $(this) );
+                //$("<p class='readless'>read less</p>").insertBefore( $(this) );
             })
             $(".readless").first().remove();
             $(".unit_info h2").click(function(){
