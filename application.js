@@ -362,7 +362,7 @@ function renderStoreDetails(container, template, collection, slug){
         $.each( repoDesign , function( repo_key, repo_val ) {
             if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
             { 
-                val.repo = repo_val.photo_url_abs;
+                val.repoDesign = repo_val.photo_url_abs;
                 val.repo_show= "display:block;";
                 val.no_repo_show="display:none;";
             }
