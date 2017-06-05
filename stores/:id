@@ -244,7 +244,7 @@
                         {
                             //console.log("h2",des2_val);
                             if(paragraph.length > 0){
-                                var temp = "<ul>" + paragraph + "</ul><br/>";
+                                var temp = "<ul>" + paragraph + "</ul>";
                                 //design_desc.push(temp);
                                 $(temp).appendTo(".unit_info #hold_desc");
                                 //$("<p class='readless'>read less</p>").insertBefore( $(".unit_info #hold_desc") );
