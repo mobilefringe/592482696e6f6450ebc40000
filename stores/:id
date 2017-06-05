@@ -248,7 +248,7 @@
                                 paragraph = "";
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
-                            ("<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>").appendTo(".unit_info span"); 
+                            4("<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>").appendTo(".unit_info span"); 
                             //console.log($(".unit_info span").html());
                             design_title.push(title);
                             design_desc.push(title);
