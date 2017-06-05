@@ -359,6 +359,7 @@ function renderStoreDetails(container, template, collection, slug){
         //parse description_2
         var separate_des2 = val.description_2.split("\n\n");
         $.each( repo , function( repo_key, repo_val ) {
+            
         });
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
