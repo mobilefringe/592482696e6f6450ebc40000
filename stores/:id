@@ -259,6 +259,7 @@
                         else {
                             console.log("text" +des2_val);
                             if(des2_val == "   ")
+                                paragraph += "<li>" + des2_val +"</li>";
                             else
                                 paragraph += "<li> - " + des2_val +"</li>";
                         }
