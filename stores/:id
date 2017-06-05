@@ -250,7 +250,7 @@
                                 //$("<p class='readless'>read less</p>").insertBefore( $(".unit_info #hold_desc") );
                                 paragraph = "";
                             }
-                            title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
+                            title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>";
                             $(title).appendTo(".unit_info #hold_desc"); 
                             //console.log($(".unit_info span").html());
                             //design_title.push(title);
