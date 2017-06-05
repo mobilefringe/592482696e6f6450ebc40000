@@ -364,8 +364,8 @@ function renderStoreDetails(container, template, collection, slug){
             if(repo_val.name.indexOf("Drawings") !== -1)
             { 
                 design.push("<img src="+repo_val.photo_url_abs+" alt='design_url' </img>") ;
-                val.repo_show= "display:block;";
-                val.no_repo_show="display:none;";
+                //val.repo_show= "display:block;";
+                //val.no_repo_show="display:none;";
             }
             
         });
