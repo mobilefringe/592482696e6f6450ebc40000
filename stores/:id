@@ -233,7 +233,7 @@
                 $(this).html("");
                 console.log(desc);
                 //parse description_2
-                if((desc !== undefined) && (desc !== null)){
+                if((desc !== undefined) && (desc !== null) && (desc !== "")){
                 var separate_des2 = desc.match(/[^\r\n]+/g);
                 //var design_desc = [];
                 //var design_title = [];
