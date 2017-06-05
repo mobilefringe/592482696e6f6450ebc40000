@@ -369,7 +369,7 @@ function renderStoreDetails(container, template, collection, slug){
                 {
                     //console.log("h2",des2_val);
                     if(paragraph.length > 0){
-                        var temp = "<span>" + paragraph + "</span>";
+                        var temp = "<span>" + paragraph + "</span><br/>";
                         design_desc.push(temp);
                         paragraph = "";
                     }
