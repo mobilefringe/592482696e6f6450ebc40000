@@ -18,7 +18,7 @@
             </h2>
         </div>
                 
-        <h3 class="store_title">{{name}}</h3>
+        <h3 class="store_title" id="store_title">{{name}}</h3>
         <h3 class="store_title" id="neighbour_store_title">Design Requirements - {{neighbourhood}} <a class='expend_all' href='javascript:expend_all();'>expand all</a></h3>
         <h3 class="store_title" id="no_neighbour_store_title">Design Requirements </h3>
         
