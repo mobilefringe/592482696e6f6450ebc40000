@@ -252,9 +252,9 @@
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>";
                             $(title).appendTo(".unit_info #hold_desc"); 
-                            if(des2_val.indexOf("DRAWINGS"))
-                            {
+                            if(des2_val.indexOf("DRAWINGS")){
                                 $("#drawings").show();
+                                console.log("show");
                             }
                             else {
                                 $("#drawings").hide();
