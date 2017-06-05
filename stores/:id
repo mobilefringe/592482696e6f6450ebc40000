@@ -239,39 +239,40 @@
                 var paragraph="";
                 var title;
                 if(){
-                $.each( separate_des2 , function( des2_key, des2_val ) {
-                    if(des2_val != " ")
-                    {
-                        if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
+                    $.each( separate_des2 , function( des2_key, des2_val ) {
+                        if(des2_val != " ")
                         {
-                            //console.log("h2",des2_val);
-                            if(paragraph.length > 0){
-                                var temp = "<ul>" + paragraph + "</ul>";
-                                $(temp).appendTo(".unit_info #hold_desc");
-                                $("<p class='readless'>read less</p>").appendTo(".unit_info #hold_desc");
-                                paragraph = "";
-                            }
-                            title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>";
-                            $(title).appendTo(".unit_info #hold_desc");
-                            if(des2_val.indexOf("Drawings") !== -1){
-                                $("#drawings").show();
-                                $(document.querySelector("#drawings")).appendTo(".unit_info #hold_desc");
-                                $("<p class='readless'>read less</p>").appendTo(".unit_info #hold_desc");
+                            if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
+                            {
+                                //console.log("h2",des2_val);
+                                if(paragraph.length > 0){
+                                    var temp = "<ul>" + paragraph + "</ul>";
+                                    $(temp).appendTo(".unit_info #hold_desc");
+                                    $("<p class='readless'>read less</p>").appendTo(".unit_info #hold_desc");
+                                    paragraph = "";
+                                }
+                                title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>";
+                                $(title).appendTo(".unit_info #hold_desc");
+                                if(des2_val.indexOf("Drawings") !== -1){
+                                    $("#drawings").show();
+                                    $(document.querySelector("#drawings")).appendTo(".unit_info #hold_desc");
+                                    $("<p class='readless'>read less</p>").appendTo(".unit_info #hold_desc");
+                                }
+                                else {
+                                    $("#drawings").hide();
+                                }
                             }
                             else {
-                                $("#drawings").hide();
+                                if(des2_val == "   ")
+                                    paragraph += "<li>" + des2_val +"</li><br/>";
+                                else
+                                    paragraph += "<li> - " + des2_val +"</li>";
                             }
                         }
-                        else {
-                            if(des2_val == "   ")
-                                paragraph += "<li>" + des2_val +"</li><br/>";
-                            else
-                                paragraph += "<li> - " + des2_val +"</li>";
-                        }
-                    }
-                });
+                    });
+                }
             });
-            }
+            
             //$(".readless").first().remove();
             $(".unit_info h2").click(function(){
                 $(this).nextUntil( "h2" ).show();
