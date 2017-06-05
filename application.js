@@ -357,7 +357,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         //parse description_2
-        var separate_des2 = val.description_2.match(/[^\r\n]+/g);
+        var separate_des2 = val.description_2.match(/[^\r\n]+/g).trim();
         var design_desc = {};
         $.each( separate_des2 , function( des2_key, des2_val ) {
             if(des2_val != " ")
