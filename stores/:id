@@ -246,7 +246,8 @@
                             if(paragraph.length > 0){
                                 var temp = "<span>" + paragraph + "</span><br/>";
                                 //design_desc.push(temp);
-                                $(temp).appendTo(".unit_info #hold_desc"); 
+                                $(temp).appendTo(".unit_info #hold_desc");
+                                $("<p class='readless'>read less</p>").insertBefore( $(".unit_info #hold_desc") );
                                 paragraph = "";
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
