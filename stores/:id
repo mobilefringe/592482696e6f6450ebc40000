@@ -261,7 +261,7 @@
                     }
                 });
             })
-            $(".readless").first().remove();
+            //$(".readless").first().remove();
             $(".unit_info h2").click(function(){
                 $(this).nextUntil( "h2" ).show();
             })
