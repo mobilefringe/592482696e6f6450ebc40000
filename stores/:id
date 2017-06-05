@@ -252,6 +252,7 @@
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2>";
                             $(title).appendTo(".unit_info #hold_desc"); 
+                            if(title.indexOf("DRAWINGS") =! -1)
                         }
                         else {
                             if(des2_val == "   ")
