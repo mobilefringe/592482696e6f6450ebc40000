@@ -357,51 +357,17 @@ function renderStoreDetails(container, template, collection, slug){
         }
         if(val.neighbourhood == "Foodhall South Side")
             val.neighbourhood = "Food Court Southside";
-        //console.log(val.neighbourhood,"Design Requirements - "+ val.neighbourhood);
+        
         var repoDesign = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood).images;
         var design = [];
         $.each( repoDesign , function( repo_key, repo_val ) {
             if(repo_val.name.indexOf("Drawing") !== -1)
             { 
                 design.push("<img src="+repo_val.photo_url_abs+" alt='design_url' />") ;
-                //val.repo_show= "display:block;";
-                //val.no_repo_show="display:none;";
             }
             
         });
         val.repoDesign = design;
-        console.log( val.repoDesign);
-        //parse description_2
-       /* var separate_des2 = val.description_2.match(/[^\r\n]+/g);
-        var design_desc = [];
-        var design_title = [];
-        var paragraph="";
-        var title;
-        $.each( separate_des2 , function( des2_key, des2_val ) {
-            if(des2_val != " ")
-            {
-                if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
-                {
-                    //console.log("h2",des2_val);
-                    if(paragraph.length > 0){
-                        var temp = "<span>" + paragraph + "</span><br/>";
-                        design_desc.push(temp);
-                        paragraph = "";
-                    }
-                    title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
-                    design_title.push(title);
-                    design_desc.push(title);
-                }
-                else {
-                    //console.log("text",des2_val);
-                    paragraph += des2_val;
-                }
-                //console.log(des2_key ,des2_val);
-            }
-        });
-        //console.log(design_title,design_desc);
-        val.design_title=design_title;
-        val.design_desc=design_desc;*/
         
         
         var rendered = Mustache.render(template_html,val);
