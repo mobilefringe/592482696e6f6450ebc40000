@@ -71,7 +71,7 @@
         </div>
         <div class="store_list_padding unit_info">
             
-            <h2 class="">{{{description_2}}}</h2>
+            <h2 class="hidden">{{{description_2}}}</h2>
             
             <p class="download_design_spec">
                     <a style="{{repo_show}}" href="{{repo}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                        
