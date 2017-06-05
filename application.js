@@ -357,7 +357,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         
         //parse description_2
-        var separate_des2 = val.description_2.match(/[^\r\n]+/g);
+       /* var separate_des2 = val.description_2.match(/[^\r\n]+/g);
         var design_desc = [];
         var design_title = [];
         var paragraph="";
@@ -383,7 +383,7 @@ function renderStoreDetails(container, template, collection, slug){
                 }
                 //console.log(des2_key ,des2_val);
             }
-        });
+        });*/
         //console.log(design_title,design_desc);
         val.design_title=design_title;
         val.design_desc=design_desc;
