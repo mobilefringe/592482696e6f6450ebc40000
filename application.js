@@ -359,7 +359,7 @@ function renderStoreDetails(container, template, collection, slug){
         //parse description_2
         var separate_des2 = val.description_2.match(/[^\r\n]+/g);
         var design_desc = [];
-        var design_title = []
+        var design_title = [];
         var paragraph="";
         var title;
         $.each( separate_des2 , function( des2_key, des2_val ) {
