@@ -363,12 +363,13 @@ function renderStoreDetails(container, template, collection, slug){
         $.each( repoDesign , function( repo_key, repo_val ) {
             if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
             { 
-                val.repoDesign = "<img src="+repo_val.photo_url_abs+" alt='design_url' </img>" ;
+                "<img src="+repo_val.photo_url_abs+" alt='design_url' </img>" ;
                 val.repo_show= "display:block;";
                 val.no_repo_show="display:none;";
             }
             
         });
+        val.repoDesign = design;
         //console.log(repoDesign);
         //parse description_2
        /* var separate_des2 = val.description_2.match(/[^\r\n]+/g);
