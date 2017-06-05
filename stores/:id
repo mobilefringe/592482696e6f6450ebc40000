@@ -254,6 +254,8 @@
                             $(title).appendTo(".unit_info #hold_desc");
                             if(des2_val.indexOf("Drawings") !== -1){
                                 $("#drawings").show();
+                                $(document.querySelector$("#drawings")).appendTo(".unit_info #hold_desc");
+                                $("<p class='readless'>read less</p>").appendTo(".unit_info #hold_desc");
                             }
                             else {
                                 $("#drawings").hide();
