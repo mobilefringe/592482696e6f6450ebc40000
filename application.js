@@ -342,11 +342,11 @@ function renderStoreDetails(container, template, collection, slug){
         
         var repo = getRepoDetailsByName("Building Design Specs").images;
         $.each( repo , function( repo_key, repo_val ) {
-            if(repo_val.name.indexOf("Drawings") !== -1)
+            if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
             { 
                 val.repo = repo_val.photo_url_abs;
-                //val.repo_show= "display:block;";
-                //val.no_repo_show="display:none;";
+                val.repo_show= "display:block;";
+                val.no_repo_show="display:none;";
             }
             
         });
@@ -361,7 +361,7 @@ function renderStoreDetails(container, template, collection, slug){
         var repoDesign = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood).images;
         var design = [];
         $.each( repoDesign , function( repo_key, repo_val ) {
-            if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
+            if(repo_val.name.indexOf("Drawings") !== -1)
             { 
                 design.push("<img src="+repo_val.photo_url_abs+" alt='design_url' </img>") ;
                 val.repo_show= "display:block;";
