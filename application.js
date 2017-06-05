@@ -359,7 +359,7 @@ function renderStoreDetails(container, template, collection, slug){
             val.neighbourhood = "Food Court Southside";
         //console.log(val.neighbourhood,"Design Requirements - "+ val.neighbourhood);
         var repoDesign = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood).images;
-        var repoDesign = [];
+        var design = [];
         $.each( repoDesign , function( repo_key, repo_val ) {
             if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
             { 
