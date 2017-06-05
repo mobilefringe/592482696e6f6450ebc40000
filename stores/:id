@@ -246,11 +246,11 @@
                             if(paragraph.length > 0){
                                 var temp = "<span>" + paragraph + "</span><br/>";
                                 //design_desc.push(temp);
-                                $(temp).appendTo(".unit_info#hold_desc"); 
+                                $(temp).appendTo(".unit_info #hold_desc"); 
                                 paragraph = "";
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
-                            $(title).appendTo(".unit_info#hold_desc"); 
+                            $(title).appendTo(".unit_info #hold_desc"); 
                             //console.log($(".unit_info span").html());
                             //design_title.push(title);
                             //design_desc.push(title);
