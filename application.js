@@ -366,7 +366,7 @@ function renderStoreDetails(container, template, collection, slug){
                 {
                     console.log("h2",des2_val);
                 }
-                console.log(des2_key ,des2_val);
+                //console.log(des2_key ,des2_val);
             }
         });
         var rendered = Mustache.render(template_html,val);
