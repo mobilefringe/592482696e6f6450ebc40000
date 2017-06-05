@@ -256,7 +256,7 @@
                             //console.log("text",des2_val);
                             paragraph += des2_val;
                         }
-                        //console.log(des2_key ,des2_val);
+                        console.log(des2_key ,des2_val);
                     }
                 });
                 //$(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
