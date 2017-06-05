@@ -231,7 +231,7 @@
             $(".unit_info span").each(function(){
                 var desc = $(this).text();
                 $(this).html("");
-                console.log(desc);
+                //console.log(desc);
                 //parse description_2
                 if((desc !== undefined) && (desc !== null) && (desc !== "")){
                 var separate_des2 = desc.match(/[^\r\n]+/g);
