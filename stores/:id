@@ -247,6 +247,7 @@
                                 var temp = "<ul>" + paragraph + "</ul>";
                                 //design_desc.push(temp);
                                 $(temp).appendTo(".unit_info #hold_desc");
+                                console.log("h2",paragraph);
                                 $("<p class='readless'>read less</p>").appendTo(".unit_info #hold_desc");
                                 paragraph = "";
                             }
