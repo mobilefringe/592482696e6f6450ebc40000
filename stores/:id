@@ -257,7 +257,7 @@
                             //design_desc.push(title);
                         }
                         else {
-                            console.log("text",des2_val);
+                            console.log("text" +des2_val);
                             paragraph += "<li> - " + des2_val +"</li>";
                         }
                         //console.log(des2_key ,des2_val);
