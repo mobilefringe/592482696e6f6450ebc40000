@@ -358,7 +358,7 @@ function renderStoreDetails(container, template, collection, slug){
         if(val.neighbourhood == "Foodhall South Side")
             val.neighbourhood = "Food Court Southside";
         console.log(val.neighbourhood,"Design Requirements - "+ val.neighbourhood);
-        var repoDesign = getRepoDetailsByName("Design Requirement - "+ val.neighbourhood).images;
+        var repoDesign = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood).images;
         console.log(repoDesign);
         //parse description_2
        /* var separate_des2 = val.description_2.match(/[^\r\n]+/g);
