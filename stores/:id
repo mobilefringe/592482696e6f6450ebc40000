@@ -233,8 +233,8 @@
                 //console.log(desc);
                 //parse description_2
                 var separate_des2 = desc.match(/[^\r\n]+/g);
-                var design_desc = [];
-                var design_title = [];
+                //var design_desc = [];
+                //var design_title = [];
                 var paragraph="";
                 var title;
                 $.each( separate_des2 , function( des2_key, des2_val ) {
@@ -252,8 +252,8 @@
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
                             $(title).appendTo(".unit_info span"); 
                             //console.log($(".unit_info span").html());
-                            design_title.push(title);
-                            design_desc.push(title);
+                            //design_title.push(title);
+                            //design_desc.push(title);
                         }
                         else {
                             //console.log("text",des2_val);
