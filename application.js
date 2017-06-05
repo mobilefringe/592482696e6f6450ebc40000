@@ -370,7 +370,7 @@ function renderStoreDetails(container, template, collection, slug){
             
         });
         val.repoDesign = design;
-        //console.log(repoDesign);
+        console.log( val.repoDesign);
         //parse description_2
        /* var separate_des2 = val.description_2.match(/[^\r\n]+/g);
         var design_desc = [];
