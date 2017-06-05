@@ -355,6 +355,10 @@ function renderStoreDetails(container, template, collection, slug){
             val.repo_show= "display:none;";
             val.no_repo_show="display:block;";
         }
+        
+        
+        
+        
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
