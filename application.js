@@ -363,6 +363,9 @@ function renderStoreDetails(container, template, collection, slug){
             if(des2_val != " ")
             {
                 if(des2_val.indexOf(/^[0-9].+$/) !== -1)
+                {
+                    console.log("h2",des2_val);
+                }
                 console.log(des2_key ,des2_val);
             }
         });
