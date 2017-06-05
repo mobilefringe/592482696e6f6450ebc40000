@@ -249,7 +249,7 @@
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
                             $(".unit_info span").html("<h2><strong>"+des2_val+"</strong> <span>read more</span><h/h2>"); 
-                            console.log($(this).html());
+                            console.log($(".unit_info span").html());
                             design_title.push(title);
                             design_desc.push(title);
                         }
