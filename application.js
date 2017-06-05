@@ -369,7 +369,7 @@ function renderStoreDetails(container, template, collection, slug){
                 {
                     //console.log("h2",des2_val);
                     if(paragraph.length > 0){
-                        vat temp = "<p>"+paragraph+"</p>;
+                        vat temp = "<p>"+paragraph+"</p>";
                         design_desc.push(paragraph);
                         paragraph = "";
                     }
