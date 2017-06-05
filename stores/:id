@@ -12,7 +12,7 @@
         </div>
         
         <div class="store_list_padding">
-            <h2 class="store_profile">Store profile</h2>   
+            <h2 class="store_profile" id="store_profile">Store profile</h2>   
             <h2 class="store_profile" id="store_profile_unit"> 
                 {{name}} <span>UNIT {{unit}} ({{name_2}} FT<sup>2</sup>)</span>
             </h2>
