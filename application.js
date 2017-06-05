@@ -342,11 +342,11 @@ function renderStoreDetails(container, template, collection, slug){
         
         var repo = getRepoDetailsByName("Building Design Specs").images;
         $.each( repo , function( repo_key, repo_val ) {
-            if((repo_val.name == val.neighbourhood.toLowerCase()) || (repo_val.name == val.neighbourhood))
+            if(repo_val.name.indexOf("Drawings") !== -1)
             { 
                 val.repo = repo_val.photo_url_abs;
-                val.repo_show= "display:block;";
-                val.no_repo_show="display:none;";
+                //val.repo_show= "display:block;";
+                //val.no_repo_show="display:none;";
             }
             
         });
