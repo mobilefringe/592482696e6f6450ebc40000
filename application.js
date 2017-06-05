@@ -357,7 +357,7 @@ function renderStoreDetails(container, template, collection, slug){
         }
         if(val.neighbourhood == "Foodhall South Side")
             val.neighbourhood = "Food Court Southside";
-        console.log(val.neighbourhood,"Design Requirement - "+ val.neighbourhood);
+        console.log(val.neighbourhood,"Design Requirements - "+ val.neighbourhood);
         var repoDesign = getRepoDetailsByName("Design Requirement - "+ val.neighbourhood).images;
         console.log(repoDesign);
         //parse description_2
