@@ -367,7 +367,7 @@ function renderStoreDetails(container, template, collection, slug){
                 if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
                 {
                     console.log("h2",des2_val);
-                    title=des2_val;
+                    title=<strong>"+title+"</strong> <span>read more</span>;
                 }
                 else {
                     console.log("text",des2_val);
