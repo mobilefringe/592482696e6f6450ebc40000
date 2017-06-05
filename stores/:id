@@ -230,6 +230,34 @@
             $(".unit_info span").each(function(){
                 var title = $(this).text();
                 console.log(title);
+                //parse description_2
+        var separate_des2 = val.description_2.match(/[^\r\n]+/g);
+        var design_desc = [];
+        var design_title = [];
+        var paragraph="";
+        var title;
+                $.each( separate_des2 , function( des2_key, des2_val ) {
+            if(des2_val != " ")
+            {
+                if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
+                {
+                    //console.log("h2",des2_val);
+                    if(paragraph.length > 0){
+                        var temp = "<span>" + paragraph + "</span><br/>";
+                        design_desc.push(temp);
+                        paragraph = "";
+                    }
+                    title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
+                    design_title.push(title);
+                    design_desc.push(title);
+                }
+                else {
+                    //console.log("text",des2_val);
+                    paragraph += des2_val;
+                }
+                //console.log(des2_key ,des2_val);
+            }
+        });
                 $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
                 $("<p class='readless'>read less</p>").insertBefore( $(this) );
             })
