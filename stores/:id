@@ -231,9 +231,10 @@
             
             $(".unit_info h2").each(function(){
                 var title = $(this).text();
-                console.log($(this).text(););
+                console.log($(this).text());
                 $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
                 $("<p class='readless'>read less</p>").insertBefore( $(this) );
+                console.log($(this).text());
             })
             $(".readless").first().remove();
             $(".unit_info h2").click(function(){
