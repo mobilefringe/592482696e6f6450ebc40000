@@ -229,7 +229,7 @@
             
             $(".unit_info span").each(function(){
                 var desc = $(this).text();
-                console.log($(this).html());
+                //console.log(desc);
                 //parse description_2
                 var separate_des2 = desc.match(/[^\r\n]+/g);
                 var design_desc = [];
@@ -249,7 +249,7 @@
                             }
                             title="<h2><strong>"+des2_val+"</strong> <span>read more</span></h2><br/>";
                             $(this).html("<h2><strong>"+des2_val+"</strong> <span>read more</span><h/h2>"); 
-                            console.log($(this).html());
+                            console.log($(this).html);
                             design_title.push(title);
                             design_desc.push(title);
                         }
