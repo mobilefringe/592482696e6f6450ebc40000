@@ -381,7 +381,7 @@ function renderStoreDetails(container, template, collection, slug){
                 //console.log(des2_key ,des2_val);
             }
         });
-         console.log(title,paragraph);
+         console.log(design_title,design_desc);
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
