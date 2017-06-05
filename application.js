@@ -369,12 +369,12 @@ function renderStoreDetails(container, template, collection, slug){
                 {
                     //console.log("h2",des2_val);
                     if(paragraph.length > 0){
-                        design_desc.push("<p>" + paragraph + "</p>" );
+                        design_desc.push("<p>" + paragraph +"</p><br/>" );
                         paragraph = "";
                     }
                     title="<strong>"+des2_val+"</strong> <span>read more</span>";
                     design_title.push(title);
-                    design_desc.push(title + "<br/>");
+                    design_desc.push(title);
                 }
                 else {
                     //console.log("text",des2_val);
