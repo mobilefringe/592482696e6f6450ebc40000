@@ -259,7 +259,7 @@
                         //console.log(des2_key ,des2_val);
                     }
                 });
-                //$(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
+                $(this).html("<strong>"+title+"</strong> <span>read more</span>");                                
                 $("<p class='readless'>read less</p>").insertBefore( $(this) );
             })
             $(".readless").first().remove();
