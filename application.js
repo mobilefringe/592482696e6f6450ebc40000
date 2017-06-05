@@ -366,11 +366,11 @@ function renderStoreDetails(container, template, collection, slug){
             {
                 if((/^\s+\d/).test(des2_val ))//((des2_val).startsWith(" 1") )
                 {
-                    console.log("h2",des2_val);
+                    //console.log("h2",des2_val);
                     title="<strong>"+des2_val+"</strong> <span>read more</span>";
                 }
                 else {
-                    console.log("text",des2_val);
+                    //console.log("text",des2_val);
                     paragraph += des2_val;
                 }
                 //console.log(des2_key ,des2_val);
