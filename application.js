@@ -361,7 +361,7 @@ function renderStoreDetails(container, template, collection, slug){
         var repoDesign = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood).images;
         var design = [];
         $.each( repoDesign , function( repo_key, repo_val ) {
-            if(repo_val.name.indexOf("Drawings") !== -1)
+            if(repo_val.name.indexOf("Drawing") !== -1)
             { 
                 design.push("<img src="+repo_val.photo_url_abs+" alt='design_url' />") ;
                 //val.repo_show= "display:block;";
