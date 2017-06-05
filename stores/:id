@@ -258,7 +258,7 @@
                         }
                         else {
                             //console.log("text",des2_val);
-                            paragraph += "<li>" + des2_val "</li><br/>";
+                            paragraph += "<li>" + des2_val +"</li><br/>";
                         }
                         //console.log(des2_key ,des2_val);
                     }
