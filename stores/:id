@@ -70,7 +70,7 @@
             </p>
         </div>
         <div class="store_list_padding unit_info">
-            <span>{{{description_2}}}</span>
+            <span>{{description_2}}</span>
             <p class="download_design_spec">
                     <a style="{{repo_show}}" href="{{repo}}" target="_blank">You can click here to download these design specs as an Adobe PDF file.</a>                        
                
