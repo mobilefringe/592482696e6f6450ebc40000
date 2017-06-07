@@ -185,7 +185,7 @@
         }
        
         $('#mapsvg').mapSvg({
-            source: '//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/svg+xml/1495736476000/StVital_Map_2016-09-30.svg',    // Path to SVG map
+            source: '//mallmaverick.com/system/properties/svgmaps/000/000/042/original/StVital_Map_2016-09-30.svg?1475523309',    // Path to SVG map
             colors: {stroke: '#aaaaaa', selected: "#F3047A", hover: 0},
             width: svgW,
             height:svgH,
