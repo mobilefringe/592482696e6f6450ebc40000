@@ -200,7 +200,8 @@
             responsive:true,
             zoomLimit: [-1,5]
         });
-
+        $("#neighbour_store_title").hide();
+            $("#no_neighbour_store_title").hide();
 
         $(".unit_info ul li").each(function(){
             $(this).prepend("- ")
