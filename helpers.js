@@ -1,6 +1,6 @@
 $('document').ready(function() {
     
-    var view_all = false;
+    
     
         
     $('input').val();
@@ -107,7 +107,7 @@ $(window).load(function() {
     renderHours('#home_hour_container', '#home_hour_template', hours, 'reg_hours');
     renderHours('#home_exp_hour_container', '#home_exp_hour_template', hours, 'holiday_hours');
     renderFeatureItems('#feature_container', '#feature_template', feature_items);
-    
+    var view_all = false;
     $('#hours-toggle').click(function(){
         console.log("toggled!");
         $("#hours-full").slideToggle();
