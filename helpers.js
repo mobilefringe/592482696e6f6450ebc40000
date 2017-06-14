@@ -109,7 +109,7 @@ $(window).load(function() {
     renderFeatureItems('#feature_container', '#feature_template', feature_items);
     var view_all = false;
     $('#hours-toggle').click(function(){
-        /console.log("toggled!");
+        //console.log("toggled!");
         $("#hours-full").slideToggle();
         if (!view_all){
             $("#hours-toggle b").html("HIDE HOURS");
