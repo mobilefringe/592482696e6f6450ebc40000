@@ -1176,6 +1176,7 @@ a.dl_pdf:link{
 }
 
 .one_column{
+    display: flex;
     -moz-column-count:1; /* Firefox */
     -webkit-column-count:1; /* Safari and Chrome */
     column-count:1;
