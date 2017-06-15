@@ -1176,12 +1176,9 @@ a.dl_pdf:link{
 }
 
 .one_column{
-    
     -moz-column-count:1; /* Firefox */
     -webkit-column-count:1; /* Safari and Chrome */
     column-count:1;
-    display: flex;
-    min-height: initial;
 }
 
 
