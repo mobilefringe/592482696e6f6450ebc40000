@@ -192,6 +192,13 @@ function renderStoreList(container, template, collection, type,starter, breaker)
         else{
             val.job_exist = "display:none";
         }
+        if (val.tags !== null && val.tags.length > 0){
+            val.taglist="";
+             $.each( val.tags , function( tag_key, tag ) {
+                val.taglist = val.taglist + " " + tag;
+             });
+            val.tags_show = "display:inline-block";
+        }
         val.block = current_initial + '-block';
         var rendered = Mustache.render(template_html,val);
         var upper_current_initial = current_initial.toUpperCase();
