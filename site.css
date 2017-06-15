@@ -1181,6 +1181,7 @@ a.dl_pdf:link{
     -webkit-column-count:1; /* Safari and Chrome */
     column-count:1;
     display: flex;
+    min-height: initial;
 }
 
 
