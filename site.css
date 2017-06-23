@@ -1180,7 +1180,11 @@ a.dl_pdf:link{
     -webkit-column-count:1; /* Safari and Chrome */
     column-count:1;
 }
-
+.single_column{
+    -moz-column-count:1; /* Firefox */
+    -webkit-column-count:1; /* Safari and Chrome */
+    column-count:1;
+}
 
 label.first_letter{
     margin: 10px 0 0;
