@@ -1181,8 +1181,8 @@ a.dl_pdf:link{
     column-count:1;
 }
 .single_column{
-    -moz-column-count:1; /* Firefox */
-    -webkit-column-count:1; /* Safari and Chrome */
+    -moz-column-count:7; /* Firefox */
+    -webkit-column-count:7; /* Safari and Chrome */
     column-count:7;
 }
 
