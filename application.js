@@ -224,7 +224,7 @@ function renderStoreListCatetories(container, template, category_list,stores){
         var current_id = category.id;
         var count = 0;
         var stores_byCat = getStoresListByCategoryID(category_id);
-        console.log(stores_byCat);
+        console.log();
         $.each( stores_byCat , function( i, store ) {
             var store_category = store.categories;
             var a = store.categories.indexOf(category_id);
@@ -243,7 +243,6 @@ function renderStoreListCatetories(container, template, category_list,stores){
                 if (store.promotions.length > 0){
                     store.promotion_exist = "display:inline";
                     var store_promo = getPromotionsForIds(store.promotions).sortBy(function(o){ return o.start_date })[0];
-                    console.log("bruh");
                     if (store_promo != undefined){
                         store.promo_btn = "/promotions/" + store_promo.slug;
                     }
