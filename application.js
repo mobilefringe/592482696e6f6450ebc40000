@@ -224,7 +224,7 @@ function renderStoreListCatetories(container, template, category_list,stores){
         var current_id = category.id;
         var count = 0;
         var stores_byCat = getStoresListByCategoryID(category_id);
-        console.log();
+        console.log(stores_byCat);
         $.each( stores_byCat , function( i, store ) {
             var store_category = store.categories;
             var a = store.categories.indexOf(category_id);
