@@ -1183,7 +1183,7 @@ a.dl_pdf:link{
 .single_column{
     -moz-column-count:1; /* Firefox */
     -webkit-column-count:1; /* Safari and Chrome */
-    column-count:1;
+    column-count:7;
 }
 
 label.first_letter{
