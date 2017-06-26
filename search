@@ -75,7 +75,7 @@
                 renderGeneral('#search_container_jobs','#search_template_jobs', search_results.jobs);
             }
             else{
-                $('#events_header').hide()
+                $('#jobs_header').hide()
             }
             show_content();
         }
