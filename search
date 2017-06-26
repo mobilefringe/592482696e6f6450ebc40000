@@ -5,8 +5,8 @@
     <script id="search_template_stores" type="x-tmpl-mustache/text">
         <div class="store_list_padding search_result">
             <a href="/stores/{{slug}}">{{name}}</a>
-        <p>{{description}}</p>
-    </div>   
+            <p>{{description}}</p>
+        </div>   
     </script>
 </div>
 
