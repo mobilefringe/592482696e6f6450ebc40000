@@ -48,6 +48,17 @@
 <!--{% endif %}-->
 
 <script>
+$(window).load(function() {
+    if (window.location.pathname.indexOf("/stores") == -1) {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
+    }
+});
     $(document).ready(function(e){
         init(e); 
         
