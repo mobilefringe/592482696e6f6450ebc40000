@@ -81,7 +81,7 @@
         
         search_results.jobs.sort(function(a, b) {
             var textA = a.name;
-            var textB = b.unit;
+            var textB = b.name;
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
         
