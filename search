@@ -8,11 +8,8 @@
     </script>
 </div>
 
-{% assign promo_query = result_query["promo"] | size %}
-{% assign event_query = result_query["event"] | size %}
-{% if promo_query > 0 or event_query > 0 %}
+
 <h3>Upcoming Event</h3>    
-    {% for item in result_query["promo"] %}
     <div id="search_container_promotions" class="store_list_padding search_result">
         <script id="search_template_promotions" type="x-tmpl-mustache/text">
            <div class="store_list_padding search_result">
@@ -21,8 +18,7 @@
         </div>    
         </script>
     </div>
-        
-    {% endfor %}
+
     {% for item in result_query["event"] %}
         <div class="store_list_padding search_result">
             <a href="/events/{{item.slug}}">{{item.name}}</a>
