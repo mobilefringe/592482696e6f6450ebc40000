@@ -54,7 +54,7 @@
         loadMallData(renderAll); 
     });
         
-        loadMallDataCached(renderAll); 
+        //loadMallDataCached(renderAll); 
     function renderAll(){
         var params = getRequestParam('query');
         var search_results = getSearchResults(params,10,100);
