@@ -71,6 +71,12 @@
             else{
                 $('#events_header').hide()
             }
+            if (search_results.jobs != undefined &&  search_results.jobs.length > 0){
+                renderGeneral('#search_container_events','#search_template_events', search_results.events);
+            }
+            else{
+                $('#events_header').hide()
+            }
             show_content();
         }
         loadMallDataCached(renderAll); 
