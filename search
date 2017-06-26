@@ -31,8 +31,8 @@
 
 <div class="store_list_padding search_result">
     <script id="search_template_events" type="x-tmpl-mustache/text">
-        <a href="/jobs/{{item.slug}}">{{item.name}}</a>
-        <p>{{item.description | strip_html | truncatewords: 35}}</p>
+        <a href="/jobs/{{slug}}">{{name}}</a>
+        <p>{{description}}</p>
     </script>
 </div>    
 
