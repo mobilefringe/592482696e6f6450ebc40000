@@ -83,5 +83,12 @@
             $('#jobs_header').hide()
         }
         show_content();
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
     }
 </script>
