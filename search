@@ -80,7 +80,7 @@
         }
         
         search_results.jobs.sort(function(a, b) {
-            var textA = a.unit;
+            var textA = a.name;
             var textB = b.unit;
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
