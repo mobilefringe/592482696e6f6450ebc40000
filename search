@@ -28,7 +28,7 @@
 
 {% assign job_query = result_query["job"] | size %}
 {% if job_query > 0 %}
-    <h3>Career Opportunities</h3>    
+    <h3 id="jobs_header">Career Opportunities</h3>    
     {% for item in result_query["job"] %}
         <div class="store_list_padding search_result">
             <a href="/jobs/{{item.slug}}">{{item.name}}</a>
