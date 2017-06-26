@@ -27,12 +27,14 @@
 
 
 
-    <h3 id="jobs_header">Career Opportunities</h3>    
+<h3 id="jobs_header">Career Opportunities</h3>    
 
-        <div class="store_list_padding search_result">
-            <a href="/jobs/{{item.slug}}">{{item.name}}</a>
-            <p>{{item.description | strip_html | truncatewords: 35}}</p>
-        </div>    
+<div class="store_list_padding search_result">
+<script id="search_template_events" type="x-tmpl-mustache/text">
+    <a href="/jobs/{{item.slug}}">{{item.name}}</a>
+    <p>{{item.description | strip_html | truncatewords: 35}}</p>
+    </script>
+</div>    
 
 
 {% assign page_query = result_query["page"] | size %}
