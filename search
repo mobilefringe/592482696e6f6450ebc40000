@@ -36,16 +36,16 @@
 </div>    
 
 
-{% assign page_query = result_query["page"] | size %}
-{% if page_query > 0 %}
-    <h3>Generial Information</h3>    
-    {% for item in result_query["page"] %}
-        <div class="store_list_padding search_result">
-            <a href="/pages/{{item.slug}}">{{item.title}}</a>
-            <p>{{item.body | strip_html | truncatewords: 35}}</p>
-        </div>    
-    {% endfor %}
-{% endif %}
+<!--{% assign page_query = result_query["page"] | size %}-->
+<!--{% if page_query > 0 %}-->
+<!--    <h3>Generial Information</h3>    -->
+<!--    {% for item in result_query["page"] %}-->
+<!--        <div class="store_list_padding search_result">-->
+<!--            <a href="/pages/{{item.slug}}">{{item.title}}</a>-->
+<!--            <p>{{item.body | strip_html | truncatewords: 35}}</p>-->
+<!--        </div>    -->
+<!--    {% endfor %}-->
+<!--{% endif %}-->
 
 <script>
     $(document).ready(function(e){
