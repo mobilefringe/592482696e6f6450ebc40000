@@ -72,7 +72,7 @@
                 $('#events_header').hide()
             }
             if (search_results.jobs != undefined &&  search_results.jobs.length > 0){
-                renderGeneral('#search_container_events','#search_template_events', search_results.jobs);
+                renderGeneral('#search_container_events','#search_template_jobs', search_results.jobs);
             }
             else{
                 $('#events_header').hide()
