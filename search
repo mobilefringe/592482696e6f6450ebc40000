@@ -50,7 +50,7 @@
 <script>
     $(document).ready(function(e){
         init(e); 
-        $(".flexslider").remove();
+        
         loadMallData(renderAll); 
     });
         
