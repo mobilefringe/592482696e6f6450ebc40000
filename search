@@ -1,6 +1,6 @@
 <h1>search result</h1>
 
-<h3>Stores, Shops, and Services</h3>
+<h3 id="stores_header">Stores, Shops, and Services</h3>
 <div id="search_container_stores" class="store_list_padding search_result">
     <script id="search_template_stores" type="x-tmpl-mustache/text">
         <a href="/stores/{{slug}}">{{name}}</a>
