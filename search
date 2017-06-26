@@ -19,16 +19,11 @@
 </div>
 <div id="search_container_events"  class="store_list_padding search_result">
     <script id="search_template_events" type="x-tmpl-mustache/text">
-        <p class="description"><a target="_blank" href="/events/{{slug}}">{{name}}</a></p>
+        <a href="/events/{{item.slug}}">{{item.name}}</a>
+            <p>{{item.description | strip_html | truncatewords: 35}}</p>
     </script>
 </div>
-    {% for item in result_query["event"] %}
-        <div>
-            <a href="/events/{{item.slug}}">{{item.name}}</a>
-            <p>{{item.description | strip_html | truncatewords: 35}}</p>
-        </div>    
-    {% endfor %}
-{% endif %}
+
 
 {% assign job_query = result_query["job"] | size %}
 {% if job_query > 0 %}
