@@ -51,7 +51,6 @@
     $(document).ready(function(e){
         init(e);
         function renderAll(){
-            init_home_hours();
             var params = getRequestParam('query');
             var search_results = getSearchResults(params,10,100);
             if (search_results.stores != undefined && search_results.stores.length > 0){
