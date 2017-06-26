@@ -1,0 +1,53 @@
+<h1>search result</h1>
+
+{% assign store_query = result_query["stores"] | size %}
+{% if store_query > 0 %}
+    <h3>Stores, Shops, and Services</h3>
+    {% for item in result_query["stores"] %}
+        <div class="store_list_padding search_result">
+            <a href="/stores/{{item.slug}}">{{item.name}}</a>
+            <p>{{item.description | strip_html | truncatewords: 35}}</p>
+        </div>        
+    {% endfor %}
+{% endif %}
+
+{% assign promo_query = result_query["promo"] | size %}
+{% assign event_query = result_query["event"] | size %}
+{% if promo_query > 0 or event_query > 0 %}
+    <h3>Upcoming Event</h3>    
+    {% for item in result_query["promo"] %}
+        <div class="store_list_padding search_result">
+            <a href="/promotions/{{item.slug}}">{{item.name}}</a>
+            <p>{{item.description | strip_html | truncatewords: 35}}</p>
+        </div>    
+    {% endfor %}
+    {% for item in result_query["event"] %}
+        <div class="store_list_padding search_result">
+            <a href="/events/{{item.slug}}">{{item.name}}</a>
+            <p>{{item.description | strip_html | truncatewords: 35}}</p>
+        </div>    
+    {% endfor %}
+{% endif %}
+
+{% assign job_query = result_query["job"] | size %}
+{% if job_query > 0 %}
+    <h3>Career Opportunities</h3>    
+    {% for item in result_query["job"] %}
+        <div class="store_list_padding search_result">
+            <a href="/jobs/{{item.slug}}">{{item.name}}</a>
+            <p>{{item.description | strip_html | truncatewords: 35}}</p>
+        </div>    
+    {% endfor %}
+{% endif %}
+
+
+{% assign page_query = result_query["page"] | size %}
+{% if page_query > 0 %}
+    <h3>Generial Information</h3>    
+    {% for item in result_query["page"] %}
+        <div class="store_list_padding search_result">
+            <a href="/pages/{{item.slug}}">{{item.title}}</a>
+            <p>{{item.body | strip_html | truncatewords: 35}}</p>
+        </div>    
+    {% endfor %}
+{% endif %}
