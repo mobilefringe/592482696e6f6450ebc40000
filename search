@@ -7,7 +7,7 @@
         <script id="search_template_stores" type="x-tmpl-mustache/text">
             <div class="store_list_padding search_result">
                 <a href="/stores/{{item.slug}}">{{item.name}}</a>
-            <p>{{item.description | strip_html | truncatewords: 35}}</p>
+            <p>{{description}}</p>
         </div>   
         </script>
     </div>
