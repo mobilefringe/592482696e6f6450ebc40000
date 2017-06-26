@@ -57,7 +57,7 @@
         //loadMallDataCached(renderAll); 
     function renderAll(){
         var params = getRequestParam('query');
-        var search_results = getSearchResults(params,10,1200);
+        var search_results = getSearchResults(params,10,200);
         console.log(params, search_results);
         if (search_results.stores != undefined && search_results.stores.length > 0){
             renderGeneral('#search_container_stores','#search_template_stores', search_results.stores);
