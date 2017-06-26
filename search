@@ -84,6 +84,7 @@
             var textB = b.unit;
             return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
         });
+        
         if (search_results.jobs != undefined &&  search_results.jobs.length > 0){
             renderGeneral('#search_container_jobs','#search_template_jobs', search_results.jobs);
         }
