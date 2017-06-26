@@ -12,10 +12,9 @@
 <h3>Upcoming Event</h3>    
 <div id="search_container_promotions" class="store_list_padding search_result">
     <script id="search_template_promotions" type="x-tmpl-mustache/text">
-       <div class="store_list_padding search_result">
-        <a href="/promotions/{{item.slug}}">{{item.name}}</a>
-        <p>{{item.description | strip_html | truncatewords: 35}}</p>
-    </div>    
+        <a href="/promotions/{{slug}}">{{name}}</a>
+        <p>{{description}}</p>
+      
     </script>
 </div>
 
