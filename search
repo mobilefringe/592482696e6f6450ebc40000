@@ -31,7 +31,7 @@
 <div id="search_container_jobs" class="store_list_padding search_result">
     <script id="search_template_jobs" type="x-tmpl-mustache/text">
         <a href="/jobs/{{slug}}">{{name}}</a>
-        <p>{{{rich_description}}}</p>
+        <p>{{description}}</p>
     </script>
 </div>    
 
