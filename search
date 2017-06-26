@@ -30,7 +30,7 @@
 <h3 id="jobs_header">Career Opportunities</h3>    
 
 <div class="store_list_padding search_result">
-    <script id="search_template_events" type="x-tmpl-mustache/text">
+    <script id="search_template_jobs" type="x-tmpl-mustache/text">
         <a href="/jobs/{{slug}}">{{name}}</a>
         <p>{{description}}</p>
     </script>
