@@ -3,9 +3,8 @@
 <h3>Stores, Shops, and Services</h3>
 <div id="search_container_stores" >
     <script id="search_template_stores" type="x-tmpl-mustache/text">
-        <div class="store_list_padding search_result">
-            <a href="/stores/{{slug}}">{{name}}</a>
-            <p>{{description}}</p>
+        <a href="/stores/{{slug}}">{{name}}</a>
+        <p>{{description}}</p>
     </script>
 </div>
 
