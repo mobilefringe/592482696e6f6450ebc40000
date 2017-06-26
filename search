@@ -59,11 +59,7 @@
         var params = getRequestParam('query');
         var search_results = getSearchResults(params,10,300);
         console.log(params, search_results);
-        search_results.jobs.sort(function(a, b) {
-            var textA = a.unit;
-            var textB = b.unit;
-            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-        });
+        
         if (search_results.stores != undefined && search_results.stores.length > 0){
             renderGeneral('#search_container_stores','#search_template_stores', search_results.stores);
         }
