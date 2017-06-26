@@ -17,6 +17,7 @@
       
     </script>
 </div>
+<h3 id="promotions_header">Upcoming Promotions</h3>    
 <div id="search_container_events"  class="store_list_padding search_result">
     <script id="search_template_events" type="x-tmpl-mustache/text">
         <a href="/events/{{slug}}">{{name}}</a>
