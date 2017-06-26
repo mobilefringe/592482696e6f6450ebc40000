@@ -3,11 +3,16 @@
 {% assign store_query = result_query["stores"] | size %}
 {% if store_query > 0 %}
     <h3>Stores, Shops, and Services</h3>
-    {% for item in result_query["stores"] %}
-        <div class="store_list_padding search_result">
-            <a href="/stores/{{item.slug}}">{{item.name}}</a>
+    <div id="search_container_stores">
+        <script id="search_template_stores" type="x-tmpl-mustache/text">
+            <div class="store_list_padding search_result">
+                <a href="/stores/{{item.slug}}">{{item.name}}</a>
             <p>{{item.description | strip_html | truncatewords: 35}}</p>
-        </div>        
+        </div>   
+        </script>
+    </div>
+    {% for item in result_query["stores"] %}
+             
     {% endfor %}
 {% endif %}
 
