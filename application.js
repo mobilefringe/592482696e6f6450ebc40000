@@ -982,11 +982,11 @@ function renderStoreTags(container, template, collection){
     });
     //item_list.sort();
     //item_list=tag_list;
-  item_list.sort(function(a, b) {
-    var textA = a.name.toUpperCase();
-    var textB = b.name.toUpperCase();
-    return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-});
+      item_list.sort(function(a, b) {
+        var textA = a.name.toUpperCase();
+        var textB = b.name.toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
     collection = [];
     collection = item_list;
     
