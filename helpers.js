@@ -468,11 +468,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         search_results['jobs_header_style'] = "display:none";
     }
     
-     <li class="menu_item" id="building_li_1">
-                    <a href="/pages/svc-submission-requirements?building=1&menu=1" class="meniu_item_a">
-                        submission requirements                        
-                    </a>
-            	</li>                
+   
                 <li class="menu_item sub_menu_li" id="building_li_2">
                     <a href="#" class="toggle_sub_menu meniu_item_a">
                         base building
@@ -524,10 +520,11 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
             	</li>                
 
     var slug_list = { 
+                        'Service' : {
                         'Customer Service' : '/pages/svc-customer-service',
                         'Leasing' :'/pages/svc-leasing',
                         'Community Booth' :'/pages/svc-community-booth',
-                        'Giftcard' :'/pages/svc-giftcard',
+                        'Giftcard' :'/pages/svc-giftcard'},
                         'Submission Requirements' : '/pages/svc-submission-requirements'
                     };
     var all_genInfo = getJobsList();
