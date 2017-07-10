@@ -478,7 +478,8 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         'Sustainability' : ['/pages/svc-sustainability-criteria?building=1&menu=4']
                     };
     
-    var genInfo =[];         
+    var genInfo =[];
+    var gen_info_list = 
     $.each( slug_list , function( key, each_list ) {
         $.each( each_list , function( key, slug ) {
             var pages_json = prefix+"/pages/" + slug + ".json"
@@ -493,6 +494,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     // console.log(search_string, val.name);
                     if((data.body.toLowerCase().indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
                         var val = {};
+                        val.name = ""
                         val.description_trim = val.description.substring(0, trim_description_length) + "..";
                         genInfo.push(val);
                         
