@@ -398,6 +398,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         search_results['promotions_header_style'] = "display:none";
         search_results['events_header_style'] = "display:none";
         search_results['jobs_header_style'] = "display:none";
+        
         return search_results;
     }
     
