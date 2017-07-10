@@ -493,7 +493,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                 
                 if(gen_info_list.indexOf(key) == -1){
                     console.log(data.body,slug);
-                    if((data.body.toLowerCase().indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
+                    if((data.body.indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
                         var val = {};
                         val.name = key;
                         val.link = slug;
