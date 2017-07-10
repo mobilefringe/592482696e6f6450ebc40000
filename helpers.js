@@ -495,7 +495,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     // console.log(search_string, val.name);
                     if((data.body.toLowerCase().indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
                         var val = {};
-                        val.name = ""
+                        val.name = 
                         val.description = data.body;
                         val.description_trim = val.description.substring(0, trim_description_length) + "..";
                         genInfo.push(val);
