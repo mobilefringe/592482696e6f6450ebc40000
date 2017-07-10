@@ -467,10 +467,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     if(jobs.length === 0){
         search_results['jobs_header_style'] = "display:none";
     }
-     <li class="sub_menu_item"><a href=><span>Customer Service</span></a></li>
-                        <li class="sub_menu_item"><a href=><span>Leasing</span></a></li>
-                        <li class="sub_menu_item"><a href=><span>Community Booth</span></a></li>
-                        <li class="sub_menu_item"><a href=><span>Giftcard</span></a></li>
+
     var slug_list = ['/pages/svc-customer-service','/pages/svc-leasing','/pages/svc-community-booth','/pages/svc-giftcard'];
     var all_genInfo = getJobsList();
     var genInfo =[];
