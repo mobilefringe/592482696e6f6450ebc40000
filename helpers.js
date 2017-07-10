@@ -498,7 +498,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     var slug_list = { 
                         'Service' : ['/pages/svc-customer-service','/pages/svc-leasing', :'/pages/svc-community-booth','/pages/svc-giftcard'],
                         'Submission Requirements' : ['/pages/svc-submission-requirements'],
-                        'Base Building' : ['/pages/svc-base-building','/pages/svc-base-building--2','/pages/svc-base-building--3','/pages/svc-base-building--4','/pages/svc-base-building--5','/pages/svc-base-building--6']
+                        'Base Building' : ['/pages/svc-base-building?building=1&menu=2','/pages/svc-base-building--2?building=1&menu=2','/pages/svc-base-building--3?building=1&menu=2','/pages/svc-base-building--4?building=1&menu=2','/pages/svc-base-building--5?building=1&menu=2','/pages/svc-base-building--6?building=1&menu=2']
                         
                     };
     var all_genInfo = getJobsList();
