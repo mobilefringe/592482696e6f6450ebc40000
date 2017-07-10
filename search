@@ -240,6 +240,7 @@
                         }
                         
                         if (genInfo != undefined &&  genInfo.length > 0){
+                            console.log ("HELOOOO");
                             renderGeneral('#search_container_genInfo','#search_template_genInfo', genInfo);
                         }
                         else{
