@@ -521,7 +521,8 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
 
     var slug_list = { 
                         'Service' : ['/pages/svc-customer-service','/pages/svc-leasing', :'/pages/svc-community-booth','/pages/svc-giftcard'],
-                        'Submission Requirements' : '/pages/svc-submission-requirements',
+                        'Submission Requirements' : ['/pages/svc-submission-requirements'],
+                        
                         
                     };
     var all_genInfo = getJobsList();
