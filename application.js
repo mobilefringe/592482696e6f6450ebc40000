@@ -42,7 +42,7 @@ function renderFeatureItems(container, template, collection){
     var template_html = $(template).html();
     Mustache.parse(template_html); 
     $.each( collection , function( key, val ) {
-        if(val.url == "" || val.url === null){
+        if(val.url === "" || val.url === null){
            val.css = "style=cursor:default;";
            val.noLink = "return false";
         }
