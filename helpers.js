@@ -422,6 +422,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         count++;
                          //console.log(gen_count);
                          gen_count++;
+                         search_results['genInfo_header_style'] = "display:block";
                     }
                     if(count >= max_results){
                         return false;
