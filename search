@@ -37,7 +37,7 @@
 
 <h3 id="genInfo_header">Genreral Information</h3>    
 <div id="search_container_genInfo" class="store_list_padding search_result">
-    <script id="search_template_jobs" type="x-tmpl-mustache/text">
+    <script id="search_template_genInfo" type="x-tmpl-mustache/text">
         <a href="/jobs/{{slug}}">{{name}}</a>
         <p>{{description_trim}}</p>
     </script>
