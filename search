@@ -66,11 +66,11 @@
     });
     $(document).ready(function(e){
         init(e); 
-        
+        loadMallData(renderAll); 
         
     });
     $( window ).load(function() {
-        loadMallData(renderAll); 
+        
     });
         //loadMallDataCached(renderAll); 
     function renderAll(){
