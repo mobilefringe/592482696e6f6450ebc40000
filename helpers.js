@@ -494,6 +494,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                 $("#404_msg").fadeIn("fast");
             }
         });
+         });
     });
     var all_genInfo = getJobsList();
     var genInfo =[];
