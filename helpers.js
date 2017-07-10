@@ -307,7 +307,7 @@ function getURLParameter(name) {
     );
 }
 
-function getSearchResults(search_string,max_results,trim_description_length){
+function getSVCSearchResults(search_string,max_results,trim_description_length){
     var search_results = {};
     var all_stores = getStoresList();
     var store_ids = [];
