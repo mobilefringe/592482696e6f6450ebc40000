@@ -467,12 +467,68 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     if(jobs.length === 0){
         search_results['jobs_header_style'] = "display:none";
     }
+    
+     <li class="menu_item" id="building_li_1">
+                    <a href="/pages/svc-submission-requirements?building=1&menu=1" class="meniu_item_a">
+                        submission requirements                        
+                    </a>
+            	</li>                
+                <li class="menu_item sub_menu_li" id="building_li_2">
+                    <a href="#" class="toggle_sub_menu meniu_item_a">
+                        base building
+                    </a>                
+                    <ul class="sub_menu">                    
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-base-building?building=1&menu=2'><span>Architectural</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-base-building--2?building=1&menu=2'><span>Structural</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-base-building--3?building=1&menu=2'><span>Mechanical</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-base-building--4?building=1&menu=2'><span>Electrical</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-base-building--5?building=1&menu=2'><span>Site</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-base-building--6?building=1&menu=2'><span>Environment Green</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item sub_menu_li" id="building_li_3">
+                    <a href="#" class="toggle_sub_menu meniu_item_a">
+                        construction
+                    </a>                
+                    <ul class="sub_menu">                    
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction?building=1&menu=3'><span>Hoarding</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction--2?building=1&menu=3'><span>Preferred Trades</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction--3?building=1&menu=3'><span>Before Construction</span></a>
+                        </li>
+                        <li class="sub_menu_item">
+                            <a href='/pages/svc-construction--4?building=1&menu=3'><span>During Construction</span></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu_item" id="building_li_4">
+                    <a href="/pages/svc-sustainability-criteria?building=1&menu=4" class="meniu_item_a">
+                        Sustainability                        
+                    </a>
+            	</li>                
 
     var slug_list = { 
                         'Customer Service' : '/pages/svc-customer-service',
                         'Leasing' :'/pages/svc-leasing',
                         'Community Booth' :'/pages/svc-community-booth',
-                        'Giftcard' :'/pages/svc-giftcard'
+                        'Giftcard' :'/pages/svc-giftcard',
+                        'Submission Requirements' : '/pages/svc-submission-requirements'
                     };
     var all_genInfo = getJobsList();
     var genInfo =[];
