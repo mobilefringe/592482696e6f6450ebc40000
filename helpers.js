@@ -538,6 +538,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         genInfo.push(val);
                         gen_info_list.push(key);
                         count++;
+                         console.log(genInfo.length);
                     }
                     if(count >= max_results){
                         return false;
