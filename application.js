@@ -1001,7 +1001,7 @@ function renderStoreTags(container, template, collection){
     $(container).html(item_rendered.join(''));
 }
 
-function renderStoreTags(container, template, collection){
+function renderStoreService(container, template, collection){
     var item_list = [];
     var item_rendered = [];
     var template_html = $(template).html();
