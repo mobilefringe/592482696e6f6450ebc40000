@@ -519,7 +519,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         'Sustainability' : ['/pages/svc-sustainability-criteria?building=1&menu=4']
                     };
     
-    var genInfo ={};
+    var genInfo =[];
     var gen_info_list = [];
     prefix = get_prefix();
     $.each( slug_list , function( key, each_list ) {
