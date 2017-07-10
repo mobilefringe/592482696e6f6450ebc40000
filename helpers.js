@@ -476,7 +476,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     </a>                
                     <ul class="sub_menu">                    
                         <li class="sub_menu_item">
-                            <a href='/pages/svc-construction?building=1&menu=3'><span>Hoarding</span></a>
+                            <a href=><span>Hoarding</span></a>
                         </li>
                         <li class="sub_menu_item">
                             <a href='/pages/svc-construction--2?building=1&menu=3'><span>Preferred Trades</span></a>
@@ -500,7 +500,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         'Submission Requirements' : ['/pages/svc-submission-requirements'],
                         'Base Building' : ['/pages/svc-base-building?building=1&menu=2','/pages/svc-base-building--2?building=1&menu=2','/pages/svc-base-building--3?building=1&menu=2','/pages/svc-base-building--4?building=1&menu=2','/pages/svc-base-building--5?building=1&menu=2','/pages/svc-base-building--6?building=1&menu=2'],
                         'Tenants Manual' : ['/pages/svc-tenants-manual'],
-                        'Construction' : []
+                        'Construction' : ['/pages/svc-construction?building=1&menu=3',]
                         
                     };
     var all_genInfo = getJobsList();
