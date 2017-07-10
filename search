@@ -238,6 +238,12 @@
                         if(count >= max_results){
                             return false;
                         }
+                        if (search_results.genInfo != undefined &&  search_results.genInfo.length > 0){
+                            renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
+                        }
+                        else{
+                            $('#genInfo_header').hide()
+                        }
                     }
                 }).fail(function(jqXHR) {
                     if (jqXHR.status == 404) {
