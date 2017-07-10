@@ -373,14 +373,14 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
             // console.log(search_string, val.name);
             if((val.description_2 !== null ) && (val.description_2 !== undefined )) {
                 if(val.store_service.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
-                val.description_trim = val.description_2.substring(0, trim_description_length) + "..";
-                stores.push(val);
-                store_ids.push(val.id);
-                count++;
-            }
-            if(count >= max_results){
-                return false;
-            }
+                    val.description_trim = val.description_2.substring(0, trim_description_length) + "..";
+                    stores.push(val);
+                    store_ids.push(val.id);
+                    count++;
+                }
+                if(count >= max_results){
+                    return false;
+                }
             }
        
         }
