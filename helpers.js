@@ -483,39 +483,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     });
     var all_genInfo = getJobsList();
     var genInfo =[];
-    var pages_json = prefix+"/pages/" + slug + ".json"
-        $.getJSON(pages_json).done(function(data) {
-            //var pages_data = JSON.parse(data);
-            // console.log(data.body);
-            
-            $("#page_title").html(data.title)
-            $('#page_body_content').html(data.body);
-            var n = 0;
-    	
-            $("div#page_body_content h3").each(function(){
-                if (n % 4 == 1 ){
-                    $(this).addClass("yellow");    
-                    $(this).addClass("ph"+n);    
-                } 
-                if (n % 4 == 2 ){
-                    $(this).removeClass("yellow");  
-                    $(this).addClass("purple");  
-                    $(this).addClass("ph"+n);    
-                }
-                if (n % 4 == 3 ){
-                    $(this).removeClass("yellow");  
-                    $(this).removeClass("purple");  
-                    $(this).addClass("red");    
-                    $(this).addClass("ph"+n);    
-                } 
-                
-                n = n+1;
-            });
-        }).fail(function(jqXHR) {
-            if (jqXHR.status == 404) {
-                $("#404_msg").fadeIn("fast");
-            }
-        });
+    
     
     search_results['summary'] = {"count":count};
     
