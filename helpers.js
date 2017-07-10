@@ -306,3 +306,170 @@ function getURLParameter(name) {
         (RegExp(name + '=' + '(.+?)(&|$)').exec(location.search)||[,null])[1]
     );
 }
+
+function getSearchResults(search_string,max_results,trim_description_length){
+    var search_results = {};
+    var all_stores = getStoresList();
+    var store_ids = [];
+    var stores =[];
+    var count = 0;
+    $.each( all_stores , function( key, val ) {
+        localizeObject(val);
+        if(store_ids.indexOf(val.id) == -1){
+            if(val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                stores.push(val);
+                store_ids.push(val.id);
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+        if(store_ids.indexOf(val.id) == -1){
+            var tags_string = val.tags.join();
+            var keywords_string  = val.keywords.join();
+            if(search_string.length > 3 && (tags_string.toLowerCase().indexOf(search_string.toLowerCase()) > -1 || keywords_string.toLowerCase().indexOf(search_string.toLowerCase()) > -1)){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                stores.push(val);
+                store_ids.push(val.id);
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        
+        }
+        
+    });
+    search_results['stores'] = stores;
+    if(stores.length === 0){
+        search_results['stores_header_style'] = "display:none";
+    }
+    
+    
+    
+    //we only want to keep checking promos, events or jobs descriptions if there is more that 2 search string characters, otherwise too many results
+    if(count >= max_results || search_string.length < 3){
+        search_results['summary'] = {"count":count};
+        search_results['promotions_header_style'] = "display:none";
+        search_results['events_header_style'] = "display:none";
+        search_results['jobs_header_style'] = "display:none";
+        return search_results;
+    }
+    
+    var all_promotions = getPromotionsList();
+    var promotion_ids = [];
+    var promotions =[];
+    $.each( all_promotions , function( key, val ) {
+        localizeObject(val);
+        var added = false;
+        if(promotion_ids.indexOf(val.id) == -1){
+            if(val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                promotions.push(val);
+                promotion_ids.push(val.id);
+                count++;
+                added = true;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+        if(!added){
+            
+            if(val.description.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                promotions.push(val);
+                promotion_ids.push(val.id);
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+    });
+    search_results['promotions'] = promotions;
+    if(promotions.length === 0){
+        search_results['promotions_header_style'] = "display:none";
+    }
+    
+    
+    var all_events = getEventsList();
+    var event_ids = [];
+    var events =[];
+    $.each( all_events , function( key, val ) {
+        localizeObject(val);
+        var added = false;
+        if(event_ids.indexOf(val.id) == -1){
+            if(val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                events.push(val);
+                event_ids.push(val.id);
+                added = true;
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+        if(!added){
+            
+            if(val.description.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                events.push(val);
+                event_ids.push(val.id);
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+    });
+    search_results['events'] = events;
+    if(events.length === 0){
+        search_results['events_header_style'] = "display:none";
+    }
+    
+    var all_jobs = getJobsList();
+    var job_ids = [];
+    var jobs =[];
+    $.each( all_jobs , function( key, val ) {
+        localizeObject(val);
+        var added = false;
+        if(job_ids.indexOf(val.id) == -1){
+            if(val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                jobs.push(val);
+                job_ids.push(val.id);
+                added = true;
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+        if(!added){
+            if(val.description.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                jobs.push(val);
+                job_ids.push(val.id);
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
+    });
+    search_results['jobs'] = jobs;
+    if(jobs.length === 0){
+        search_results['jobs_header_style'] = "display:none";
+    }
+    
+    search_results['summary'] = {"count":count};
+    
+    
+
+    return search_results;
+    
+}
