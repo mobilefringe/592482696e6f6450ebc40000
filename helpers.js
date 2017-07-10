@@ -479,7 +479,8 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     };
                     
     $.each( slug_list , function( key, val ) {
-    }
+        
+    });
     var all_genInfo = getJobsList();
     var genInfo =[];
     var pages_json = prefix+"/pages/" + slug + ".json"
