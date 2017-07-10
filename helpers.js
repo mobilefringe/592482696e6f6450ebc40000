@@ -478,7 +478,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         'Sustainability' : ['/pages/svc-sustainability-criteria?building=1&menu=4']
                     };
                     
-    $.each( slug_list , function( key, val ) {
+    $.each( slug_list , function( key, each_list ) {
         //var pages_json = prefix+"/pages/" + slug + ".json"
         $.getJSON(pages_json).done(function(data) {
             //var pages_data = JSON.parse(data);
