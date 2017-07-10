@@ -110,7 +110,7 @@
         //console.log(search_results.genInfo, (search_results.genInfo.length > 0));
         if (search_results.genInfo != undefined){
             renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
-            $("#search_container_genInfo").style(search_results.genInfo_header_style);
+            $("#search_container_genInfo").css(search_results.genInfo_header_style);
         }
         else{
             $('#genInfo_header').hide()
