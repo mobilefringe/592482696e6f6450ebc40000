@@ -54,7 +54,7 @@
 <!--{% endif %}-->
 
 <script>
-
+     var search_results;
     $(window).load(function() {
         $('.flexslider').flexslider({
             animation: "slide",
