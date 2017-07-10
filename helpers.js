@@ -469,7 +469,9 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     }
 
     var slug_list = { 'Customer Service' : '/pages/svc-customer-service',
-                    '/pages/svc-leasing','/pages/svc-community-booth','/pages/svc-giftcard'};
+                    '/pages/svc-leasing','/pages/svc-community-booth','/pages/svc-giftcard'
+        
+    };
     var all_genInfo = getJobsList();
     var genInfo =[];
     var pages_json = prefix+"/pages/" + slug + ".json"
