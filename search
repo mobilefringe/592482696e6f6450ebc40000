@@ -238,6 +238,7 @@
                         if(count >= max_results){
                             return false;
                         }
+                        console.log ("HELOOOO");
                         if (genInfo != undefined &&  genInfo.length > 0){
                             renderGeneral('#search_container_genInfo','#search_template_genInfo', genInfo);
                         }
