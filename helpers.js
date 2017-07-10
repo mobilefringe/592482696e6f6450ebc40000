@@ -502,7 +502,6 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         'Tenants Manual' : ['/pages/svc-tenants-manual'],
                         'Construction' : ['/pages/svc-construction?building=1&menu=3','/pages/svc-construction--2?building=1&menu=3','/pages/svc-construction--3?building=1&menu=3','/pages/svc-construction--4?building=1&menu=3']
                         'Sustainability' : ['/pages/svc-sustainability-criteria?building=1&menu=4']
-                        
                     };
     var all_genInfo = getJobsList();
     var genInfo =[];
