@@ -535,6 +535,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         val.link = slug;
                         val.description = $(data.body).text();
                         val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                        console.log("val is", val)
                         genInfo.push(val);
                         gen_info_list.push(key)
                         count++;
