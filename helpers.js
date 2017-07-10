@@ -313,6 +313,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     var store_ids = [];
     var stores =[];
     var count = 0;
+    console.log(all_stores)
     $.each( all_stores , function( key, val ) {
         localizeObject(val);
         if(store_ids.indexOf(val.id) == -1){
