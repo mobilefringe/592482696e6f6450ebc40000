@@ -510,7 +510,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         });
     });
     
-    search_results['genInfo'] = jobs;
+    search_results['genInfo'] = genInfo;
     if(genInfo.length === 0){
         search_results['genInfo_header_style'] = "display:none";
     }
