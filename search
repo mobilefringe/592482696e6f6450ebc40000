@@ -72,7 +72,7 @@
         //loadMallDataCached(renderAll); 
     function renderAll(){
         var params = getRequestParam('query');
-        var search_results = getSVCSearchResults(params,10,300);
+        var search_results = getSVCSearchResults(params,15,300);
         console.log(params, search_results);
         
         if (search_results.stores != undefined && search_results.stores.length > 0){
