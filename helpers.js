@@ -491,7 +491,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                 //$("#page_title").html(data.title)
                 //$('#page_body_content').html(data.body);
                 
-                if(store_ids.indexOf(val.id) == -1){
+                if(gen_info_list.indexOf(key) == -1){
                     // console.log(search_string, val.name);
                     if((data.body.toLowerCase().indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
                         var val = {};
