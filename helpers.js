@@ -468,7 +468,8 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         search_results['jobs_header_style'] = "display:none";
     }
 
-    var slug_list = { 'Customer Service' : '/pages/svc-customer-service',
+    var slug_list = { 
+        'Customer Service' : '/pages/svc-customer-service',
                     'Customer Service' :'/pages/svc-leasing','/pages/svc-community-booth','/pages/svc-giftcard'
         
     };
