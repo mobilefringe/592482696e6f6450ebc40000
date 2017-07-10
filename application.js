@@ -310,8 +310,8 @@ function renderStoreDetails(container, template, collection, slug){
         else{
             val.tags_show = "display:none";
         }
-        val.payment = null; val.return = null;
-        if (val.payment !== null && val.payment.length > 0){
+        //val.payment = null; val.return = null;
+        if (val.payment_methods !== null && val.payment.length > 0){
             val.payment_show = "display:inline-block";
         }
         else{
