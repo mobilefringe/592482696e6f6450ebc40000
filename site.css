@@ -1367,6 +1367,7 @@ a.store_name:hover{
     top: -25px;
     left: -25px;
     color:white;
+    width:100%;
 }
 
 .store_name_map_detail{
