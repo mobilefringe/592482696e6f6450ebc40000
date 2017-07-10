@@ -479,22 +479,22 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     };
                     
     $.each( slug_list , function( key, each_list ) {
-         $.each( each_list , function( key, val ) {
+        $.each( each_list , function( key, val ) {
         //var pages_json = prefix+"/pages/" + slug + ".json"
-        $.getJSON(pages_json).done(function(data) {
-            //var pages_data = JSON.parse(data);
-            // console.log(data.body);
-            
-            //$("#page_title").html(data.title)
-            //$('#page_body_content').html(data.body);
-            
-    	
-        }).fail(function(jqXHR) {
-            if (jqXHR.status == 404) {
-                $("#404_msg").fadeIn("fast");
-            }
+            $.getJSON(pages_json).done(function(data) {
+                //var pages_data = JSON.parse(data);
+                // console.log(data.body);
+                
+                //$("#page_title").html(data.title)
+                //$('#page_body_content').html(data.body);
+                
+        	
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            });
         });
-         });
     });
     var all_genInfo = getJobsList();
     var genInfo =[];
