@@ -485,12 +485,6 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         $.each( each_list , function( key_slug, slug ) {
             var pages_json = prefix + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
-                //var pages_data = JSON.parse(data);
-                // console.log(data.body);
-                
-                //$("#page_title").html(data.title)
-                //$('#page_body_content').html(data.body);
-                
                 if(gen_info_list.indexOf(key) == -1){
                     
                     if((data.body.indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
