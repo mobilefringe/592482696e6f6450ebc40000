@@ -354,7 +354,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                 return false;
             }
         }
-         if((store_ids.indexOf(val.id) == -1) && (val.description_2 != null )){
+         if((store_ids.indexOf(val.id) == -1) && (val.description_2 !== null )){
             // console.log(search_string, val.name);
             if(val.description_2.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
                 val.description_trim = val.description_2.substring(0, trim_description_length) + "..";
