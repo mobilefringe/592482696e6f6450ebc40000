@@ -469,31 +469,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     }
     
    
-                <li class="menu_item sub_menu_li" id="building_li_2">
-                    <a href="#" class="toggle_sub_menu meniu_item_a">
-                        base building
-                    </a>                
-                    <ul class="sub_menu">                    
-                        <li class="sub_menu_item">
-                            <a href='/pages/svc-base-building?building=1&menu=2'><span>Architectural</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href='/pages/svc-base-building--2?building=1&menu=2'><span>Structural</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href='/pages/svc-base-building--3?building=1&menu=2'><span>Mechanical</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href='/pages/svc-base-building--4?building=1&menu=2'><span>Electrical</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href='/pages/svc-base-building--5?building=1&menu=2'><span>Site</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href='/pages/svc-base-building--6?building=1&menu=2'><span>Environment Green</span></a>
-                        </li>
-                    </ul>
-                </li>
+            
                 <li class="menu_item sub_menu_li" id="building_li_3">
                     <a href="#" class="toggle_sub_menu meniu_item_a">
                         construction
@@ -522,7 +498,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     var slug_list = { 
                         'Service' : ['/pages/svc-customer-service','/pages/svc-leasing', :'/pages/svc-community-booth','/pages/svc-giftcard'],
                         'Submission Requirements' : ['/pages/svc-submission-requirements'],
-                        'Base Building' : ['/pages/svc-base-building','/pages/svc-base-building--2','/pages/svc-base-building--3']
+                        'Base Building' : ['/pages/svc-base-building','/pages/svc-base-building--2','/pages/svc-base-building--3','/pages/svc-base-building--4','/pages/svc-base-building--5','/pages/svc-base-building--6']
                         
                     };
     var all_genInfo = getJobsList();
