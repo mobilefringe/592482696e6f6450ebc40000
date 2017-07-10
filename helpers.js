@@ -407,7 +407,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     $.each( slug_list , function( key, each_list ) {
         $.each( each_list , function( key_slug, slug ) {
             var pages_json = prefix + slug + ".json"
-            $.getJSON(pages_json).done(function(data) {
+            $.getJSON(pages_json).then(function(data) {
                 if(gen_info_list.indexOf(key) == -1){
                     
                     if((data.body.indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
