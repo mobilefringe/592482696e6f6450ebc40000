@@ -110,7 +110,7 @@
             renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
         }
         else{
-            $('#jobs_header').hide()
+            $('#genInfo_header').hide()
         }
         show_content();
        
