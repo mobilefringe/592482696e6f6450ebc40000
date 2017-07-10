@@ -436,10 +436,10 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     });
     
     search_results['genInfo'] = genInfo;
-    if(gen_count === 0){
-        console.log(gen_count);
-        search_results['genInfo_header_style'] = "display:none";
-    }
+    // if(gen_count === 0){
+    //     console.log(gen_count);
+    //     search_results['genInfo_header_style'] = "display:none";
+    // }
     
     
     //we only want to keep checking promos, events or jobs descriptions if there is more that 2 search string characters, otherwise too many results
