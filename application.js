@@ -1010,7 +1010,7 @@ function renderStoreService(container, template, collection){
     $.each( collection , function( key, val ) {
         if(val.store_service !==null || val.store_service !==undefined  || val.store_service !=="")
         {
-            console.log( val.store_service, (val.store_service !==null),( val.store_service !==""));
+            console.log( val.store_service, (val.store_service !==null),(val.store_service !==undefined,( val.store_service !==""));
             var temp_list = val.store_service.split(",");
             $.each( temp_list , function( keys, tag ) {
               if($.inArray(tag, service_list) == -1 && (tag!=="")){
