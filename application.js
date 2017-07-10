@@ -63,7 +63,6 @@ function renderGeneral(container, template, collection){
        
     });
     $(container).html(item_rendered.join(''));
-    console.log("hi",container, template, collection);
 }
 function renderVendorScroll(container, template, collection){
     var item_list_temp = [];
