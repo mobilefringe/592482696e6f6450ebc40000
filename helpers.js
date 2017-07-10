@@ -494,7 +494,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     if(val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
                         val.description_trim = val.description.substring(0, trim_description_length) + "..";
                         genInfo.push(val);
-                        store_ids.push(val.id);
+                        
                         count++;
                     }
                     if(count >= max_results){
