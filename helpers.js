@@ -468,33 +468,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         search_results['jobs_header_style'] = "display:none";
     }
     
-   
-            
-                <li class="menu_item sub_menu_li" id="building_li_3">
-                    <a href="#" class="toggle_sub_menu meniu_item_a">
-                        construction
-                    </a>                
-                    <ul class="sub_menu">                    
-                        <li class="sub_menu_item">
-                            <a href=><span>Hoarding</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href=><span>Preferred Trades</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href=><span>Before Construction</span></a>
-                        </li>
-                        <li class="sub_menu_item">
-                            <a href=><span>During Construction</span></a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="menu_item" id="building_li_4">
-                    <a href="/pages/svc-sustainability-criteria?building=1&menu=4" class="meniu_item_a">
-                        Sustainability                        
-                    </a>
-            	</li>                
-
+    // St Vital Search through pages        
     var slug_list = { 
                         'Service' : ['/pages/svc-customer-service','/pages/svc-leasing', :'/pages/svc-community-booth','/pages/svc-giftcard'],
                         'Submission Requirements' : ['/pages/svc-submission-requirements'],
