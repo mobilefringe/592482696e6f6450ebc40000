@@ -496,7 +496,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
             });
         });
     });
-   
+    
     search_results['jobs'] = jobs;
     if(jobs.length === 0){
         search_results['jobs_header_style'] = "display:none";
