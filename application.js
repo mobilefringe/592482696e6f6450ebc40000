@@ -1012,12 +1012,12 @@ function renderStoreService(container, template, collection){
         {
             var temp_list = val.store_service.split(",");
             $.each( val.temp_list , function( keys, tag ) {
-              if($.inArray(tag, tag_list) == -1 && (tag!=="")){
+              if($.inArray(tag, service_list) == -1 && (tag!=="")){
                     // console.log(tag);
                     var value={};
                     value.name=tag;
                     item_list.push(value);
-                    tag_list.push(tag);
+                    service_list.push(tag);
                 }
             });
         }
