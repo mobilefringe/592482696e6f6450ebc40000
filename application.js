@@ -967,7 +967,7 @@ function renderStoreTags(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var tag_list = [];
     $.each( collection , function( key, val ) {
-        if(val.tags !== null || val.tags !==undefined)
+        if(val.tags !== null && val.tags !==undefined)
         {
             $.each( val.tags , function( keys, tag ) {
               if($.inArray(tag, tag_list) == -1 && (tag!=="")){
