@@ -538,7 +538,6 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         genInfo.push(val);
                         gen_info_list.push(key)
                         count++;
-                        console.log(getInfo.length);
                     }
                     if(count >= max_results){
                         return false;
@@ -554,7 +553,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     
     search_results['genInfo'] = genInfo;
     if(genInfo.length === 0){
-        console.log(getInfo.length);
+        console.log(genInfo.length);
         search_results['genInfo_header_style'] = "display:none";
     }
     search_results['summary'] = {"count":count};
