@@ -470,7 +470,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
 
     var slug_list = { 
                     'Customer Service' : '/pages/svc-customer-service',
-                    'Customer Service' :'/pages/svc-leasing',
+                    'Leasing' :'/pages/svc-leasing',
                     'Customer Service' :'/pages/svc-community-booth',
                     'Customer Service' :'/pages/svc-giftcard'
         
