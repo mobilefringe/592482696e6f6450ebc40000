@@ -483,7 +483,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     prefix = get_prefix();
     $.each( slug_list , function( key, each_list ) {
         $.each( each_list , function( key, slug ) {
-            var pages_json = prefix+"/pages/" + slug + ".json"
+            var pages_json = prefix + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
                 //var pages_data = JSON.parse(data);
                 // console.log(data.body);
