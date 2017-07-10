@@ -520,11 +520,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
             	</li>                
 
     var slug_list = { 
-                        'Service' : {
-                        'Customer Service' : '/pages/svc-customer-service',
-                        'Leasing' :'/pages/svc-leasing',
-                        'Community Booth' :'/pages/svc-community-booth',
-                        'Giftcard' :'/pages/svc-giftcard'},
+                        'Service' : ['/pages/svc-customer-service','/pages/svc-leasing', :'/pages/svc-community-booth','/pages/svc-giftcard'],
                         'Submission Requirements' : '/pages/svc-submission-requirements',
                         
                     };
