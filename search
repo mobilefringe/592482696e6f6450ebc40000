@@ -68,7 +68,9 @@
         
         loadMallData(renderAll); 
     });
-        
+    $( window ).load(function() {
+
+    });
         //loadMallDataCached(renderAll); 
     function renderAll(){
         var params = getRequestParam('query');
