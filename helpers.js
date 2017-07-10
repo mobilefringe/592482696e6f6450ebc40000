@@ -469,8 +469,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     }
     
     var all_genInfo = getJobsList();
-    var job_ids = [];
-    var jobs =[];
+    var genInfo =[];
     var pages_json = prefix+"/pages/" + slug + ".json"
         $.getJSON(pages_json).done(function(data) {
             //var pages_data = JSON.parse(data);
