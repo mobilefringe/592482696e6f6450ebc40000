@@ -525,7 +525,8 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         'Leasing' :'/pages/svc-leasing',
                         'Community Booth' :'/pages/svc-community-booth',
                         'Giftcard' :'/pages/svc-giftcard'},
-                        'Submission Requirements' : '/pages/svc-submission-requirements'
+                        'Submission Requirements' : '/pages/svc-submission-requirements',
+                        
                     };
     var all_genInfo = getJobsList();
     var genInfo =[];
