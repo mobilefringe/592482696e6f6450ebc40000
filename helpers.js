@@ -521,6 +521,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     
     var genInfo =[];
     var gen_info_list = [];
+    var gen_count = 0;
     prefix = get_prefix();
     $.each( slug_list , function( key, each_list ) {
         $.each( each_list , function( key_slug, slug ) {
