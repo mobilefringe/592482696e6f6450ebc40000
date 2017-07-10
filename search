@@ -36,7 +36,7 @@
 </div>    
 
 <h3 id="genInfo_header">Genreral Information</h3>    
-<div id="search_container_genInfo" class="store_list_padding search_result hidden_now">
+<div id="search_container_genInfo" class="store_list_padding search_result">
     <script id="search_template_genInfo" type="x-tmpl-mustache/text">
         <a href="{{link}}">{{name}}</a>
         <p>{{description_trim}}</p>
@@ -106,11 +106,10 @@
         else{
             $('#jobs_header').hide()
         }
-        console.log(search_results.genInfo_header_style);
+        //console.log(search_results.stores);
         //console.log(search_results.genInfo, (search_results.genInfo.length > 0));
-        if (search_results.genInfo != undefined){
+        if (search_results.genInfo != undefined &&  search_results.genInfo.length > 0){
             renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
-            $("#search_container_genInfo").css(search_results.genInfo_header_style);
         }
         else{
             $('#genInfo_header').hide()
