@@ -316,7 +316,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     $.each( all_stores , function( key, val ) {
         localizeObject(val);
         if(store_ids.indexOf(val.id) == -1){
-            console.log(search_string,
+            console.log(search_string, (val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1));
             if(val.name.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
                 val.description_trim = val.description.substring(0, trim_description_length) + "..";
                 stores.push(val);
