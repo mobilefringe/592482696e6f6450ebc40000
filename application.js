@@ -1006,9 +1006,9 @@ function renderStoreService(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html);   // optional, speeds up future uses
-    var tag_list = [];
+    var service_list = [];
     $.each( collection , function( key, val ) {
-        if(val.tags !== null || val.tags !==undefined)
+        if(val.store_service !== null || val.store_service !==undefined)
         {
             $.each( val.tags , function( keys, tag ) {
               if($.inArray(tag, tag_list) == -1 && (tag!=="")){
