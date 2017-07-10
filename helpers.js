@@ -536,7 +536,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         val.description = $(data.body).text();
                         val.description_trim = val.description.substring(0, trim_description_length) + "..";
                         genInfo.push(val);
-                        gen_info_list.push(key)
+                        gen_info_list.push(key);
                         count++;
                     }
                     if(count >= max_results){
