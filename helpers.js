@@ -356,7 +356,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         }
          if(store_ids.indexOf(val.id) == -1){
             // console.log(search_string, val.name);
-            if((val.description_2 !== null ) && (val.description_2 !== undefined ))) {
+            if((val.description_2 !== null ) && (val.description_2 !== undefined )) {
                 
             }
             if(val.description_2.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
