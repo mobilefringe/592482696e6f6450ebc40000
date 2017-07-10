@@ -556,7 +556,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     
     search_results['genInfo'] = genInfo;
     if(gen_count === 0){
-        console.log(genInfo.length);
+        console.log(gen_count);
         search_results['genInfo_header_style'] = "display:none";
     }
     search_results['summary'] = {"count":count};
