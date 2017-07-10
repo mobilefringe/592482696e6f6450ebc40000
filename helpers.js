@@ -354,7 +354,18 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                 return false;
             }
         }
-        
+         if(store_ids.indexOf(val.id) == -1){
+            // console.log(search_string, val.name);
+            if(val.description.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
+                val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                stores.push(val);
+                store_ids.push(val.id);
+                count++;
+            }
+            if(count >= max_results){
+                return false;
+            }
+        }
     });
     search_results['stores'] = stores;
     if(stores.length === 0){
