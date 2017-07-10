@@ -482,7 +482,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
     var gen_info_list = [];
     prefix = get_prefix();
     $.each( slug_list , function( key, each_list ) {
-        $.each( each_list , function( key, slug ) {
+        $.each( each_list , function( key_slug, slug ) {
             var pages_json = prefix + slug + ".json"
             $.getJSON(pages_json).done(function(data) {
                 //var pages_data = JSON.parse(data);
@@ -499,7 +499,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                         val.description = data.body;
                         val.description_trim = val.description.substring(0, trim_description_length) + "..";
                         genInfo.push(val);
-                        
+                        gen_info_list.push()
                         count++;
                     }
                     if(count >= max_results){
