@@ -1010,7 +1010,7 @@ function renderStoreService(container, template, collection){
     $.each( collection , function( key, val ) {
         if(val.store_service !== null || val.store_service !==undefined)
         {
-            $.each( val.tags , function( keys, tag ) {
+            $.each( val.store_service , function( keys, tag ) {
               if($.inArray(tag, tag_list) == -1 && (tag!=="")){
                     // console.log(tag);
                     var value={};
