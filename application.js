@@ -1000,3 +1000,44 @@ function renderStoreTags(container, template, collection){
     $(container).show();
     $(container).html(item_rendered.join(''));
 }
+
+function renderStoreTags(container, template, collection){
+    var item_list = [];
+    var item_rendered = [];
+    var template_html = $(template).html();
+    Mustache.parse(template_html);   // optional, speeds up future uses
+    var tag_list = [];
+    $.each( collection , function( key, val ) {
+        if(val.tags !== null || val.tags !==undefined)
+        {
+            $.each( val.tags , function( keys, tag ) {
+              if($.inArray(tag, tag_list) == -1 && (tag!=="")){
+                    // console.log(tag);
+                    var value={};
+                    value.name=tag;
+                    item_list.push(value);
+                    tag_list.push(tag);
+                }
+            });
+        }
+    });
+    //item_list.sort();
+    //item_list=tag_list;
+      item_list.sort(function(a, b) {
+        var textA = a.name.toUpperCase();
+        var textB = b.name.toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+    collection = [];
+    collection = item_list;
+    
+    $.each( collection , function( key, val ) {
+        //console.log(val.name);
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
+
+    });
+    
+    $(container).show();
+    $(container).html(item_rendered.join(''));
+}
