@@ -505,7 +505,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     if(count >= max_results){
                         return false;
                     }
-                // }
+                }
             }).fail(function(jqXHR) {
                 if (jqXHR.status == 404) {
                     $("#404_msg").fadeIn("fast");
