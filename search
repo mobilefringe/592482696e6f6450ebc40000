@@ -109,6 +109,7 @@
         $( window ).load(function() {
              if (search_results.genInfo != undefined &&  search_results.genInfo.length > 0){
             renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
+            console.log("Hi!");
             }
             else{
                 $('#genInfo_header').hide()
