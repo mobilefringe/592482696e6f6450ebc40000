@@ -36,7 +36,7 @@
 </div>    
 
 <h3 id="genInfo_header">Genreral Information</h3>    
-<div id="search_container_genInfo" class="store_list_padding search_result">
+<div id="search_container_genInfo" class="store_list_padding search_result hidden_now">
     <script id="search_template_genInfo" type="x-tmpl-mustache/text">
         <a href="{{link}}">{{name}}</a>
         <p>{{description_trim}}</p>
