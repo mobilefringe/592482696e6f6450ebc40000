@@ -4,7 +4,7 @@
 <div id="search_container_stores" class="store_list_padding search_result">
     <script id="search_template_stores" type="x-tmpl-mustache/text">
         <a href="/stores/{{slug}}">{{name}}</a>
-        <p>{{{rich_description}}}</p>
+        <p>{{description_trim}}</p>
     </script>
 </div>
 
@@ -13,7 +13,7 @@
 <div id="search_container_promotions" class="store_list_padding search_result">
     <script id="search_template_promotions" type="x-tmpl-mustache/text">
         <a href="/promotions/{{slug}}">{{name}}</a>
-        <p>{{{rich_description}}}</p>
+        <p>{{description_trim}}</p>
       
     </script>
 </div>
@@ -21,7 +21,7 @@
 <div id="search_container_events"  class="store_list_padding search_result">
     <script id="search_template_events" type="x-tmpl-mustache/text">
         <a href="/events/{{slug}}">{{name}}</a>
-        <p>{{{rich_description}}}</p>
+        <p>{{description_trim}}</p>
     </script>
 </div>
 
