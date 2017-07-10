@@ -1008,7 +1008,7 @@ function renderStoreService(container, template, collection){
     Mustache.parse(template_html);   // optional, speeds up future uses
     var service_list = [];
     $.each( collection , function( key, val ) {
-        if(val.store_service !== null || val.store_service !==undefined)
+        if(val.store_service !== null || val.store_service !==undefined  || val.store_service !=="")
         {
             var temp_list = val.store_service.split(",");
             $.each( temp_list , function( keys, tag ) {
