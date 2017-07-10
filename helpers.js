@@ -468,6 +468,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         search_results['jobs_header_style'] = "display:none";
     }
     
+    var slug_list = [];
     var all_genInfo = getJobsList();
     var genInfo =[];
     var pages_json = prefix+"/pages/" + slug + ".json"
