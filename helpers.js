@@ -390,6 +390,56 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         search_results['stores_header_style'] = "display:none";
     }
     
+       // St Vital Search through pages        
+    var slug_list = { 
+                        'Service' : ['/pages/svc-customer-service','/pages/svc-leasing', '/pages/svc-community-booth','/pages/svc-giftcard'],
+                        'Submission Requirements' : ['/pages/svc-submission-requirements'],
+                        'Base Building' : ['/pages/svc-base-building?building=1&menu=2','/pages/svc-base-building--2?building=1&menu=2','/pages/svc-base-building--3?building=1&menu=2','/pages/svc-base-building--4?building=1&menu=2','/pages/svc-base-building--5?building=1&menu=2','/pages/svc-base-building--6?building=1&menu=2'],
+                        'Tenants Manual' : ['/pages/svc-tenants-manual'],
+                        'Construction' : ['/pages/svc-construction?building=1&menu=3','/pages/svc-construction--2?building=1&menu=3','/pages/svc-construction--3?building=1&menu=3','/pages/svc-construction--4?building=1&menu=3'],
+                        'Sustainability' : ['/pages/svc-sustainability-criteria?building=1&menu=4']
+                    };
+    
+    var genInfo =[];
+    var gen_info_list = [];
+    var gen_count = 0;
+    prefix = get_prefix();
+    $.each( slug_list , function( key, each_list ) {
+        $.each( each_list , function( key_slug, slug ) {
+            var pages_json = prefix + slug + ".json"
+            $.getJSON(pages_json).done(function(data) {
+                if(gen_info_list.indexOf(key) == -1){
+                    
+                    if((data.body.indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
+                        console.log(data.title,slug);
+                        var val = {};
+                        val.name = key;
+                        val.link = slug;
+                        val.description = $(data.body).text();
+                        val.description_trim = val.description.substring(0, trim_description_length) + "..";
+                        genInfo.push(val);
+                        gen_info_list.push(key);
+                        count++;
+                         //console.log(gen_count);
+                         gen_count++;
+                    }
+                    if(count >= max_results){
+                        return false;
+                    }
+                }
+            }).fail(function(jqXHR) {
+                if (jqXHR.status == 404) {
+                    $("#404_msg").fadeIn("fast");
+                }
+            });
+        });
+    });
+    
+    search_results['genInfo'] = genInfo;
+    if(gen_count === 0){
+        console.log(gen_count);
+        search_results['genInfo_header_style'] = "display:none";
+    }
     
     
     //we only want to keep checking promos, events or jobs descriptions if there is more that 2 search string characters, otherwise too many results
