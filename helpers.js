@@ -486,7 +486,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
             
             //$("#page_title").html(data.title)
             //$('#page_body_content').html(data.body);
-            var n = 0;
+            
     	
         }).fail(function(jqXHR) {
             if (jqXHR.status == 404) {
