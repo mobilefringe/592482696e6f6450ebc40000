@@ -489,7 +489,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
                     
                     if((data.body.indexOf(search_string.toLowerCase()) > -1) || (data.title.toLowerCase().indexOf(search_string.toLowerCase()) > -1)  ){
                         console.log(data.title,slug);
-                        var val = {};
+                        var val = [];
                         val.name = key;
                         val.link = slug;
                         val.description = html(data.body);
