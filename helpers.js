@@ -371,7 +371,7 @@ function getSVCSearchResults(search_string,max_results,trim_description_length){
         }
          if(store_ids.indexOf(val.id) == -1){
             // console.log(search_string, val.name);
-            if((val.store_service !== null ) && (val.description_2 !== undefined )) {
+            if((val.store_service !== null ) && (val.store_service !== undefined )) {
                 if(val.store_service.toLowerCase().indexOf(search_string.toLowerCase()) > -1){
                     val.description_trim = val.description_2.substring(0, trim_description_length) + "..";
                     stores.push(val);
