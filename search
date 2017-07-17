@@ -74,10 +74,10 @@
         var params = getRequestParam('query');
         console.log(params);
         if(params) {
-            
-        }
-        var search_results = getSVCSearchResults(params,15,300);
+            var search_results = getSVCSearchResults(params,15,300);
         console.log(params, search_results);
+        }
+        
         
         if (search_results.stores != undefined && search_results.stores.length > 0){
             renderGeneral('#search_container_stores','#search_template_stores', search_results.stores);
