@@ -111,10 +111,10 @@ $(window).load(function() {
         console.log("Hi");
         $("#"+promo_div+" .info_toggle").toggle();
         
-        if ($(this).text().indexOf("more") != -1){
-            $(this).text("Read less"); 
+        if ($("a.toggle").text().indexOf("more") != -1){
+            $("a.toggle").text("Read less"); 
         } else {
-            $(this).text("Read more");    
+            $("a.toggle").text("Read more");    
         }  
         
     }
