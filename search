@@ -103,7 +103,7 @@
                 renderGeneral('#search_container_jobs','#search_template_jobs', search_results.jobs);
             }
             else{
-                $('#jobs_header').hide()
+                $('#genInfo_header').hide()
             }
             
             //console.log(search_results.stores);
@@ -118,6 +118,8 @@
         else {
             $("#no_search_header").show();
             $("#no_search_container").show();
+            $('#genInfo_header').hide();
+            $('#genInfo_header').hide();
         }
 
         show_content();
