@@ -68,7 +68,7 @@
     
     function renderAll(){
    
-        var jobs = getEventsList();
+        var jobs = getJobsList();
       
         if (jobs.length > 0){
             renderJobs("#jobs_container","#jobs_template", jobs);
