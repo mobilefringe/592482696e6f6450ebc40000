@@ -123,6 +123,7 @@
              $('#events_header').hide();
              $('#promotions_header').hide();
              $('#stores_header').hide();
+              $('#jobs_header').hide();
         }
 
         show_content();
