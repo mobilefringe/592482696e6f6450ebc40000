@@ -122,14 +122,7 @@ $(window).load(function() {
                 $(this).next().css("background-color","#05E7E4")
             }
         );
-        $("a.toggle").click(function(){
-             console.log("Hello");
-            if ($(this).text().indexOf("more") != -1){
-                $(this).text("Read less"); 
-            } else {
-                $(this).text("Read more");    
-            }            
-        });
+        
         $("#event_select select").change(function(){
             if ($(this).val() == "event"){
                 window.location = "/events"
