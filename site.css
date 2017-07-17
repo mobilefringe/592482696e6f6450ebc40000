@@ -1539,6 +1539,12 @@ a#mapshot-toggle.mapview{
 #map-legend .legend-list .defib .icon {
     background-position: -240px -40px;
 }
+
+.map_tooltip{
+    background-color: #C607A9;
+    width:300px;
+    
+}
 /******** map END **********/
 
 
