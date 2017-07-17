@@ -42,16 +42,13 @@
         <p>{{description_trim}}</p>
     </script>
 </div>  
-<!--{% assign page_query = result_query["page"] | size %}-->
-<!--{% if page_query > 0 %}-->
-<!--    <h3>Generial Information</h3>    -->
-<!--    {% for item in result_query["page"] %}-->
-<!--        <div class="store_list_padding search_result">-->
-<!--            <a href="/pages/{{item.slug}}">{{item.title}}</a>-->
-<!--            <p>{{item.body | strip_html | truncatewords: 35}}</p>-->
-<!--        </div>    -->
-<!--    {% endfor %}-->
-<!--{% endif %}-->
+<h3 id="stores_header">Stores, Shops, and Services</h3>
+<div id="search_container_stores" class="store_list_padding search_result">
+    <script id="search_template_stores" type="x-tmpl-mustache/text">
+        <a href="/stores/{{slug}}">{{name}}</a>
+        <p>{{description_trim}}</p>
+    </script>
+</div>
 
 <script>
     
