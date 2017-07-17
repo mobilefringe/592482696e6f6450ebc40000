@@ -111,10 +111,10 @@ $(window).load(function() {
         // console.log("Hi");
         $("#"+promo_div+" .info_toggle").toggle();
         
-        if ($("#read"+promo_div).text().indexOf("more") != -1){
-           $("#read"+promo_div).text("Read less"); 
+        if ($("#read_"+promo_div).text().indexOf("more") != -1){
+           $("#read_"+promo_div).text("Read less"); 
         } else {
-           $("#read"+promo_div).text("Read more");    
+           $("#read_"+promo_div).text("Read more");    
         }  
         
     }
