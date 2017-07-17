@@ -5,7 +5,7 @@
     
     <div id="jobs_container">
         <script id="jobs_template" type="x-tmpl-mustache/text">
-             <h3>{{job.jobable.name}}</h3>
+             <h3>{{store_name}}</h3>
              <div class="job_list">
                 <h4>{{store_name}}</h4>
                 <p>{{job.description | strip_html | truncate:360}}</p>
