@@ -11,7 +11,7 @@
                 <p>{{job.description | strip_html | truncate:360}}</p>
                 <a href="/jobs/{{slug}}">Read more...</a>
                 <a href="#top" class="back_to_top">
-                    <img src="">
+                    <img src="http://assets.codecloudapp.com/sites/592482696e6f6450ebc40000/image/png/1495572558000/back_small.png">
                     Back to top
                 </a>
             </div>
