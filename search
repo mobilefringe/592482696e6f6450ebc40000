@@ -44,7 +44,7 @@
 </div>  
 
 <h3 id="no_search_header" class="hidden_now">No Search Query Found</h3>
-<div id="search_container_stores" class="store_list_padding search_result hidden_now">
+<div id="no_search_container" class="store_list_padding search_result hidden_now">
    
         <p>Please use the search bar to enter search keyword.</p>
   
