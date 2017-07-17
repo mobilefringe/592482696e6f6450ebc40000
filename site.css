@@ -1542,7 +1542,7 @@ a#mapshot-toggle.mapview{
 
 .map_tooltip{
     background-color: #C607A9;
-    width:300px;
+    width:300px!important;
     
 }
 /******** map END **********/
