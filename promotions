@@ -112,9 +112,9 @@ $(window).load(function() {
         $("#"+promo_div+" .info_toggle").toggle();
         
         if ($("#read"+promo_div).text().indexOf("more") != -1){
-            $("a.toggle").text("Read less"); 
+           $("#read"+promo_div).text("Read less"); 
         } else {
-            $("a.toggle").text("Read more");    
+           $("#read"+promo_div).text("Read more");    
         }  
         
     }
