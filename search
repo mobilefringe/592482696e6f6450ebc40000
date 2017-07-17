@@ -120,6 +120,7 @@
             $("#no_search_container").show();
             $('#genInfo_header').hide();
             $('#genInfo_header').hide();
+             $('#events_header').hide()
         }
 
         show_content();
