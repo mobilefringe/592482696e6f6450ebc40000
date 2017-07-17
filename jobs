@@ -39,3 +39,127 @@
     </div>
     {% endfor %}
 </div>
+
+<script>
+    $(window).load(function() {
+        $('.flexslider').flexslider({
+            animation: "slide",
+            controlNav: false,
+            directionNav: false,        
+            prevText: "Previous",
+            nextText: "Next"
+        });
+    });
+    $(document).ready(function(e){
+        init(e);
+        loadMallData(renderAll); 
+        
+    });
+
+    function toggle_detail(promo_div){
+        $("#"+promo_div+" .info_toggle").toggle();
+        
+         if ($("#read_"+promo_div).text().indexOf("more") != -1){
+           $("#read_"+promo_div).text("Read less"); 
+        } else {
+           $("#read_"+promo_div).text("Read more");    
+        }  
+    }
+    
+    function renderAll(){
+        $(".all_events_promo, .mall_events, .store_event, .property_event").hide();
+        $(".selector-wrap select").hover(
+            function(){
+                $(this).next().css("background-color","#F3047A")
+            },
+            function(){
+                $(this).next().css("background-color","#05E7E4")
+            }
+        );
+        $("a.toggle").click(function(){
+            console.log("Hello");
+            if ($(this).text().indexOf("more") != -1){
+                $(this).text("Read less"); 
+            } else {
+                $(this).text("Read more");    
+            }            
+        });
+        $("#event_select select").change(function(){
+            if ($(this).val() == "event"){
+                window.location = "/events"
+            } else if ($(this).val() == "store_promo"){
+                $(".all_events_promo").hide();
+                $(".property_event").hide();
+                $(".mall_events").hide();
+                $(".store_event").show();             
+                $("#promomainheading").text("Sales and Promotions");
+            } else if ($(this).val() == "property_promo"){
+                $(".all_events_promo").hide();
+                $(".store_event").hide();
+                $(".mall_events").hide();
+                $(".property_event").show();                
+                $("#promomainheading").text("Kids Club Events");
+            } else if ($(this).val() == "all"){
+                window.location = "/promotions"
+            }
+            
+            var cat_name = $(this).find("option:selected").text();            
+            $("#category_select .select_name").text(cat_name);
+        })
+        
+        if (getURLParameter("show") == "kids-club"){
+            $(".all_events_promo").remove();
+            $(".store_event").remove();
+            $(".mall_events").remove();
+            $(".property_event").show();
+        } else if (getURLParameter("show") == "sales"){
+            $(".all_events_promo").remove();
+            $(".mall_events").remove();
+            $(".store_event").show();
+            $(".property_event").show();
+        } else{
+            $(".store_event").remove();
+            $(".property_event").remove();
+            $(".mall_events").remove();
+            $(".all_events_promo").show();
+        }
+        
+        
+
+        var promotions = getEventsList();
+        var store_promos = promotions.sortBy(function(o){ return o.start_date });
+        var published_promos = [];
+        $.each( store_promos , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today >= webDate) {
+                published_promos.push(val)
+            } 
+        });
+        if (published_promos.length > 0){
+            renderPromotions("#event_container","#event_template", published_promos);
+        }
+        /*var future_promos = [];
+        $.each( store_promos , function( key, val ){
+            // today = new Date();
+            // webDate = new Date(val.show_on_web_date)
+            
+            today = moment();
+            webDate = moment(val.show_on_web_date);
+            if (today < webDate) {
+                future_promos.push(val)
+            } 
+        });
+        if (future_promos.length > 0){
+            renderEvents("#future_promo_container","#future_promo_template", future_promos);
+        }
+        else {
+            $(".future_promo").hide();
+        }*/
+        show_content();
+   
+    }
+</script>
