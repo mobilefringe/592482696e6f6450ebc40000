@@ -105,6 +105,16 @@ $(window).load(function() {
         init(e);
         loadMallData(renderAll);
        
+       $("a.toggle").click(function(){
+        console.log("Hello");
+        if ($(this).text().indexOf("more") != -1){
+            $(this).text("Read less"); 
+        } else {
+            $(this).text("Read more");    
+        }            
+    });
+    
+    
     });
 
     function toggle_detail(promo_div){
