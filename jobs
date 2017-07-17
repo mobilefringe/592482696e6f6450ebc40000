@@ -68,7 +68,7 @@
     
     function renderAll(){
    
-        var promotions = getEventsList();
+        var jobs = getEventsList();
         var store_promos = promotions.sortBy(function(o){ return o.start_date });
         var published_promos = [];
         $.each( store_promos , function( key, val ){
