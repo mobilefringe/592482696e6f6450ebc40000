@@ -49,13 +49,7 @@
 </div>
 
 <script>
-$(document).ready(function(e){
-        init(e);
-        loadMallData(renderAll); 
-        $(".info_toggle").show();
-    });
-    
-    function renderAll(){
+$(window).load(function() {
         $('.flexslider').flexslider({
             animation: "slide",
             controlNav: false,
@@ -63,7 +57,15 @@ $(document).ready(function(e){
             prevText: "Previous",
             nextText: "Next"
         });
-        
+    });
+$(document).ready(function(e){
+        init(e);
+        loadMallData(renderAll); 
+        $(".info_toggle").show();
+    });
+    
+    function renderAll(){
+       
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         event_details = getEventDetailsBySlug(slug);
