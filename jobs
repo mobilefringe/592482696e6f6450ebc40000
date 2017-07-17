@@ -82,7 +82,11 @@
     function renderAll(){
    
         var jobs = getJobsList();
-        
+        jobs.sort(function(a, b) {
+                var textA = a.name;
+                var textB = b.name;
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
         if (jobs.length > 0){
             renderJobs("#jobs_container","#jobs_template", jobs);
         }
