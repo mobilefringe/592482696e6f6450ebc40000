@@ -3,7 +3,11 @@
         <h2>careers</h2>
     </div>    
     
-    {% for job in store_jobs %}
+    <div id="jobs_container">
+        <script id="jobs_template" type="x-tmpl-mustache/text">
+            
+        </script>
+    </div>
     <h3>{{job.jobable.name}}</h3>
     <div class="job_list">
         <h4>{{job.name}}</h4>
