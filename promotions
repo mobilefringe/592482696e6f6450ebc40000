@@ -108,7 +108,7 @@ $(window).load(function() {
     });
 
     function toggle_detail(promo_div){
-        console.log("Hi");
+        // console.log("Hi");
         $("#"+promo_div+" .info_toggle").toggle();
         
         if ($("a.toggle").text().indexOf("more") != -1){
