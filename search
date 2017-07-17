@@ -76,49 +76,49 @@
         if(params) {
             var search_results = getSVCSearchResults(params,15,300);
             console.log(params, search_results);
+            
+             if (search_results.stores != undefined && search_results.stores.length > 0){
+                renderGeneral('#search_container_stores','#search_template_stores', search_results.stores);
+            }
+            else{
+                $('#stores_header').hide()
+            }
+            if (search_results.promotions != undefined && search_results.promotions.length > 0){
+                renderGeneral('#search_container_promotions','#search_template_promotions', search_results.promotions);
+            }
+            else{
+                $('#promotions_header').hide()
+            }
+            if (search_results.events != undefined &&  search_results.events.length > 0){
+                renderGeneral('#search_container_events','#search_template_events', search_results.events);
+            }
+            else{
+                $('#events_header').hide()
+            }
+            
+            search_results.jobs.sort(function(a, b) {
+                var textA = a.name;
+                var textB = b.name;
+                return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+            });
+            
+            if (search_results.jobs != undefined &&  search_results.jobs.length > 0){
+                renderGeneral('#search_container_jobs','#search_template_jobs', search_results.jobs);
+            }
+            else{
+                $('#jobs_header').hide()
+            }
+            
+            //console.log(search_results.stores);
+            //console.log(search_results.genInfo, (search_results.genInfo.length > 0));
+            if (search_results.genInfo != undefined &&  search_results.genInfo.length > 0){
+                renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
+            }
+            else{
+                $('#genInfo_header').hide()
+            }
         }
-        
-        
-        if (search_results.stores != undefined && search_results.stores.length > 0){
-            renderGeneral('#search_container_stores','#search_template_stores', search_results.stores);
-        }
-        else{
-            $('#stores_header').hide()
-        }
-        if (search_results.promotions != undefined && search_results.promotions.length > 0){
-            renderGeneral('#search_container_promotions','#search_template_promotions', search_results.promotions);
-        }
-        else{
-            $('#promotions_header').hide()
-        }
-        if (search_results.events != undefined &&  search_results.events.length > 0){
-            renderGeneral('#search_container_events','#search_template_events', search_results.events);
-        }
-        else{
-            $('#events_header').hide()
-        }
-        
-        search_results.jobs.sort(function(a, b) {
-            var textA = a.name;
-            var textB = b.name;
-            return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-        });
-        
-        if (search_results.jobs != undefined &&  search_results.jobs.length > 0){
-            renderGeneral('#search_container_jobs','#search_template_jobs', search_results.jobs);
-        }
-        else{
-            $('#jobs_header').hide()
-        }
-        
-        //console.log(search_results.stores);
-        //console.log(search_results.genInfo, (search_results.genInfo.length > 0));
-        if (search_results.genInfo != undefined &&  search_results.genInfo.length > 0){
-            renderGeneral('#search_container_genInfo','#search_template_genInfo', search_results.genInfo);
-        }
-        else{
-            $('#genInfo_header').hide()
-        }
+
         show_content();
        
     }
