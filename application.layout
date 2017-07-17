@@ -270,7 +270,13 @@
                                         </a>
                                         {%endraw%}
                                     </li>
-                                    
+                                    <li class="phone" style="width: 550px; float: left; display: block;">
+                                        {%raw%}
+                                        <a href="{{url}}" {{css}} onclick="{{noLink}}">
+                                            <img alt="banner image" src="{{image_url}}" />
+                                        </a>
+                                        {%endraw%}
+                                    </li>
                                 </script>
                             </ul>
                     </div>
