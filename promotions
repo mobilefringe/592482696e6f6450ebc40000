@@ -110,6 +110,11 @@ $(window).load(function() {
     function toggle_detail(promo_div){
         console.log("Hi");
         $("#"+promo_div+" .info_toggle").toggle();
+        if ($(this).text().indexOf("more") != -1){
+            $(this).text("Read less"); 
+        } else {
+            $(this).text("Read more");    
+        }  
     }
     $("a.toggle").click(function(){
         console.log("Hello");
