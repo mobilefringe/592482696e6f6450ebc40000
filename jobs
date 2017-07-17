@@ -11,7 +11,7 @@
                 <p>{{job.description | strip_html | truncate:360}}</p>
                 <a href="/jobs/{{slug}}">Read more...</a>
                 <a href="#top" class="back_to_top">
-                    <img src="{{1847 | get_image_url}}">
+                    <img src="">
                     Back to top
                 </a>
             </div>
