@@ -8,7 +8,7 @@
              <h3>{{store_name}}</h3>
              <div class="job_list">
                 <h4>{{store_name}}</h4>
-                <p>{{description | strip_html | truncate:360}}</p>
+                <p>{{description}}</p>
                 <a href="/jobs/{{slug}}">Read more...</a>
                 <a href="#top" class="back_to_top">
                     <img src="http://assets.codecloudapp.com/sites/592482696e6f6450ebc40000/image/png/1495572558000/back_small.png">
