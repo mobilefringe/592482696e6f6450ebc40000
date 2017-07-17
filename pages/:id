@@ -18,23 +18,10 @@ $(window).load(function() {
     $(document).ready(function(e) {
         init(e);
         loadMallDataCached(renderAll); 
-        $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
+      
         });
     });
     function renderAll(){
-         $('.flexslider').flexslider({
-            animation: "slide",
-            controlNav: false,
-            directionNav: false,        
-            prevText: "Previous",
-            nextText: "Next"
-        });
-       
         var pathArray = window.location.pathname.split( '/' );
         var slug = pathArray[pathArray.length-1];
         prefix = get_prefix();
