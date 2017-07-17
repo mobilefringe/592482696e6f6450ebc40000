@@ -122,6 +122,7 @@
             $('#genInfo_header').hide();
              $('#events_header').hide()
              $('#promotions_header').hide()
+             $('#stores_header').hide();
         }
 
         show_content();
