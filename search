@@ -118,6 +118,9 @@
                 $('#genInfo_header').hide()
             }
         }
+        else {
+            
+        }
 
         show_content();
        
