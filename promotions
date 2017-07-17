@@ -108,7 +108,7 @@ $(window).load(function() {
     });
 
     function toggle_detail(promo_div){
-        console.log("Hi");
+        console.log("Hi",$(this).text());
         $("#"+promo_div+" .info_toggle").toggle();
         if ($(this).text().indexOf("more") != -1){
             $(this).text("Read less"); 
