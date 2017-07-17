@@ -75,7 +75,7 @@
         console.log(params);
         if(params) {
             var search_results = getSVCSearchResults(params,15,300);
-        console.log(params, search_results);
+            console.log(params, search_results);
         }
         
         
