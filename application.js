@@ -563,7 +563,7 @@ function renderJobs(container, template, collection){
         else{
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
-        
+        val.description_trim = val.description.substring(0, 360) + "..";
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
     });
