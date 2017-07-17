@@ -71,7 +71,7 @@
         var jobs = getEventsList();
       
         if (jobs.length > 0){
-            renderJobs("#job_container","#job_template", published_promos);
+            renderJobs("#jobs_container","#jobs_template", published_promos);
         }
     
         show_content();
