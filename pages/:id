@@ -19,7 +19,7 @@ $(window).load(function() {
         init(e);
         loadMallDataCached(renderAll); 
       
-        });
+       
     });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
