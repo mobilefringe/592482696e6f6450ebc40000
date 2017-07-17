@@ -40,7 +40,7 @@
                 </div>
                 <div class="details">
                     <div class="action">
-                        <a href="javascript:toggle_detail('promo{{id}}');"  id="read{{id}}" class="toggle">Read more</a>
+                        <a href="javascript:toggle_detail('promo{{id}}');"  id="read_promo{{id}}" class="toggle">Read more</a>
                         <a href="http://www.facebook.com/sharer.php?u={{main_host}}/{{type}}/{{slug}}" target="_blank" class="share_btn facebook">
                             <span style="display:none">facebook</span>
                         </a>
@@ -111,7 +111,7 @@ $(window).load(function() {
         // console.log("Hi");
         $("#"+promo_div+" .info_toggle").toggle();
         
-        if ($("a.toggle").text().indexOf("more") != -1){
+        if ($("#read").text().indexOf("more") != -1){
             $("a.toggle").text("Read less"); 
         } else {
             $("a.toggle").text("Read more");    
