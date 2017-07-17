@@ -121,6 +121,7 @@
             $('#genInfo_header').hide();
             $('#genInfo_header').hide();
              $('#events_header').hide()
+             $('#promotions_header').hide()
         }
 
         show_content();
