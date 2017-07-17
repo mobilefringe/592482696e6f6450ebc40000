@@ -142,23 +142,7 @@
         if (published_promos.length > 0){
             renderPromotions("#event_container","#event_template", published_promos);
         }
-        /*var future_promos = [];
-        $.each( store_promos , function( key, val ){
-            // today = new Date();
-            // webDate = new Date(val.show_on_web_date)
-            
-            today = moment();
-            webDate = moment(val.show_on_web_date);
-            if (today < webDate) {
-                future_promos.push(val)
-            } 
-        });
-        if (future_promos.length > 0){
-            renderEvents("#future_promo_container","#future_promo_template", future_promos);
-        }
-        else {
-            $(".future_promo").hide();
-        }*/
+    
         show_content();
    
     }
