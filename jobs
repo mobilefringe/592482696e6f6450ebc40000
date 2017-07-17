@@ -7,19 +7,19 @@
         <script id="jobs_template" type="x-tmpl-mustache/text">
              <h3>{{job.jobable.name}}</h3>
              <div class="job_list">
-        <h4>{{job.name}}</h4>
-        <p>{{job.description | strip_html | truncate:360}}</p>
-        <a href="/jobs/{{job.slug}}">Read more...</a>
-        
-        {% if can_edit == "true" %}
-        <a class="btn btn-info" href="/jobs/{{job.slug}}/edit">Edit</a>
-        {% endif %}
-        
-        <a href="#top" class="back_to_top">
-            <img src="{{1847 | get_image_url}}">
-            Back to top
-        </a>
-    </div>
+                <h4>{{job.name}}</h4>
+                <p>{{job.description | strip_html | truncate:360}}</p>
+                <a href="/jobs/{{job.slug}}">Read more...</a>
+                
+                {% if can_edit == "true" %}
+                <a class="btn btn-info" href="/jobs/{{job.slug}}/edit">Edit</a>
+                {% endif %}
+                
+                <a href="#top" class="back_to_top">
+                    <img src="{{1847 | get_image_url}}">
+                    Back to top
+                </a>
+            </div>
         </script>
     </div>
     <h3>{{job.jobable.name}}</h3>
