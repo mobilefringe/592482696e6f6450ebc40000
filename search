@@ -116,8 +116,8 @@
             }
         }
         else {
-            $("#no_search_header").hide();
-            $("#no_search_container").hide();
+            $("#no_search_header").show();
+            $("#no_search_container").show();
         }
 
         show_content();
