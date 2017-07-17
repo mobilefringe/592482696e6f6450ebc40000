@@ -103,7 +103,7 @@
                 renderGeneral('#search_container_jobs','#search_template_jobs', search_results.jobs);
             }
             else{
-                $('#genInfo_header').hide()
+                $('#jobs_header').hide()
             }
             
             //console.log(search_results.stores);
@@ -120,8 +120,8 @@
             $("#no_search_container").show();
             $('#genInfo_header').hide();
             $('#genInfo_header').hide();
-             $('#events_header').hide()
-             $('#promotions_header').hide()
+             $('#events_header').hide();
+             $('#promotions_header').hide();
              $('#stores_header').hide();
         }
 
