@@ -596,38 +596,37 @@ function renderJobDetails(container, template, collection){
     item_list.push(collection);
     var val = collection;
     
-        console.log(val);
-        if(val.alt_url === null) {
-            val.alt_url="";
-        }
-        if (val.jobable_type == "Store") {
-            var store_details = getStoreDetailsByID(val.jobable_id);
-            val.store_detail_btn = store_details.slug;
-            val.store_name = store_details.name;
-            if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
-                val.image_url = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
-            }
-            else{
-                val.image_url = store_details.store_front_url_abs;
-            }
-        }
-        else{
-            val.store_name = "St. Vital Centre";
+    if(val.alt_url === null) {
+        val.alt_url="";
+    }
+    if (val.jobable_type == "Store") {
+        var store_details = getStoreDetailsByID(val.jobable_id);
+        val.store_detail_btn = store_details.slug;
+        val.store_name = store_details.name;
+        if (store_details.store_front_url_abs.indexOf('missing.png') > -1){
             val.image_url = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
         }
-        
-        var show_date = moment(val.show_on_web_date);
-        var start = moment(val.start_date).tz(getPropertyTimeZone());
-        var end = moment(val.end_date).tz(getPropertyTimeZone());
-        if (start.format("DMY") == end.format("DMY")){
-            val.dates = start.format("MMM D")
-        }
         else{
-            val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+            val.image_url = store_details.store_front_url_abs;
         }
-        
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
+    }
+    else{
+        val.store_name = "St. Vital Centre";
+        val.image_url = "//codecloud.cdn.speedyrails.net/sites/592482696e6f6450ebc40000/image/png/1495569752000/logo.png";
+    }
+    
+    var show_date = moment(val.show_on_web_date);
+    var start = moment(val.start_date).tz(getPropertyTimeZone());
+    var end = moment(val.end_date).tz(getPropertyTimeZone());
+    if (start.format("DMY") == end.format("DMY")){
+        val.dates = start.format("MMM D")
+    }
+    else{
+        val.dates = start.format("MMM D") + " - " + end.format("MMM D")
+    }
+    
+    var rendered = Mustache.render(template_html,val);
+    item_rendered.push(rendered);
 
     $(container).show();
     $(container).html(item_rendered.join(''));
