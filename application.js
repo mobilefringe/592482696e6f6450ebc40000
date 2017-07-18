@@ -595,7 +595,7 @@ function renderJobDetails(container, template, collection){
     Mustache.parse(template_html); 
     item_list.push(collection);
     $.each( collection , function( key, val ) {
-        console.log(val.jobable_type);
+        console.log(val);
         if (val.jobable_type == "Store") {
             var store_details = getStoreDetailsByID(val.jobable_id);
             val.store_detail_btn = store_details.slug;
