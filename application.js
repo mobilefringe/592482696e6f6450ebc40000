@@ -608,8 +608,8 @@ function renderJobDetails(container, template, collection){
     });
   
     item_list.sort(function(a, b) {
-        var textA = a.name.toUpperCase();
-        var textB = b.name.toUpperCase();
+        var textA = a.store_name.toUpperCase();
+        var textB = b.store_name.toUpperCase();
         return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     });
     collection = [];
