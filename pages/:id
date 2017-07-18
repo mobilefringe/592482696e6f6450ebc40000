@@ -345,6 +345,7 @@ $(window).load(function() {
         }
         else {
             $("#tenant_extra").hide();
+            $("#page_body_content").addClass("tenant_area");
         }
         if(slug.indexOf("kids-club") > -1) {
             $("#kid_club_extra").show();
