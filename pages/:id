@@ -252,7 +252,12 @@ $(window).load(function() {
                 $("#404_msg").fadeIn("fast");
             }
         });
-        if(slug.indexOf("kids-club") > -1)
+        if(slug.indexOf("kids-club") > -1) {
+            $("#kid_club_extra").show();
+        }
+        else {
+              $("#kid_club_extra").hide();
+        }
         show_content();
         
     }
