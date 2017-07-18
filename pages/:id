@@ -330,7 +330,7 @@ $(window).load(function() {
             if (valid){
                 var data = {}
                 var loyalty = {}
-                loyalty["property_id"] = {{site.property.id}}
+                loyalty["property_id"] = getPropertyID();
                 loyalty["first_name"] = $("#loyalty_first_name").val();
                 loyalty["last_name"] = $("#loyalty_last_name").val();
                 loyalty["address"] = $("#loyalty_address").val();
