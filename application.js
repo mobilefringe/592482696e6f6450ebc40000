@@ -645,7 +645,7 @@ function renderJobDetails(container, template, collection){
 
     // });
     
-    // $(container).show();
+    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
