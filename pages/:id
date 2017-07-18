@@ -281,14 +281,14 @@ $(window).load(function() {
         
     }
       
-        $(function(){
-            
-            
-            $(".selector-wrap select").change(function(){                
-                var cat_name = $(this).find("option:selected").text();            
-                $(this).parent().find("span").first().text(cat_name);
-            })
+    $(function(){
+        
+        
+        $(".selector-wrap select").change(function(){                
+            var cat_name = $(this).find("option:selected").text();            
+            $(this).parent().find("span").first().text(cat_name);
         })
+    })
         
         function signup_kids_club(){
             $(".required").hide();
