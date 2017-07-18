@@ -337,7 +337,7 @@ $(window).load(function() {
                 $("#404_msg").fadeIn("fast");
             }
         });
-        if() {
+        if(slug.indexOf("tenant-login"> -1) {
             tenant_extra
         }
         if(slug.indexOf("kids-club") > -1) {
