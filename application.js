@@ -631,17 +631,17 @@ function renderJobDetails(container, template, collection){
     //     var textB = b.store_name.toUpperCase();
     //     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
     // });
-    collection = [];
-    collection = item_list;
+    // collection = [];
+    // collection = item_list;
     
-    $.each( collection , function( key, val ) {
-        //console.log(val.name);
-        var rendered = Mustache.render(template_html,val);
-        item_rendered.push(rendered);
+    // $.each( collection , function( key, val ) {
+    //     //console.log(val.name);
+    //     var rendered = Mustache.render(template_html,val);
+    //     item_rendered.push(rendered);
 
-    });
+    // });
     
-    $(container).show();
+    // $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
