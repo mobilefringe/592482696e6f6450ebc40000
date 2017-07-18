@@ -88,8 +88,6 @@
                     </span>
                 </div>
             </div>
-            
-            {{page.body}}
         </div>
     </div>
     <div id="page_body_content">
