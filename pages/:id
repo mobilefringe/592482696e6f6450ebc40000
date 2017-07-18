@@ -341,6 +341,9 @@ $(window).load(function() {
             
             $("#tenant_extra").show();
         }
+        else {
+            
+        }
         if(slug.indexOf("kids-club") > -1) {
             $("#kid_club_extra").show();
               var n = 1;
