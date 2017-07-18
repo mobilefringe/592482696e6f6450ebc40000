@@ -278,7 +278,7 @@ $(window).load(function() {
             });
         }
         else {
-              $("#kid_club_extra").hide();
+            $("#kid_club_extra").hide();
         }
         
         
