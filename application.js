@@ -621,9 +621,9 @@ function renderJobDetails(container, template, collection){
         else{
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
-        item_list.push(val);
-        // var rendered = Mustache.render(template_html,val);
-        // item_rendered.push(rendered);
+        
+        var rendered = Mustache.render(template_html,val);
+        item_rendered.push(rendered);
     });
     //console.log(item_list);
     // item_list.sort(function(a, b) {
