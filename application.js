@@ -593,7 +593,7 @@ function renderJobDetails(container, template, collection){
     var item_rendered = [];
     var template_html = $(template).html();
     Mustache.parse(template_html); 
-    //item_list.push(collection);
+    item_list.push(collection);
     $.each( collection , function( key, val ) {
         console.log(val);
         if (val.jobable_type == "Store") {
