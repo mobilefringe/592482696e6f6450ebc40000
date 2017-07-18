@@ -536,7 +536,7 @@ $(window).load(function() {
                         	    }
                 			},
                             error: function(xhr, ajaxOptions, thrownError){
-                                alert("Please try again later.");
+                                alert("Please try again later .");
                 			}
                         }) 
                   }
