@@ -338,7 +338,8 @@ $(window).load(function() {
             }
         });
         if(slug.indexOf("tenant-login"> -1) {
-            tenant_extra
+            
+            $("#tenant_extra").show();
         }
         if(slug.indexOf("kids-club") > -1) {
             $("#kid_club_extra").show();
