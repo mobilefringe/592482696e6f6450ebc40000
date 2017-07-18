@@ -181,8 +181,8 @@
     <ul class="info-list wide" id="kids_discount_container">
         <script id="kids_discount_template" type="x-tmpl-mustache/text">
             <li>
-			    <strong><a href="{{url}}">{{name}}</a></strong>
-			    <span>{{description}}</span>
+			    <strong><a href="{{images.url}}">{{images.name}}</a></strong>
+			    <span>{{images.description}}</span>
 		    </li>
         </script>
 	</ul>
