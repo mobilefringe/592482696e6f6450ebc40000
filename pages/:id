@@ -280,6 +280,8 @@ $(window).load(function() {
         else {
               $("#kid_club_extra").hide();
         }
+        
+        
         show_content();
         
     }
