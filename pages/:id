@@ -178,7 +178,10 @@
     <p>Kids Club discounts are offered to all St. Vital Centre Kids Club members every Tuesday. Please show your membership card to receive these special Kids Club discounts.</p>
     <p>Offers are subject to change without notice.</p>
     
-    <ul class="info-list wide">
+    <ul class="info-list wide" id="kids_discount_container">
+        <script id="kids_discount_template" type="x-tmpl-mustache/text">
+            
+        </script>
         {% assign repos = site.property.repos %}
         
 	    {% for repo in repos %}
