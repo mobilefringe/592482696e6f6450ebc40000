@@ -607,11 +607,11 @@ function renderJobDetails(container, template, collection){
         // item_rendered.push(rendered);
     });
     //console.log(item_list);
-    item_list.sort(function(a, b) {
-        var textA = a.store_name.toUpperCase();
-        var textB = b.store_name.toUpperCase();
-        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
-    });
+    // item_list.sort(function(a, b) {
+    //     var textA = a.store_name.toUpperCase();
+    //     var textB = b.store_name.toUpperCase();
+    //     return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    // });
     collection = [];
     collection = item_list;
     
