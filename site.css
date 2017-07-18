@@ -1020,6 +1020,11 @@ footer .copyright a:hover{
     margin-left: auto;
     max-width: 960px;
 }
+.bc_banner {
+    margin: 20px auto;
+    display: block;
+    max-width: 95%;
+}
 /********** footer END **********/
 
 /********* page *******/
