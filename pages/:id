@@ -342,7 +342,7 @@ $(window).load(function() {
             $("#tenant_extra").show();
         }
         else {
-            
+            $("#tenant_extra").hide();
         }
         if(slug.indexOf("kids-club") > -1) {
             $("#kid_club_extra").show();
