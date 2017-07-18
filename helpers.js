@@ -191,7 +191,7 @@ function search_site(){
 
 function show_content(){
     $('.yield').fadeIn();
-    $(".modal-backdrop").remove();
+    // $(".modal-backdrop").remove();
     var windowWidth = $(window).width();
     if(windowWidth <= 1024) {
          $('.panel-collapse').removeClass('in')
