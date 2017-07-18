@@ -399,5 +399,50 @@ $(window).load(function() {
                 }
         });
     });
-    
+   
+         
+            $(function(){
+                if ($.cookie("tenant_login") == "true"){
+                    $(".login").hide();
+                    $(".tenant_select").show();
+                    $(".flexslider").remove();
+                    $(".login_title").remove();
+                    $(".page_title").text("welcome");   
+                }
+            })
+            function verify_pin(){
+                  var data = {}
+                  data["username"] = $("#username").val();
+                  data["pin"] = $("#pin").val();
+                  if ($("#username").val() !="" && $("#pin").val() != ""){
+                      $.ajax({
+                            url: "/verify_pin",
+                            type: "POST",
+                            data: data,
+                            success: function(response){
+                                if (response["msg"] == "success"){
+                                    $(".login").hide();
+                                    $(".tenant_select").show();
+                                    $(".flexslider").remove();
+                                    $(".login_title").remove();
+                                    $(".page_title").text("welcome");
+                                    window.scrollTo(0,0);
+                                    var date = new Date();
+                                    var minutes = 15;
+                                    date.setTime(date.getTime() + (minutes * 60 * 1000));                                
+                                    $.cookie("tenant_login", "true", { expires: date });                                
+                                } else {
+                                    alert("Please try again later.");
+                        	    }
+                			},
+                            error: function(xhr, ajaxOptions, thrownError){
+                                alert("Please try again later.");
+                			}
+                        }) 
+                  }
+                  else{
+                      alert("Please provide username and password.");
+                  }
+              }
+
 </script>
