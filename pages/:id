@@ -340,8 +340,8 @@ $(window).load(function() {
         if(slug.indexOf("tenant-login")> -1) {
             
             $("#tenant_extra").show();
-            tenant_area
-            $("#page_body_content").addClass("");
+            
+            $("#page_body_content").addClass("tenant_area");
         }
         else {
             $("#tenant_extra").hide();
