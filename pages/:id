@@ -1,5 +1,9 @@
 <div>
     <h2 class="page_title" id="page_title"></h2>
+    
+    <div id="tenant_extra">
+        
+    </div>
     <div id="page_body_content">
         
     </div>
