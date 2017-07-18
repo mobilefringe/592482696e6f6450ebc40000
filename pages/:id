@@ -180,20 +180,11 @@
     
     <ul class="info-list wide" id="kids_discount_container">
         <script id="kids_discount_template" type="x-tmpl-mustache/text">
-            
-        </script>
-        {% assign repos = site.property.repos %}
-        
-	    {% for repo in repos %}
-	        {% if repo.slug == "svc-kids-club-discounts" %}
-	            {% for item in repo.site_images%}
-    	            <li>
+            <li>
         			    <strong><a href="{{item.url}}">{{item.name}}</a></strong>
         			    <span>{{item.description}}</span>
         		    </li>
-                {% endfor %}
-        	{% endif %}
-	    {% endfor %}
+        </script>
 	</ul>
     <form id="kids_agency_form" action="http://app.emediatemail.com/t/r/s/jtoujj/" method="post" style="display:none">
         <input id="fieldName_kids_agency" name="cm-name" type="text" align="top"/>
