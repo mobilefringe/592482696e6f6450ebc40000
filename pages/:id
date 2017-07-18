@@ -337,7 +337,7 @@ $(window).load(function() {
                 $("#404_msg").fadeIn("fast");
             }
         });
-        if(slug.indexOf("tenant-login"> -1) {
+        if(slug.indexOf("tenant-login")> -1) {
             
             $("#tenant_extra").show();
         }
