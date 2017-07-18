@@ -276,7 +276,7 @@ $(window).load(function() {
         }
         //get kids club discount from repo
         var kids_club_discount = getRepoDetailsByName("kids club discounts");
-        renderGeneral(kids_club_discount);
+        renderGeneral("#kids_discount_container","#kids_discount_template",kids_club_discount);
         show_content();
         
     }
