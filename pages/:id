@@ -282,7 +282,7 @@ $(window).load(function() {
         }
         //get kids club discount from repo
         var kids_club_discount = getRepoDetailsByName("kids club discounts");
-        
+        renderGeneral();
         show_content();
         
     }
