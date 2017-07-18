@@ -516,7 +516,7 @@ $(window).load(function() {
                   data["pin"] = $("#pin").val();
                   if ($("#username").val() !="" && $("#pin").val() != ""){
                       $.ajax({
-                            url: "/verify_pin",
+                            url: "http://www.stvitalcentre.com/verify_pin",
                             type: "POST",
                             data: data,
                             success: function(response){
