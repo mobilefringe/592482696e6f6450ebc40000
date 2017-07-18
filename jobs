@@ -7,7 +7,7 @@
         <script id="jobs_template" type="x-tmpl-mustache/text">
              <h3>{{store_name}}</h3>
              <div class="job_list">
-                <h4>{{store_name}}</h4>
+                <h4>{{name}}</h4>
                 <p>{{description_trim}}</p>
                 <a href="/jobs/{{slug}}">Read more...</a>
                 <a href="#top" class="back_to_top">
