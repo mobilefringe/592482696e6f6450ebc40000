@@ -359,7 +359,7 @@ $(window).load(function() {
         //                 alert("Please try again later.");
         // 			}
         //         })
-        //     }
+            }
             
         }
         function signup_kids_club_agency(){
