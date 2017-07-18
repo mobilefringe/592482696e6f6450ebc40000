@@ -252,6 +252,7 @@ $(window).load(function() {
                 $("#404_msg").fadeIn("fast");
             }
         });
+        if(slug.indexOf("kids-club") > -1)
         show_content();
         
     }
