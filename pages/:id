@@ -275,7 +275,7 @@ $(window).load(function() {
             $("#kid_club_extra").hide();
         }
         //get kids club discount from repo
-        var kids_club_discount = getRepoDetailsByName("kids club discounts");
+        var kids_club_discount = getRepoDetailsByName("kids club discounts").images;
         renderGeneral("#kids_discount_container","#kids_discount_template",kids_club_discount);
         show_content();
         
