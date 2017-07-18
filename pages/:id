@@ -196,7 +196,7 @@
         <input id="fieldName_kids_agency" name="cm-name" type="text" align="top"/>
         <input id="fieldEmail_kids_agency" name="cm-jtoujj-jtoujj" type="email"/>
     </form>
- 
+    </div>
 </div>
 
 <script>
