@@ -280,7 +280,8 @@ $(window).load(function() {
         else {
             $("#kid_club_extra").hide();
         }
-        
+        //get kids club discount from repo
+        var kids_club_discount = getRepoDetailsByName("kids club discounts");
         
         show_content();
         
