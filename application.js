@@ -602,9 +602,25 @@ function renderJobDetails(container, template, collection){
         else{
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
+        
+    });
+  
+        item_list.sort(function(a, b) {
+        var textA = a.name.toUpperCase();
+        var textB = b.name.toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+    collection = [];
+    collection = item_list;
+    
+    $.each( collection , function( key, val ) {
+        //console.log(val.name);
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
+
     });
+    
+    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
