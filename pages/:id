@@ -138,12 +138,12 @@
         <div class="row-fluid">
             <div class="span6">
                 <label for="loyalty_parent_name">Parent's' name *</label>
-                <input id="loyalty_parent_name" name="loyalty[parent_name]" size="30" type="text">
+                <input id="loyalty_parent_name" name="loyalty[parent_name]" size="30" type="text"><br/>
                 <span class="required" id="loyalty_parent_name_required">This field cannot be left blank</span>
             </div>
             <div class="span6">
               <label for="loyalty_email">Parent's' Email *</label>
-              <input id="loyalty_email" name="loyalty[email]" size="30" type="text">
+              <input id="loyalty_email" name="loyalty[email]" size="30" type="text"><br/>
               <span class="required" id="loyalty_email_required">This field cannot be left blank</span>
             </div>            
         </div>
