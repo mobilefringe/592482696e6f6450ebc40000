@@ -299,7 +299,15 @@ $(window).load(function() {
         $(".selector-wrap select").change(function(){                
             var cat_name = $(this).find("option:selected").text();            
             $(this).parent().find("span").first().text(cat_name);
-        })
+        });
+        
+        if ($.cookie("tenant_login") == "true"){
+            $(".login").hide();
+            $(".tenant_select").show();
+            $(".flexslider").remove();
+            $(".login_title").remove();
+            $(".page_title").text("welcome");   
+        }
     });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
