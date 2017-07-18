@@ -595,7 +595,7 @@ function renderJobDetails(container, template, collection){
     Mustache.parse(template_html); 
     item_list.push(collection);
     var val = collection;
-    // $.each( collection , function( key, val ) {
+    
         console.log(val);
         if(val.alt_url === null) {
             val.alt_url="";
