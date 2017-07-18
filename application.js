@@ -564,9 +564,27 @@ function renderJobs(container, template, collection){
             val.dates = start.format("MMM D") + " - " + end.format("MMM D")
         }
         val.description_trim = val.description.substring(0, 360) + "..";
+         item_list.push(val);
+        // var rendered = Mustache.render(template_html,val);
+        // item_rendered.push(rendered);
+    });
+    console.log(item_list);
+    item_list.sort(function(a, b) {
+        var textA = a.store_name.toUpperCase();
+        var textB = b.store_name.toUpperCase();
+        return (textA < textB) ? -1 : (textA > textB) ? 1 : 0;
+    });
+    collection = [];
+    collection = item_list;
+    
+    $.each( collection , function( key, val ) {
+        //console.log(val.name);
         var rendered = Mustache.render(template_html,val);
         item_rendered.push(rendered);
+
     });
+    
+    $(container).show();
     $(container).html(item_rendered.join(''));
 }
 
