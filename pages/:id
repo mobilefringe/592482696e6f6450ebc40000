@@ -255,6 +255,7 @@ $(window).load(function() {
         });
         if(slug.indexOf("kids-club") > -1) {
             $("#kid_club_extra").show();
+              var n = 0;
             $("div#kid_club_extra h3").each(function(){
                 // console.log("hi");
                 if (n % 4 == 1 ){
