@@ -296,6 +296,10 @@ $(window).load(function() {
     $(document).ready(function(e) {
         init(e);
         loadMallDataCached(renderAll); 
+        $(".selector-wrap select").change(function(){                
+            var cat_name = $(this).find("option:selected").text();            
+            $(this).parent().find("span").first().text(cat_name);
+        })
     });
     function renderAll(){
         var pathArray = window.location.pathname.split( '/' );
