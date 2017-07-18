@@ -606,7 +606,7 @@ function renderJobDetails(container, template, collection){
         // var rendered = Mustache.render(template_html,val);
         // item_rendered.push(rendered);
     });
-    console.log(item_list);
+    //console.log(item_list);
     item_list.sort(function(a, b) {
         var textA = a.store_name.toUpperCase();
         var textB = b.store_name.toUpperCase();
