@@ -2781,6 +2781,9 @@ input[type=text]{
         width: 92%;
     }
     .homepop_up_container {
-        width:100%!important;
+        width: 300px;
+        position: relative;
+        top: 30%;
+        left: 4%;
     }
 }
