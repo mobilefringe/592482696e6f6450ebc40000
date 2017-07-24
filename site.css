@@ -2783,7 +2783,7 @@ input[type=text]{
     .homepop_up_container {
         width: 300px;
         position: relative;
-        top: 30%;
+        top: 70%;
         left: 50%;
         -webkit-transform:translate(-50%, -50%);
         -moz-transform:translate(-50%, -50%);
