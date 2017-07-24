@@ -2786,4 +2786,7 @@ input[type=text]{
         top: 30%;
         left: 50%;
     }
+    .mfp-container {
+        height:auto;
+    }
 }
