@@ -368,9 +368,7 @@ function renderStoreDetails(container, template, collection, slug){
         var repo_data = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood.replace(/['"]+/g, ''));
         var design = [];
         if(repo_data !== null && repo_data==undefined) {
-            
-        }
-        var repoDesign = repo_data.images;
+             var repoDesign = repo_data.images;
         
         $.each( repoDesign , function( repo_key, repo_val ) {
             if(repo_val.name.indexOf("Drawing") !== -1)
@@ -379,6 +377,8 @@ function renderStoreDetails(container, template, collection, slug){
             }
             
         });
+        }
+       
         val.repoDesign = design;
         
         var rendered = Mustache.render(template_html,val);
