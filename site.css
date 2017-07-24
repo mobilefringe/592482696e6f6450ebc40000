@@ -2780,4 +2780,7 @@ input[type=text]{
     .home_page{
         width: 92%;
     }
+    .homepop_up_container {
+        width:100%;
+    }
 }
