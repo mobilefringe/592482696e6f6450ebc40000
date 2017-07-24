@@ -370,13 +370,13 @@ function renderStoreDetails(container, template, collection, slug){
         if(repo_data !== null && repo_data==undefined) {
              var repoDesign = repo_data.images;
         
-        $.each( repoDesign , function( repo_key, repo_val ) {
-            if(repo_val.name.indexOf("Drawing") !== -1)
-            { 
-                design.push("<img src="+repo_val.photo_url_abs+" alt='design_url' />") ;
-            }
-            
-        });
+            $.each( repoDesign , function( repo_key, repo_val ) {
+                if(repo_val.name.indexOf("Drawing") !== -1)
+                { 
+                    design.push("<img src="+repo_val.photo_url_abs+" alt='design_url' />") ;
+                }
+                
+            });
         }
        
         val.repoDesign = design;
