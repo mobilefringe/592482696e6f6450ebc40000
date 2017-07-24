@@ -2792,4 +2792,7 @@ input[type=text]{
     .mfp-container {
         height:auto;
     }
+    .mfp-content {
+        width: 100%!important;
+    }
 }
