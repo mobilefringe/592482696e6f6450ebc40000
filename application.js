@@ -170,7 +170,7 @@ function renderStoreList(container, template, collection, type,starter, breaker)
             val.show = "display:none;";
         }
         else{
-            val.initial = current_initial;
+            val.initial = current_initial.toUpperCase();
             store_initial = current_initial;
             
             if(val.initial=="0") {
