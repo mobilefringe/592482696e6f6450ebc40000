@@ -50,7 +50,7 @@
             
             <ul style="{{payment_show}}" class="payment">
             
-                <li>- {{payment}}</li>
+                <li>- {{payment_methods}}</li>
            
             </ul>
             
