@@ -2781,6 +2781,6 @@ input[type=text]{
         width: 92%;
     }
     .homepop_up_container {
-        width:100%;
+        width:100%!important;
     }
 }
