@@ -2783,10 +2783,7 @@ input[type=text]{
     .homepop_up_container {
         width: 300px;
         position: relative;
-        img {
-        top: 30%;
-        left: 50%;
-    }
+        
     }
     .mfp-container {
         height:auto;
