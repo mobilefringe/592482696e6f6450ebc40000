@@ -366,11 +366,12 @@ function renderStoreDetails(container, template, collection, slug){
             val.neighbourhood = "Food Court Southside";
         //console.log("Design Requirements - "+ val.neighbourhood.replace(/['"]+/g, ''));
         var repo_data = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood.replace(/['"]+/g, ''));
+        var design = [];
         if(repo_data !== null && repo_data==undefined) {
             
         }
         var repoDesign = repo_data.images;
-        var design = [];
+        
         $.each( repoDesign , function( repo_key, repo_val ) {
             if(repo_val.name.indexOf("Drawing") !== -1)
             { 
