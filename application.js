@@ -367,7 +367,7 @@ function renderStoreDetails(container, template, collection, slug){
         //console.log("Design Requirements - "+ val.neighbourhood.replace(/['"]+/g, ''));
         var repo_data = getRepoDetailsByName("Design Requirements - "+ val.neighbourhood.replace(/['"]+/g, ''));
         var design = [];
-        if(repo_data !== null && repo_data==undefined) {
+        if(repo_data !== null && repo_data!==undefined) {
              var repoDesign = repo_data.images;
         
             $.each( repoDesign , function( repo_key, repo_val ) {
