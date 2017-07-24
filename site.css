@@ -2785,6 +2785,10 @@ input[type=text]{
         position: relative;
         
     }
+    .homepop_up_container img {
+        top: 30%;
+        left: 50%;
+    }
     .mfp-container {
         height:auto;
     }
